@@ -206,7 +206,7 @@ con = get_con()
 # ── Data ──────────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_all():
-    df = con.sql("SELECT * FROM pokedex_full ORDER BY Number, Name").df()
+    df = con.sql("SELECT * FROM pokedex_full ORDER BY Number, Name").df()  # includes all columns incl. new traits fields
     df["_len"] = df["Name"].str.len()
     df = (df.sort_values(["Number", "_len"])
             .drop_duplicates(subset=["Number"])
@@ -241,6 +241,288 @@ def stat_bar(label: str, val: int) -> str:
         f'<div class="stat-val" style="color:{c};">{val}</div>'
         f'</div>'
     )
+
+
+# ── Physical Traits helpers ───────────────────────────────────────────────────
+
+HEIGHT_COMPS = [
+    (0.3,  "smaller than a house cat 🐱"),
+    (0.6,  "about the size of a toddler 👶"),
+    (1.0,  "about as tall as a 7-year-old 🧒"),
+    (1.4,  "about as tall as a 10-year-old 🧑"),
+    (1.7,  "about as tall as a grown-up 🧍"),
+    (2.5,  "taller than a basketball hoop 🏀"),
+    (5.0,  "as tall as a double-decker bus 🚌"),
+    (10.0, "as tall as a 3-story building 🏢"),
+    (float("inf"), "absolutely ENORMOUS 🌋"),
+]
+WEIGHT_COMPS = [
+    (1,    "lighter than a water bottle 💧"),
+    (5,    "about as heavy as a house cat 🐱"),
+    (15,   "about as heavy as a big dog 🐕"),
+    (40,   "about as heavy as a panda bear 🐼"),
+    (100,  "about as heavy as a motorbike 🏍️"),
+    (500,  "about as heavy as a horse 🐴"),
+    (1000, "about as heavy as a car 🚗"),
+    (float("inf"), "heavier than most things you know 🏔️"),
+]
+GROWTH_ICONS = {
+    "Erratic": "⚡⚡ Very Fast", "Fast": "⚡ Fast",
+    "Medium Fast": "➡️ Medium", "Medium Slow": "🐾 Medium Slow",
+    "Slow": "🐢 Slow", "Fluctuating": "🔀 Fluctuating",
+}
+CATCH_LABELS = [
+    (50,  "⭐⭐⭐⭐⭐ Very Easy"),
+    (120, "⭐⭐⭐⭐ Easy"),
+    (180, "⭐⭐⭐ Medium"),
+    (220, "⭐⭐ Tricky"),
+    (255, "⭐ Hard"),
+    (256, "💀 Very Hard (Legendary!)"),
+]
+HAPPINESS_LABELS = [
+    (50,  "😤 Grumpy — needs lots of love to warm up"),
+    (100, "😐 Neutral — fairly content from the start"),
+    (256, "😊 Happy — loves its new trainer right away!"),
+]
+COLOR_SWATCHES = {
+    "Black": "#333", "Blue": "#4a7fc1", "Brown": "#8B5E3C", "Gray": "#999",
+    "Green": "#4CAF50", "Pink": "#F48FB1", "Purple": "#9C27B0", "Red": "#E53935",
+    "White": "#eee", "Yellow": "#F9A825",
+}
+
+
+def _compare(val: float, table: list) -> str:
+    for threshold, label in table:
+        if val <= threshold:
+            return label
+    return table[-1][1]
+
+
+def _catch_label(rate: int) -> str:
+    pct = round(rate / 255 * 100, 1)
+    for threshold, label in CATCH_LABELS:
+        if rate <= threshold:
+            return f"{label}  ({pct}% catch chance)"
+    return f"💀 Very Hard  ({pct}% catch chance)"
+
+
+def _happiness_label(val: int) -> str:
+    for threshold, label in HAPPINESS_LABELS:
+        if val < threshold:
+            return label
+    return HAPPINESS_LABELS[-1][1]
+
+
+def _gender_html(rate: int) -> str:
+    if rate == -1:
+        return '<span style="color:#aaa;font-size:1rem;">⚲ Genderless</span>'
+    f_pct = rate / 8 * 100
+    m_pct = 100 - f_pct
+    f_bar = f'<div style="height:10px;border-radius:4px 0 0 4px;background:#F48FB1;width:{f_pct}%;display:inline-block;"></div>'
+    m_bar = f'<div style="height:10px;border-radius:0 4px 4px 0;background:#6390F0;width:{m_pct}%;display:inline-block;"></div>'
+    return (
+        f'<div style="margin:6px 0 2px;">{f_bar}{m_bar}</div>'
+        f'<span style="color:#F48FB1;">♀ {f_pct:.0f}%</span>'
+        f'&nbsp;&nbsp;'
+        f'<span style="color:#6390F0;">♂ {m_pct:.0f}%</span>'
+    )
+
+
+def _type_badges_from_str(types_str: str | None) -> str:
+    if not types_str:
+        return '<span style="color:#666;">None</span>'
+    return " ".join(type_badge(t.strip()) for t in types_str.split(";") if t.strip())
+
+
+def _section(title: str) -> None:
+    st.markdown(
+        f'<div style="margin:20px 0 8px;font-size:1rem;font-weight:800;'
+        f'color:#EE8130;border-bottom:1px solid #2a2d33;padding-bottom:4px;">'
+        f'{title}</div>',
+        unsafe_allow_html=True,
+    )
+
+
+def render_traits_tab(row, sel_num: int) -> None:
+    """Render the full Physical Traits tab content."""
+    con = get_con()
+
+    # ── Section 1: Body Facts ─────────────────────────────────────────────────
+    _section("🔬 Body Facts")
+    col_a, col_b = st.columns(2)
+
+    with col_a:
+        # Color swatch
+        color_name = str(row.get("Color") or "Gray")
+        swatch_bg  = COLOR_SWATCHES.get(color_name, "#888")
+        swatch_fg  = "#000" if color_name in ("White", "Yellow") else "#fff"
+        shape_name = str(row.get("Shape") or "Unknown")
+        st.markdown(
+            f'<div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">'
+            f'<span style="background:{swatch_bg};color:{swatch_fg};padding:3px 14px;'
+            f'border-radius:20px;font-weight:700;">{color_name}</span>'
+            f'<span style="color:#aaa;">Body shape: <strong style="color:#eee;">{shape_name}</strong></span>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
+        h = float(row["HeightM"])
+        st.markdown(
+            f'**📏 Height:** {h:.1f} m — *{_compare(h, HEIGHT_COMPS)}*'
+        )
+
+    with col_b:
+        w = float(row["WeightKg"])
+        st.markdown(
+            f'**⚖️ Weight:** {w:.1f} kg — *{_compare(w, WEIGHT_COMPS)}*'
+        )
+        # Gender bar
+        rate = int(row.get("GenderRate") or -1)
+        st.markdown("**⚤ Gender:**")
+        st.markdown(_gender_html(rate), unsafe_allow_html=True)
+
+    # ── Section 2: Trainer Facts ──────────────────────────────────────────────
+    _section("🎮 Trainer Facts")
+    col_c, col_d = st.columns(2)
+
+    with col_c:
+        # Catch difficulty
+        catch = int(row.get("CaptureRate") or 0)
+        catch_pct = min(catch / 255, 1.0)
+        catch_color = "#5bde7a" if catch > 180 else "#f7d02c" if catch > 90 else "#EE8130" if catch > 30 else "#C22E28"
+        st.markdown("**🎯 Catch Difficulty:**")
+        st.markdown(
+            f'<div style="background:#2a2a2a;border-radius:8px;height:12px;margin:4px 0;">'
+            f'<div style="width:{catch_pct*100:.0f}%;height:100%;border-radius:8px;background:{catch_color};"></div>'
+            f'</div>'
+            f'<div style="font-size:0.85rem;color:#aaa;">{_catch_label(catch)}</div>'
+            f'<div style="font-size:0.75rem;color:#666;margin-top:2px;">Higher = easier to catch</div>',
+            unsafe_allow_html=True,
+        )
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # Base experience
+        xp = int(row.get("BaseExperience") or 0)
+        xp_pct = min(xp / 608, 1.0)
+        st.markdown("**✨ XP Reward when defeated:**")
+        st.markdown(
+            f'<div style="background:#2a2a2a;border-radius:8px;height:12px;margin:4px 0;">'
+            f'<div style="width:{xp_pct*100:.0f}%;height:100%;border-radius:8px;background:#7C4DFF;"></div>'
+            f'</div>'
+            f'<div style="font-size:0.85rem;color:#aaa;">{xp} XP — '
+            f'{"lots of XP! 🏆" if xp > 200 else "average XP" if xp > 80 else "low XP"}</div>'
+            f'<div style="font-size:0.75rem;color:#666;margin-top:2px;">More XP = better reward for your team</div>',
+            unsafe_allow_html=True,
+        )
+
+    with col_d:
+        # Starting happiness
+        happy = int(row.get("BaseHappiness") or 0)
+        st.markdown("**😊 Starting Happiness:**")
+        st.markdown(
+            f'<div style="font-size:0.9rem;color:#eee;margin:4px 0;">{_happiness_label(happy)}</div>'
+            f'<div style="font-size:0.75rem;color:#666;">Score: {happy}/255</div>',
+            unsafe_allow_html=True,
+        )
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # Growth rate
+        growth = str(row.get("GrowthRate") or "Medium Fast")
+        growth_icon = GROWTH_ICONS.get(growth, f"➡️ {growth}")
+        st.markdown("**📈 Growth Rate (how fast it levels up):**")
+        st.markdown(
+            f'<div style="font-size:0.9rem;color:#eee;margin:4px 0;">{growth_icon}</div>',
+            unsafe_allow_html=True,
+        )
+
+        # Egg groups
+        eg1 = str(row.get("EggGroup1") or "")
+        eg2 = str(row.get("EggGroup2") or "")
+        groups = eg1 + (f" / {eg2}" if eg2 else "")
+        if groups:
+            st.markdown(f"**🥚 Egg Groups:** {groups}")
+
+    # ── Section 3: Abilities ──────────────────────────────────────────────────
+    _section("⚡ Abilities")
+    st.caption("Abilities are special powers that help Pokémon in battle!")
+
+    abilities_df = con.sql(
+        f"SELECT AbilityName, IsHidden FROM raw_abilities WHERE Number = {sel_num} ORDER BY IsHidden"
+    ).df()
+
+    if abilities_df.empty:
+        st.markdown("*No ability data available.*")
+    else:
+        badges_html = ""
+        for _, ab in abilities_df.iterrows():
+            name = str(ab["AbilityName"])
+            is_hidden = str(ab["IsHidden"]).lower() == "true"
+            if is_hidden:
+                badges_html += (
+                    f'<span style="background:#F9A825;color:#000;padding:4px 16px;'
+                    f'border-radius:20px;font-weight:700;margin-right:8px;margin-bottom:6px;'
+                    f'display:inline-block;">✨ {name} (Hidden)</span>'
+                )
+            else:
+                badges_html += (
+                    f'<span style="background:#2E7D32;color:#fff;padding:4px 16px;'
+                    f'border-radius:20px;font-weight:700;margin-right:8px;margin-bottom:6px;'
+                    f'display:inline-block;">{name}</span>'
+                )
+        st.markdown(f'<div style="margin:6px 0;">{badges_html}</div>', unsafe_allow_html=True)
+
+    # ── Section 4: Where to Find It ───────────────────────────────────────────
+    _section("🗺️ Where to Find It")
+
+    locs_df = con.sql(
+        f"SELECT Region, AreaName, EncounterRate FROM raw_locations "
+        f"WHERE Number = {sel_num} ORDER BY Region, EncounterRate DESC"
+    ).df()
+
+    if locs_df.empty:
+        st.info("🚫 This Pokémon can't be found in the wild — it must be obtained another way! (Gift, trade, or evolution)")
+    else:
+        regions = locs_df["Region"].unique()
+        region_cols = st.columns(min(len(regions), 3))
+        for col, region in zip(region_cols, regions):
+            with col:
+                region_data = locs_df[locs_df["Region"] == region][["AreaName", "EncounterRate"]]
+                with st.expander(f"📍 {region} ({len(region_data)} areas)"):
+                    st.dataframe(
+                        region_data.rename(columns={"AreaName": "Area", "EncounterRate": "Encounter %"}),
+                        use_container_width=True, hide_index=True,
+                    )
+
+    # ── Section 5: Type Battle Info ───────────────────────────────────────────
+    _section("⚔️ Type Battle Info")
+    traits_row = con.sql(
+        f"SELECT StrongAgainst, WeakAgainst, ResistantTo, ImmuneFrom "
+        f"FROM pokemon_traits WHERE Number = {sel_num}"
+    ).fetchone()
+
+    type1 = str(row.get("Type1") or "")
+    type2 = str(row.get("Type2") or "")
+    type_desc = f"{type1}" + (f" / {type2}" if type2 else "")
+    st.caption(f"How {row['Name']}'s **{type_desc}** type performs in battles:")
+
+    if traits_row:
+        strong, weak, resist, immune = traits_row
+        col_e, col_f = st.columns(2)
+        with col_e:
+            st.markdown("🔴 **Strong against:**")
+            st.markdown(_type_badges_from_str(strong), unsafe_allow_html=True)
+            st.markdown("<br>🟡 **Resists hits from:**", unsafe_allow_html=True)
+            st.markdown(_type_badges_from_str(resist), unsafe_allow_html=True)
+        with col_f:
+            st.markdown("🔵 **Weak to:**")
+            st.markdown(_type_badges_from_str(weak), unsafe_allow_html=True)
+            if immune:
+                st.markdown("<br>⚫ **Immune to (no damage!):**", unsafe_allow_html=True)
+                st.markdown(_type_badges_from_str(immune), unsafe_allow_html=True)
+    else:
+        st.markdown("*Type battle data not available.*")
 
 def gif_url(pokemon_id: int) -> str:
     return f"{CDN}/other/showdown/{pokemon_id}.gif"
@@ -393,68 +675,76 @@ if st.session_state.pop("_scroll_top", False):
         height=0,
     )
 
-# ── Detail panel ──────────────────────────────────────────────────────────────
+# ── Detail panel — tabbed ────────────────────────────────────────────────────
 with st.container(border=True):
-    art_col, info_col = st.columns([1, 1.7], gap="large")
+    tab_overview, tab_traits = st.tabs(["📋 Overview", "🏋️ Physical Traits"])
 
-    with art_col:
-        st.image(row["ArtworkURL"], use_container_width=True)
-        st.markdown(
-            f'<div style="text-align:center;margin-top:6px;">'
-            f'<img src="{row["AnimatedGifURL"]}" width="96" style="image-rendering:pixelated;"/>'
-            f'<br><span style="font-size:0.75rem;color:#888;">Battle sprite</span>'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
+    # ── Overview tab (unchanged layout) ──────────────────────────────────────
+    with tab_overview:
+        art_col, info_col = st.columns([1, 1.7], gap="large")
 
-    with info_col:
-        leg_star = " ⭐" if row["Legendary"] else ""
-        st.markdown(
-            f'<span style="color:#888;font-size:1.1rem;font-weight:700;">#{int(row["Number"]):04d}</span>'
-            f'<span style="color:#888;font-size:0.85rem;"> Gen {gen}{leg_star}</span>',
-            unsafe_allow_html=True,
-        )
-        st.markdown(f"## {row['Name']}")
-
-        badges = type_badge(row["Type1"])
-        if row["Type2"]:
-            badges += type_badge(row["Type2"])
-        genus = row.get("Genus", "") or ""
-        st.markdown(
-            f'<span style="color:#bbb;font-style:italic;font-size:0.95rem;">{genus}</span>'
-            f'<br>{badges}',
-            unsafe_allow_html=True,
-        )
-
-        flavor = row.get("FlavorText", "") or ""
-        if flavor:
+        with art_col:
+            st.image(row["ArtworkURL"], use_container_width=True)
             st.markdown(
-                f'<div class="flavor-text">"{flavor}"</div>',
+                f'<div style="text-align:center;margin-top:6px;">'
+                f'<img src="{row["AnimatedGifURL"]}" width="96" style="image-rendering:pixelated;"/>'
+                f'<br><span style="font-size:0.75rem;color:#888;">Battle sprite</span>'
+                f'</div>',
                 unsafe_allow_html=True,
             )
 
-        egg2 = f" / {row['EggGroup2']}" if row.get("EggGroup2") else ""
-        st.markdown(
-            f'<div style="margin-bottom:14px;">'
-            f'<span class="physical-stat">📏 {row["HeightM"]:.1f} m</span>'
-            f'<span class="physical-stat">⚖️ {row["WeightKg"]:.1f} kg</span>'
-            f'<span class="physical-stat">🥚 {row.get("EggGroup1","")}{egg2}</span>'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
+        with info_col:
+            leg_star = " ⭐" if row["Legendary"] else ""
+            st.markdown(
+                f'<span style="color:#888;font-size:1.1rem;font-weight:700;">#{int(row["Number"]):04d}</span>'
+                f'<span style="color:#888;font-size:0.85rem;"> Gen {gen}{leg_star}</span>',
+                unsafe_allow_html=True,
+            )
+            st.markdown(f"## {row['Name']}")
 
-        bars = "".join([
-            stat_bar("HP",    int(row["HP"])),
-            stat_bar("ATK",   int(row["Attack"])),
-            stat_bar("DEF",   int(row["Defense"])),
-            stat_bar("SpATK", int(row["SpAtk"])),
-            stat_bar("SpDEF", int(row["SpDef"])),
-            stat_bar("SPD",   int(row["Speed"])),
-        ])
-        tc = stat_color(int(row["TotalStats"]) // 6)
-        bars += (f'<div style="margin-top:8px;font-size:0.82rem;color:#aaa;">'
-                 f'Total: <strong style="color:{tc}">{int(row["TotalStats"])}</strong></div>')
-        st.markdown(bars, unsafe_allow_html=True)
+            badges = type_badge(row["Type1"])
+            if row["Type2"]:
+                badges += type_badge(row["Type2"])
+            genus = row.get("Genus", "") or ""
+            st.markdown(
+                f'<span style="color:#bbb;font-style:italic;font-size:0.95rem;">{genus}</span>'
+                f'<br>{badges}',
+                unsafe_allow_html=True,
+            )
+
+            flavor = row.get("FlavorText", "") or ""
+            if flavor:
+                st.markdown(
+                    f'<div class="flavor-text">"{flavor}"</div>',
+                    unsafe_allow_html=True,
+                )
+
+            egg2 = f" / {row['EggGroup2']}" if row.get("EggGroup2") else ""
+            st.markdown(
+                f'<div style="margin-bottom:14px;">'
+                f'<span class="physical-stat">📏 {row["HeightM"]:.1f} m</span>'
+                f'<span class="physical-stat">⚖️ {row["WeightKg"]:.1f} kg</span>'
+                f'<span class="physical-stat">🥚 {row.get("EggGroup1","")}{egg2}</span>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+            bars = "".join([
+                stat_bar("HP",    int(row["HP"])),
+                stat_bar("ATK",   int(row["Attack"])),
+                stat_bar("DEF",   int(row["Defense"])),
+                stat_bar("SpATK", int(row["SpAtk"])),
+                stat_bar("SpDEF", int(row["SpDef"])),
+                stat_bar("SPD",   int(row["Speed"])),
+            ])
+            tc = stat_color(int(row["TotalStats"]) // 6)
+            bars += (f'<div style="margin-top:8px;font-size:0.82rem;color:#aaa;">'
+                     f'Total: <strong style="color:{tc}">{int(row["TotalStats"])}</strong></div>')
+            st.markdown(bars, unsafe_allow_html=True)
+
+    # ── Physical Traits tab ───────────────────────────────────────────────────
+    with tab_traits:
+        render_traits_tab(row, int(row["Number"]))
 
 # ── Card grid — uniform spreadsheet cells ─────────────────────────────────────
 st.divider()

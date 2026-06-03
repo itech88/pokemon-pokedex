@@ -21,14 +21,22 @@ TYPE_ORDER = [
 
 def _build(db_path: Path) -> None:
     con = duckdb.connect(str(db_path))
-    pokemon_csv  = str(DATA_DIR / "pokemon_data.csv")
-    pokedex_csv  = str(DATA_DIR / "pokedex_data.csv")
 
-    con.execute("DROP TABLE IF EXISTS raw_pokemon CASCADE")
-    con.execute("DROP TABLE IF EXISTS raw_pokedex  CASCADE")
+    pokemon_csv    = str(DATA_DIR / "pokemon_data.csv")
+    pokedex_csv    = str(DATA_DIR / "pokedex_data.csv")
+    abilities_csv  = str(DATA_DIR / "Pokemon_Abilities.csv")
+    locations_csv  = str(DATA_DIR / "Pokemon_Locations.csv")
+    type_attrs_csv = str(DATA_DIR / "Types_Attributes.csv")
 
-    con.execute(f"CREATE TABLE raw_pokemon AS SELECT * FROM read_csv_auto('{pokemon_csv}', header=true)")
-    con.execute(f"CREATE TABLE raw_pokedex  AS SELECT * FROM read_csv_auto('{pokedex_csv}',  header=true)")
+    for tbl in ["raw_pokemon", "raw_pokedex", "raw_abilities",
+                "raw_locations", "raw_type_attrs"]:
+        con.execute(f"DROP TABLE IF EXISTS {tbl} CASCADE")
+
+    con.execute(f"CREATE TABLE raw_pokemon    AS SELECT * FROM read_csv_auto('{pokemon_csv}',    header=true)")
+    con.execute(f"CREATE TABLE raw_pokedex    AS SELECT * FROM read_csv_auto('{pokedex_csv}',    header=true)")
+    con.execute(f"CREATE TABLE raw_abilities  AS SELECT * FROM read_csv_auto('{abilities_csv}',  header=true)")
+    con.execute(f"CREATE TABLE raw_locations  AS SELECT * FROM read_csv_auto('{locations_csv}',  header=true)")
+    con.execute(f"CREATE TABLE raw_type_attrs AS SELECT * FROM read_csv_auto('{type_attrs_csv}', header=true)")
 
     con.execute("DROP VIEW IF EXISTS pokemon_base")
     con.execute("""
@@ -38,19 +46,40 @@ def _build(db_path: Path) -> None:
         FROM raw_pokemon
     """)
 
+    # Full Pokédex view — now includes all pokedex_data fields
     con.execute("DROP VIEW IF EXISTS pokedex_full")
     con.execute("""
         CREATE VIEW pokedex_full AS
-        SELECT p.Number, p.Name, p.Type1, p.Type2,
-               p.HP, p.Attack, p.Defense, p.SpAtk, p.SpDef, p.Speed, p.TotalStats,
-               p.Generation, p.Legendary,
-               d.HeightM, d.WeightKg, d.ArtworkURL, d.AnimatedGifURL,
-               d.CaptureRate, d.Genus, d.FlavorText,
-               d.EggGroup1, d.EggGroup2, d.Habitat, d.GrowthRate
+        SELECT
+            p.Number, p.Name, p.Type1, p.Type2,
+            p.HP, p.Attack, p.Defense, p.SpAtk, p.SpDef, p.Speed, p.TotalStats,
+            p.Generation, p.Legendary,
+            d.HeightM, d.WeightKg, d.BaseExperience,
+            d.ArtworkURL, d.AnimatedGifURL,
+            d.CaptureRate, d.BaseHappiness, d.GenderRate,
+            d.Genus, d.FlavorText,
+            d.Color, d.Shape, d.Habitat,
+            d.EggGroup1, d.EggGroup2, d.GrowthRate
         FROM pokemon_base p
         LEFT JOIN raw_pokedex d ON d.Number = p.Number
         WHERE p.IsForm = false
     """)
+
+    # Traits view — pokedex_full joined to type attributes for battle info
+    con.execute("DROP VIEW IF EXISTS pokemon_traits")
+    con.execute("""
+        CREATE VIEW pokemon_traits AS
+        SELECT
+            p.Number, p.Name, p.Type1, p.Type2,
+            p.HeightM, p.WeightKg, p.BaseExperience,
+            p.CaptureRate, p.BaseHappiness, p.GenderRate,
+            p.Color, p.Shape, p.Habitat,
+            p.EggGroup1, p.EggGroup2, p.GrowthRate,
+            ta.StrongAgainst, ta.WeakAgainst, ta.ResistantTo, ta.ImmuneFrom
+        FROM pokedex_full p
+        LEFT JOIN raw_type_attrs ta ON ta.TypeName = p.Type1
+    """)
+
     con.execute("CHECKPOINT")
     con.close()
 

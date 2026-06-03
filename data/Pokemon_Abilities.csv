@@ -1,0 +1,2575 @@
+Number,AbilityName,IsHidden
+1,Chlorophyll,True
+1,Overgrow,False
+2,Chlorophyll,True
+2,Overgrow,False
+3,Chlorophyll,True
+3,Overgrow,False
+3,Thick Fat,False
+4,Blaze,False
+4,Solar Power,True
+5,Blaze,False
+5,Solar Power,True
+6,Blaze,False
+6,Drought,False
+6,Solar Power,True
+6,Tough Claws,False
+7,Rain Dish,True
+7,Torrent,False
+8,Rain Dish,True
+8,Torrent,False
+9,Mega Launcher,False
+9,Rain Dish,True
+9,Torrent,False
+10,Run Away,True
+10,Shield Dust,False
+11,Shed Skin,False
+12,Compound Eyes,False
+12,Tinted Lens,True
+13,Run Away,True
+13,Shield Dust,False
+14,Shed Skin,False
+15,Adaptability,False
+15,Sniper,True
+15,Swarm,False
+16,Big Pecks,True
+16,Keen Eye,False
+16,Tangled Feet,False
+17,Big Pecks,True
+17,Keen Eye,False
+17,Tangled Feet,False
+18,Big Pecks,True
+18,Keen Eye,False
+18,No Guard,False
+18,Tangled Feet,False
+19,Gluttony,False
+19,Guts,False
+19,Hustle,False
+19,Hustle,True
+19,Run Away,False
+19,Thick Fat,True
+20,Gluttony,False
+20,Guts,False
+20,Hustle,False
+20,Hustle,True
+20,Run Away,False
+20,Thick Fat,True
+21,Keen Eye,False
+21,Sniper,True
+22,Keen Eye,False
+22,Sniper,True
+23,Intimidate,False
+23,Shed Skin,False
+23,Unnerve,True
+24,Intimidate,False
+24,Shed Skin,False
+24,Unnerve,True
+25,Lightning Rod,True
+25,Static,False
+26,Lightning Rod,True
+26,Static,False
+26,Surge Surfer,False
+27,Sand Rush,True
+27,Sand Veil,False
+27,Slush Rush,True
+27,Snow Cloak,False
+28,Sand Rush,True
+28,Sand Veil,False
+28,Slush Rush,True
+28,Snow Cloak,False
+29,Hustle,True
+29,Poison Point,False
+29,Rivalry,False
+30,Hustle,True
+30,Poison Point,False
+30,Rivalry,False
+31,Poison Point,False
+31,Rivalry,False
+31,Sheer Force,True
+32,Hustle,True
+32,Poison Point,False
+32,Rivalry,False
+33,Hustle,True
+33,Poison Point,False
+33,Rivalry,False
+34,Poison Point,False
+34,Rivalry,False
+34,Sheer Force,True
+35,Cute Charm,False
+35,Friend Guard,True
+35,Magic Guard,False
+36,Cute Charm,False
+36,Magic Bounce,False
+36,Magic Guard,False
+36,Unaware,True
+37,Drought,True
+37,Flash Fire,False
+37,Snow Cloak,False
+37,Snow Warning,True
+38,Drought,True
+38,Flash Fire,False
+38,Snow Cloak,False
+38,Snow Warning,True
+39,Competitive,False
+39,Cute Charm,False
+39,Friend Guard,True
+40,Competitive,False
+40,Cute Charm,False
+40,Frisk,True
+41,Infiltrator,True
+41,Inner Focus,False
+42,Infiltrator,True
+42,Inner Focus,False
+43,Chlorophyll,False
+43,Run Away,True
+44,Chlorophyll,False
+44,Stench,True
+45,Chlorophyll,False
+45,Effect Spore,True
+46,Damp,True
+46,Dry Skin,False
+46,Effect Spore,False
+47,Damp,True
+47,Dry Skin,False
+47,Effect Spore,False
+48,Compound Eyes,False
+48,Run Away,True
+48,Tinted Lens,False
+49,Shield Dust,False
+49,Tinted Lens,False
+49,Wonder Skin,True
+50,Arena Trap,False
+50,Sand Force,True
+50,Sand Veil,False
+50,Tangling Hair,False
+51,Arena Trap,False
+51,Sand Force,True
+51,Sand Veil,False
+51,Tangling Hair,False
+52,Pickup,False
+52,Rattled,True
+52,Technician,False
+52,Tough Claws,False
+52,Unnerve,True
+53,Fur Coat,False
+53,Limber,False
+53,Rattled,True
+53,Technician,False
+53,Unnerve,True
+54,Cloud Nine,False
+54,Damp,False
+54,Swift Swim,True
+55,Cloud Nine,False
+55,Damp,False
+55,Swift Swim,True
+56,Anger Point,False
+56,Defiant,True
+56,Vital Spirit,False
+57,Anger Point,False
+57,Defiant,True
+57,Vital Spirit,False
+58,Flash Fire,False
+58,Intimidate,False
+58,Justified,True
+58,Rock Head,True
+59,Flash Fire,False
+59,Intimidate,False
+59,Justified,True
+59,Rock Head,True
+60,Damp,False
+60,Swift Swim,True
+60,Water Absorb,False
+61,Damp,False
+61,Swift Swim,True
+61,Water Absorb,False
+62,Damp,False
+62,Swift Swim,True
+62,Water Absorb,False
+63,Inner Focus,False
+63,Magic Guard,True
+63,Synchronize,False
+64,Inner Focus,False
+64,Magic Guard,True
+64,Synchronize,False
+65,Inner Focus,False
+65,Magic Guard,True
+65,Synchronize,False
+65,Trace,False
+66,Guts,False
+66,No Guard,False
+66,Steadfast,True
+67,Guts,False
+67,No Guard,False
+67,Steadfast,True
+68,Guts,False
+68,No Guard,False
+68,Steadfast,True
+69,Chlorophyll,False
+69,Gluttony,True
+70,Chlorophyll,False
+70,Gluttony,True
+71,Chlorophyll,False
+71,Gluttony,True
+71,Innards Out,False
+72,Clear Body,False
+72,Liquid Ooze,False
+72,Rain Dish,True
+73,Clear Body,False
+73,Liquid Ooze,False
+73,Rain Dish,True
+74,Galvanize,True
+74,Magnet Pull,False
+74,Rock Head,False
+74,Sand Veil,True
+74,Sturdy,False
+75,Galvanize,True
+75,Magnet Pull,False
+75,Rock Head,False
+75,Sand Veil,True
+75,Sturdy,False
+76,Galvanize,True
+76,Magnet Pull,False
+76,Rock Head,False
+76,Sand Veil,True
+76,Sturdy,False
+77,Anticipation,True
+77,Flame Body,True
+77,Flash Fire,False
+77,Pastel Veil,False
+77,Run Away,False
+78,Anticipation,True
+78,Flame Body,True
+78,Flash Fire,False
+78,Pastel Veil,False
+78,Run Away,False
+79,Gluttony,False
+79,Oblivious,False
+79,Own Tempo,False
+79,Regenerator,True
+80,Oblivious,False
+80,Own Tempo,False
+80,Quick Draw,False
+80,Regenerator,True
+80,Shell Armor,False
+81,Analytic,True
+81,Magnet Pull,False
+81,Sturdy,False
+82,Analytic,True
+82,Magnet Pull,False
+82,Sturdy,False
+83,Defiant,True
+83,Inner Focus,False
+83,Keen Eye,False
+83,Scrappy,True
+83,Steadfast,False
+84,Early Bird,False
+84,Run Away,False
+84,Tangled Feet,True
+85,Early Bird,False
+85,Run Away,False
+85,Tangled Feet,True
+86,Hydration,False
+86,Ice Body,True
+86,Thick Fat,False
+87,Hydration,False
+87,Ice Body,True
+87,Thick Fat,False
+88,Gluttony,False
+88,Poison Touch,False
+88,Poison Touch,True
+88,Power Of Alchemy,True
+88,Stench,False
+88,Sticky Hold,False
+89,Gluttony,False
+89,Poison Touch,False
+89,Poison Touch,True
+89,Power Of Alchemy,True
+89,Stench,False
+89,Sticky Hold,False
+90,Overcoat,True
+90,Shell Armor,False
+90,Skill Link,False
+91,Overcoat,True
+91,Shell Armor,False
+91,Skill Link,False
+92,Levitate,False
+93,Levitate,False
+94,Cursed Body,False
+94,Shadow Tag,False
+95,Rock Head,False
+95,Sturdy,False
+95,Weak Armor,True
+96,Forewarn,False
+96,Inner Focus,True
+96,Insomnia,False
+97,Forewarn,False
+97,Inner Focus,True
+97,Insomnia,False
+98,Hyper Cutter,False
+98,Sheer Force,True
+98,Shell Armor,False
+99,Hyper Cutter,False
+99,Sheer Force,True
+99,Shell Armor,False
+100,Aftermath,True
+100,Soundproof,False
+100,Static,False
+101,Aftermath,True
+101,Soundproof,False
+101,Static,False
+102,Chlorophyll,False
+102,Harvest,True
+103,Chlorophyll,False
+103,Frisk,False
+103,Harvest,True
+104,Battle Armor,True
+104,Lightning Rod,False
+104,Rock Head,False
+105,Battle Armor,True
+105,Cursed Body,False
+105,Lightning Rod,False
+105,Rock Head,False
+105,Rock Head,True
+106,Limber,False
+106,Reckless,False
+106,Unburden,True
+107,Inner Focus,True
+107,Iron Fist,False
+107,Keen Eye,False
+108,Cloud Nine,True
+108,Oblivious,False
+108,Own Tempo,False
+109,Levitate,False
+109,Neutralizing Gas,False
+109,Stench,True
+110,Levitate,False
+110,Misty Surge,True
+110,Neutralizing Gas,False
+110,Stench,True
+111,Lightning Rod,False
+111,Reckless,True
+111,Rock Head,False
+112,Lightning Rod,False
+112,Reckless,True
+112,Rock Head,False
+113,Healer,True
+113,Natural Cure,False
+113,Serene Grace,False
+114,Chlorophyll,False
+114,Leaf Guard,False
+114,Regenerator,True
+115,Early Bird,False
+115,Inner Focus,True
+115,Parental Bond,False
+115,Scrappy,False
+116,Damp,True
+116,Sniper,False
+116,Swift Swim,False
+117,Damp,True
+117,Poison Point,False
+117,Sniper,False
+118,Lightning Rod,True
+118,Swift Swim,False
+118,Water Veil,False
+119,Lightning Rod,True
+119,Swift Swim,False
+119,Water Veil,False
+120,Analytic,True
+120,Illuminate,False
+120,Natural Cure,False
+121,Analytic,True
+121,Huge Power,False
+121,Illuminate,False
+121,Natural Cure,False
+122,Filter,False
+122,Ice Body,True
+122,Screen Cleaner,False
+122,Soundproof,False
+122,Technician,True
+122,Vital Spirit,False
+123,Steadfast,True
+123,Swarm,False
+123,Technician,False
+124,Dry Skin,True
+124,Forewarn,False
+124,Oblivious,False
+125,Static,False
+125,Vital Spirit,True
+126,Flame Body,False
+126,Vital Spirit,True
+127,Aerilate,False
+127,Hyper Cutter,False
+127,Mold Breaker,False
+127,Moxie,True
+128,Anger Point,False
+128,Cud Chew,True
+128,Intimidate,False
+128,Sheer Force,True
+129,Rattled,True
+129,Swift Swim,False
+130,Intimidate,False
+130,Mold Breaker,False
+130,Moxie,True
+131,Hydration,True
+131,Shell Armor,False
+131,Water Absorb,False
+132,Imposter,True
+132,Limber,False
+133,Adaptability,False
+133,Anticipation,True
+133,Run Away,False
+134,Hydration,True
+134,Water Absorb,False
+135,Quick Feet,True
+135,Volt Absorb,False
+136,Flash Fire,False
+136,Guts,True
+137,Analytic,True
+137,Download,False
+137,Trace,False
+138,Shell Armor,False
+138,Swift Swim,False
+138,Weak Armor,True
+139,Shell Armor,False
+139,Swift Swim,False
+139,Weak Armor,True
+140,Battle Armor,False
+140,Swift Swim,False
+140,Weak Armor,True
+141,Battle Armor,False
+141,Swift Swim,False
+141,Weak Armor,True
+142,Pressure,False
+142,Rock Head,False
+142,Tough Claws,False
+142,Unnerve,True
+143,Gluttony,True
+143,Immunity,False
+143,Thick Fat,False
+144,Competitive,False
+144,Pressure,False
+144,Snow Cloak,True
+145,Defiant,False
+145,Pressure,False
+145,Static,True
+146,Berserk,False
+146,Flame Body,True
+146,Pressure,False
+147,Marvel Scale,True
+147,Shed Skin,False
+148,Marvel Scale,True
+148,Shed Skin,False
+149,Inner Focus,False
+149,Multiscale,False
+149,Multiscale,True
+150,Insomnia,False
+150,Pressure,False
+150,Steadfast,False
+150,Unnerve,True
+151,Synchronize,False
+152,Leaf Guard,True
+152,Overgrow,False
+153,Leaf Guard,True
+153,Overgrow,False
+154,Leaf Guard,True
+154,Mega Sol,False
+154,Overgrow,False
+155,Blaze,False
+155,Flash Fire,True
+156,Blaze,False
+156,Flash Fire,True
+157,Blaze,False
+157,Flash Fire,True
+157,Frisk,True
+158,Sheer Force,True
+158,Torrent,False
+159,Sheer Force,True
+159,Torrent,False
+160,Dragonize,False
+160,Sheer Force,True
+160,Torrent,False
+161,Frisk,True
+161,Keen Eye,False
+161,Run Away,False
+162,Frisk,True
+162,Keen Eye,False
+162,Run Away,False
+163,Insomnia,False
+163,Keen Eye,False
+163,Tinted Lens,True
+164,Insomnia,False
+164,Keen Eye,False
+164,Tinted Lens,True
+165,Early Bird,False
+165,Rattled,True
+165,Swarm,False
+166,Early Bird,False
+166,Iron Fist,True
+166,Swarm,False
+167,Insomnia,False
+167,Sniper,True
+167,Swarm,False
+168,Insomnia,False
+168,Sniper,True
+168,Swarm,False
+169,Infiltrator,True
+169,Inner Focus,False
+170,Illuminate,False
+170,Volt Absorb,False
+170,Water Absorb,True
+171,Illuminate,False
+171,Volt Absorb,False
+171,Water Absorb,True
+172,Lightning Rod,True
+172,Static,False
+173,Cute Charm,False
+173,Friend Guard,True
+173,Magic Guard,False
+174,Competitive,False
+174,Cute Charm,False
+174,Friend Guard,True
+175,Hustle,False
+175,Serene Grace,False
+175,Super Luck,True
+176,Hustle,False
+176,Serene Grace,False
+176,Super Luck,True
+177,Early Bird,False
+177,Magic Bounce,True
+177,Synchronize,False
+178,Early Bird,False
+178,Magic Bounce,True
+178,Synchronize,False
+179,Plus,True
+179,Static,False
+180,Plus,True
+180,Static,False
+181,Mold Breaker,False
+181,Plus,True
+181,Static,False
+182,Chlorophyll,False
+182,Healer,True
+183,Huge Power,False
+183,Sap Sipper,True
+183,Thick Fat,False
+184,Huge Power,False
+184,Sap Sipper,True
+184,Thick Fat,False
+185,Rattled,True
+185,Rock Head,False
+185,Sturdy,False
+186,Damp,False
+186,Drizzle,True
+186,Water Absorb,False
+187,Chlorophyll,False
+187,Infiltrator,True
+187,Leaf Guard,False
+188,Chlorophyll,False
+188,Infiltrator,True
+188,Leaf Guard,False
+189,Chlorophyll,False
+189,Infiltrator,True
+189,Leaf Guard,False
+190,Pickup,False
+190,Run Away,False
+190,Skill Link,True
+191,Chlorophyll,False
+191,Early Bird,True
+191,Solar Power,False
+192,Chlorophyll,False
+192,Early Bird,True
+192,Solar Power,False
+193,Compound Eyes,False
+193,Frisk,True
+193,Speed Boost,False
+194,Damp,False
+194,Poison Point,False
+194,Unaware,True
+194,Water Absorb,False
+195,Damp,False
+195,Unaware,True
+195,Water Absorb,False
+196,Magic Bounce,True
+196,Synchronize,False
+197,Inner Focus,True
+197,Synchronize,False
+198,Insomnia,False
+198,Prankster,True
+198,Super Luck,False
+199,Curious Medicine,False
+199,Oblivious,False
+199,Own Tempo,False
+199,Regenerator,True
+200,Levitate,False
+201,Levitate,False
+202,Shadow Tag,False
+202,Telepathy,True
+203,Early Bird,False
+203,Inner Focus,False
+203,Sap Sipper,True
+204,Overcoat,True
+204,Sturdy,False
+205,Overcoat,True
+205,Sturdy,False
+206,Rattled,True
+206,Run Away,False
+206,Serene Grace,False
+207,Hyper Cutter,False
+207,Immunity,True
+207,Sand Veil,False
+208,Rock Head,False
+208,Sand Force,False
+208,Sheer Force,True
+208,Sturdy,False
+209,Intimidate,False
+209,Rattled,True
+209,Run Away,False
+210,Intimidate,False
+210,Quick Feet,False
+210,Rattled,True
+211,Intimidate,True
+211,Poison Point,False
+211,Swift Swim,False
+212,Light Metal,True
+212,Swarm,False
+212,Technician,False
+213,Contrary,True
+213,Gluttony,False
+213,Sturdy,False
+214,Guts,False
+214,Moxie,True
+214,Skill Link,False
+214,Swarm,False
+215,Inner Focus,False
+215,Keen Eye,False
+215,Pickpocket,True
+216,Honey Gather,True
+216,Pickup,False
+216,Quick Feet,False
+217,Guts,False
+217,Quick Feet,False
+217,Unnerve,True
+218,Flame Body,False
+218,Magma Armor,False
+218,Weak Armor,True
+219,Flame Body,False
+219,Magma Armor,False
+219,Weak Armor,True
+220,Oblivious,False
+220,Snow Cloak,False
+220,Thick Fat,True
+221,Oblivious,False
+221,Snow Cloak,False
+221,Thick Fat,True
+222,Cursed Body,True
+222,Hustle,False
+222,Natural Cure,False
+222,Regenerator,True
+222,Weak Armor,False
+223,Hustle,False
+223,Moody,True
+223,Sniper,False
+224,Moody,True
+224,Sniper,False
+224,Suction Cups,False
+225,Hustle,False
+225,Insomnia,True
+225,Vital Spirit,False
+226,Swift Swim,False
+226,Water Absorb,False
+226,Water Veil,True
+227,Keen Eye,False
+227,Stalwart,False
+227,Sturdy,False
+227,Weak Armor,True
+228,Early Bird,False
+228,Flash Fire,False
+228,Unnerve,True
+229,Early Bird,False
+229,Flash Fire,False
+229,Solar Power,False
+229,Unnerve,True
+230,Damp,True
+230,Sniper,False
+230,Swift Swim,False
+231,Pickup,False
+231,Sand Veil,True
+232,Sand Veil,True
+232,Sturdy,False
+233,Analytic,True
+233,Download,False
+233,Trace,False
+234,Frisk,False
+234,Intimidate,False
+234,Sap Sipper,True
+235,Moody,True
+235,Own Tempo,False
+235,Technician,False
+236,Guts,False
+236,Steadfast,False
+236,Vital Spirit,True
+237,Intimidate,False
+237,Steadfast,True
+237,Technician,False
+238,Forewarn,False
+238,Hydration,True
+238,Oblivious,False
+239,Static,False
+239,Vital Spirit,True
+240,Flame Body,False
+240,Vital Spirit,True
+241,Sap Sipper,True
+241,Scrappy,False
+241,Thick Fat,False
+242,Healer,True
+242,Natural Cure,False
+242,Serene Grace,False
+243,Inner Focus,True
+243,Pressure,False
+244,Inner Focus,True
+244,Pressure,False
+245,Inner Focus,True
+245,Pressure,False
+246,Guts,False
+246,Sand Veil,True
+247,Shed Skin,False
+248,Sand Stream,False
+248,Unnerve,True
+249,Multiscale,True
+249,Pressure,False
+250,Pressure,False
+250,Regenerator,True
+251,Natural Cure,False
+252,Overgrow,False
+252,Unburden,True
+253,Overgrow,False
+253,Unburden,True
+254,Lightning Rod,False
+254,Overgrow,False
+254,Unburden,True
+255,Blaze,False
+255,Speed Boost,True
+256,Blaze,False
+256,Speed Boost,True
+257,Blaze,False
+257,Speed Boost,False
+257,Speed Boost,True
+258,Damp,True
+258,Torrent,False
+259,Damp,True
+259,Torrent,False
+260,Damp,True
+260,Swift Swim,False
+260,Torrent,False
+261,Quick Feet,False
+261,Rattled,True
+261,Run Away,False
+262,Intimidate,False
+262,Moxie,True
+262,Quick Feet,False
+263,Gluttony,False
+263,Pickup,False
+263,Quick Feet,True
+264,Gluttony,False
+264,Pickup,False
+264,Quick Feet,True
+265,Run Away,True
+265,Shield Dust,False
+266,Shed Skin,False
+267,Rivalry,True
+267,Swarm,False
+268,Shed Skin,False
+269,Compound Eyes,True
+269,Shield Dust,False
+270,Own Tempo,True
+270,Rain Dish,False
+270,Swift Swim,False
+271,Own Tempo,True
+271,Rain Dish,False
+271,Swift Swim,False
+272,Own Tempo,True
+272,Rain Dish,False
+272,Swift Swim,False
+273,Chlorophyll,False
+273,Early Bird,False
+273,Pickpocket,True
+274,Chlorophyll,False
+274,Early Bird,False
+274,Pickpocket,True
+275,Chlorophyll,False
+275,Pickpocket,True
+275,Wind Rider,False
+276,Guts,False
+276,Scrappy,True
+277,Guts,False
+277,Scrappy,True
+278,Hydration,False
+278,Keen Eye,False
+278,Rain Dish,True
+279,Drizzle,False
+279,Keen Eye,False
+279,Rain Dish,True
+280,Synchronize,False
+280,Telepathy,True
+280,Trace,False
+281,Synchronize,False
+281,Telepathy,True
+281,Trace,False
+282,Pixilate,False
+282,Synchronize,False
+282,Telepathy,True
+282,Trace,False
+283,Rain Dish,True
+283,Swift Swim,False
+284,Intimidate,False
+284,Unnerve,True
+285,Effect Spore,False
+285,Poison Heal,False
+285,Quick Feet,True
+286,Effect Spore,False
+286,Poison Heal,False
+286,Technician,True
+287,Truant,False
+288,Vital Spirit,False
+289,Truant,False
+290,Compound Eyes,False
+290,Run Away,True
+291,Infiltrator,True
+291,Speed Boost,False
+292,Wonder Guard,False
+293,Rattled,True
+293,Soundproof,False
+294,Scrappy,True
+294,Soundproof,False
+295,Scrappy,True
+295,Soundproof,False
+296,Guts,False
+296,Sheer Force,True
+296,Thick Fat,False
+297,Guts,False
+297,Sheer Force,True
+297,Thick Fat,False
+298,Huge Power,False
+298,Sap Sipper,True
+298,Thick Fat,False
+299,Magnet Pull,False
+299,Sand Force,True
+299,Sturdy,False
+300,Cute Charm,False
+300,Normalize,False
+300,Wonder Skin,True
+301,Cute Charm,False
+301,Normalize,False
+301,Wonder Skin,True
+302,Keen Eye,False
+302,Magic Bounce,False
+302,Prankster,True
+302,Stall,False
+303,Huge Power,False
+303,Hyper Cutter,False
+303,Intimidate,False
+303,Sheer Force,True
+304,Heavy Metal,True
+304,Rock Head,False
+304,Sturdy,False
+305,Heavy Metal,True
+305,Rock Head,False
+305,Sturdy,False
+306,Filter,False
+306,Heavy Metal,True
+306,Rock Head,False
+306,Sturdy,False
+307,Pure Power,False
+307,Telepathy,True
+308,Pure Power,False
+308,Telepathy,True
+309,Lightning Rod,False
+309,Minus,True
+309,Static,False
+310,Intimidate,False
+310,Lightning Rod,False
+310,Minus,True
+310,Static,False
+311,Lightning Rod,True
+311,Plus,False
+312,Minus,False
+312,Volt Absorb,True
+313,Illuminate,False
+313,Prankster,True
+313,Swarm,False
+314,Oblivious,False
+314,Prankster,True
+314,Tinted Lens,False
+315,Leaf Guard,True
+315,Natural Cure,False
+315,Poison Point,False
+316,Gluttony,True
+316,Liquid Ooze,False
+316,Sticky Hold,False
+317,Gluttony,True
+317,Liquid Ooze,False
+317,Sticky Hold,False
+318,Rough Skin,False
+318,Speed Boost,True
+319,Rough Skin,False
+319,Speed Boost,True
+319,Strong Jaw,False
+320,Oblivious,False
+320,Pressure,True
+320,Water Veil,False
+321,Oblivious,False
+321,Pressure,True
+321,Water Veil,False
+322,Oblivious,False
+322,Own Tempo,True
+322,Simple,False
+323,Anger Point,True
+323,Magma Armor,False
+323,Sheer Force,False
+323,Solid Rock,False
+324,Drought,False
+324,Shell Armor,True
+324,White Smoke,False
+325,Gluttony,True
+325,Own Tempo,False
+325,Thick Fat,False
+326,Gluttony,True
+326,Own Tempo,False
+326,Thick Fat,False
+327,Contrary,True
+327,Own Tempo,False
+327,Tangled Feet,False
+328,Arena Trap,False
+328,Hyper Cutter,False
+328,Sheer Force,True
+329,Levitate,False
+330,Levitate,False
+331,Sand Veil,False
+331,Water Absorb,True
+332,Sand Veil,False
+332,Water Absorb,True
+333,Cloud Nine,True
+333,Natural Cure,False
+334,Cloud Nine,True
+334,Natural Cure,False
+334,Pixilate,False
+335,Immunity,False
+335,Toxic Boost,True
+336,Infiltrator,True
+336,Shed Skin,False
+337,Levitate,False
+338,Levitate,False
+339,Anticipation,False
+339,Hydration,True
+339,Oblivious,False
+340,Anticipation,False
+340,Hydration,True
+340,Oblivious,False
+341,Adaptability,True
+341,Hyper Cutter,False
+341,Shell Armor,False
+342,Adaptability,True
+342,Hyper Cutter,False
+342,Shell Armor,False
+343,Levitate,False
+344,Levitate,False
+345,Storm Drain,True
+345,Suction Cups,False
+346,Storm Drain,True
+346,Suction Cups,False
+347,Battle Armor,False
+347,Swift Swim,True
+348,Battle Armor,False
+348,Swift Swim,True
+349,Adaptability,True
+349,Oblivious,False
+349,Swift Swim,False
+350,Competitive,False
+350,Cute Charm,True
+350,Marvel Scale,False
+351,Forecast,False
+352,Color Change,False
+352,Protean,True
+353,Cursed Body,True
+353,Frisk,False
+353,Insomnia,False
+354,Cursed Body,True
+354,Frisk,False
+354,Insomnia,False
+354,Prankster,False
+355,Frisk,True
+355,Levitate,False
+356,Frisk,True
+356,Pressure,False
+357,Chlorophyll,False
+357,Harvest,True
+357,Solar Power,False
+358,Levitate,False
+359,Justified,True
+359,Magic Bounce,False
+359,Pressure,False
+359,Super Luck,False
+360,Shadow Tag,False
+360,Telepathy,True
+361,Ice Body,False
+361,Inner Focus,False
+361,Moody,True
+362,Ice Body,False
+362,Inner Focus,False
+362,Moody,True
+362,Refrigerate,False
+363,Ice Body,False
+363,Oblivious,True
+363,Thick Fat,False
+364,Ice Body,False
+364,Oblivious,True
+364,Thick Fat,False
+365,Ice Body,False
+365,Oblivious,True
+365,Thick Fat,False
+366,Rattled,True
+366,Shell Armor,False
+367,Swift Swim,False
+367,Water Veil,True
+368,Hydration,True
+368,Swift Swim,False
+369,Rock Head,False
+369,Sturdy,True
+369,Swift Swim,False
+370,Hydration,True
+370,Swift Swim,False
+371,Rock Head,False
+371,Sheer Force,True
+372,Overcoat,True
+372,Rock Head,False
+373,Aerilate,False
+373,Intimidate,False
+373,Moxie,True
+374,Clear Body,False
+374,Light Metal,True
+375,Clear Body,False
+375,Light Metal,True
+376,Clear Body,False
+376,Light Metal,True
+376,Tough Claws,False
+377,Clear Body,False
+377,Sturdy,True
+378,Clear Body,False
+378,Ice Body,True
+379,Clear Body,False
+379,Light Metal,True
+380,Levitate,False
+381,Levitate,False
+382,Drizzle,False
+382,Primordial Sea,False
+383,Desolate Land,False
+383,Drought,False
+384,Air Lock,False
+384,Delta Stream,False
+385,Serene Grace,False
+386,Pressure,False
+387,Overgrow,False
+387,Shell Armor,True
+388,Overgrow,False
+388,Shell Armor,True
+389,Overgrow,False
+389,Shell Armor,True
+390,Blaze,False
+390,Iron Fist,True
+391,Blaze,False
+391,Iron Fist,True
+392,Blaze,False
+392,Iron Fist,True
+393,Competitive,True
+393,Torrent,False
+394,Competitive,True
+394,Torrent,False
+395,Competitive,True
+395,Torrent,False
+396,Keen Eye,False
+396,Reckless,True
+397,Intimidate,False
+397,Reckless,True
+398,Intimidate,False
+398,Reckless,True
+399,Moody,True
+399,Simple,False
+399,Unaware,False
+400,Moody,True
+400,Simple,False
+400,Unaware,False
+401,Run Away,True
+401,Shed Skin,False
+402,Swarm,False
+402,Technician,True
+403,Guts,True
+403,Intimidate,False
+403,Rivalry,False
+404,Guts,True
+404,Intimidate,False
+404,Rivalry,False
+405,Guts,True
+405,Intimidate,False
+405,Rivalry,False
+406,Leaf Guard,True
+406,Natural Cure,False
+406,Poison Point,False
+407,Natural Cure,False
+407,Poison Point,False
+407,Technician,True
+408,Mold Breaker,False
+408,Sheer Force,True
+409,Mold Breaker,False
+409,Sheer Force,True
+410,Soundproof,True
+410,Sturdy,False
+411,Soundproof,True
+411,Sturdy,False
+412,Overcoat,True
+412,Shed Skin,False
+413,Anticipation,False
+413,Overcoat,True
+414,Swarm,False
+414,Tinted Lens,True
+415,Honey Gather,False
+415,Hustle,True
+416,Pressure,False
+416,Unnerve,True
+417,Pickup,False
+417,Run Away,False
+417,Volt Absorb,True
+418,Swift Swim,False
+418,Water Veil,True
+419,Swift Swim,False
+419,Water Veil,True
+420,Chlorophyll,False
+421,Flower Gift,False
+422,Sand Force,True
+422,Sticky Hold,False
+422,Storm Drain,False
+423,Sand Force,True
+423,Sticky Hold,False
+423,Storm Drain,False
+424,Pickup,False
+424,Skill Link,True
+424,Technician,False
+425,Aftermath,False
+425,Flare Boost,True
+425,Unburden,False
+426,Aftermath,False
+426,Flare Boost,True
+426,Unburden,False
+427,Klutz,False
+427,Limber,True
+427,Run Away,False
+428,Cute Charm,False
+428,Klutz,False
+428,Limber,True
+428,Scrappy,False
+429,Levitate,False
+430,Insomnia,False
+430,Moxie,True
+430,Super Luck,False
+431,Keen Eye,True
+431,Limber,False
+431,Own Tempo,False
+432,Defiant,True
+432,Own Tempo,False
+432,Thick Fat,False
+433,Levitate,False
+434,Aftermath,False
+434,Keen Eye,True
+434,Stench,False
+435,Aftermath,False
+435,Keen Eye,True
+435,Stench,False
+436,Heatproof,False
+436,Heavy Metal,True
+436,Levitate,False
+437,Heatproof,False
+437,Heavy Metal,True
+437,Levitate,False
+438,Rattled,True
+438,Rock Head,False
+438,Sturdy,False
+439,Filter,False
+439,Soundproof,False
+439,Technician,True
+440,Friend Guard,True
+440,Natural Cure,False
+440,Serene Grace,False
+441,Big Pecks,True
+441,Keen Eye,False
+441,Tangled Feet,False
+442,Infiltrator,True
+442,Pressure,False
+443,Rough Skin,True
+443,Sand Veil,False
+444,Rough Skin,True
+444,Sand Veil,False
+445,Rough Skin,True
+445,Sand Force,False
+445,Sand Veil,False
+446,Gluttony,True
+446,Pickup,False
+446,Thick Fat,False
+447,Inner Focus,False
+447,Prankster,True
+447,Steadfast,False
+448,Adaptability,False
+448,Inner Focus,False
+448,Justified,True
+448,Steadfast,False
+449,Sand Force,True
+449,Sand Stream,False
+450,Sand Force,True
+450,Sand Stream,False
+451,Battle Armor,False
+451,Keen Eye,True
+451,Sniper,False
+452,Battle Armor,False
+452,Keen Eye,True
+452,Sniper,False
+453,Anticipation,False
+453,Dry Skin,False
+453,Poison Touch,True
+454,Anticipation,False
+454,Dry Skin,False
+454,Poison Touch,True
+455,Levitate,False
+456,Storm Drain,False
+456,Swift Swim,False
+456,Water Veil,True
+457,Storm Drain,False
+457,Swift Swim,False
+457,Water Veil,True
+458,Swift Swim,False
+458,Water Absorb,False
+458,Water Veil,True
+459,Snow Warning,False
+459,Soundproof,True
+460,Snow Warning,False
+460,Soundproof,True
+461,Pickpocket,True
+461,Pressure,False
+462,Analytic,True
+462,Magnet Pull,False
+462,Sturdy,False
+463,Cloud Nine,True
+463,Oblivious,False
+463,Own Tempo,False
+464,Lightning Rod,False
+464,Reckless,True
+464,Solid Rock,False
+465,Chlorophyll,False
+465,Leaf Guard,False
+465,Regenerator,True
+466,Motor Drive,False
+466,Vital Spirit,True
+467,Flame Body,False
+467,Vital Spirit,True
+468,Hustle,False
+468,Serene Grace,False
+468,Super Luck,True
+469,Frisk,True
+469,Speed Boost,False
+469,Tinted Lens,False
+470,Chlorophyll,True
+470,Leaf Guard,False
+471,Ice Body,True
+471,Snow Cloak,False
+472,Hyper Cutter,False
+472,Poison Heal,True
+472,Sand Veil,False
+473,Oblivious,False
+473,Snow Cloak,False
+473,Thick Fat,True
+474,Adaptability,False
+474,Analytic,True
+474,Download,False
+475,Inner Focus,False
+475,Justified,True
+475,Sharpness,False
+475,Steadfast,False
+476,Magnet Pull,False
+476,Sand Force,True
+476,Sturdy,False
+477,Frisk,True
+477,Pressure,False
+478,Cursed Body,True
+478,Snow Cloak,False
+478,Snow Warning,False
+479,Levitate,False
+480,Levitate,False
+481,Levitate,False
+482,Levitate,False
+483,Pressure,False
+483,Telepathy,True
+484,Pressure,False
+484,Telepathy,True
+485,Flame Body,True
+485,Flash Fire,False
+486,Slow Start,False
+487,Levitate,False
+487,Pressure,False
+487,Telepathy,True
+488,Levitate,False
+489,Hydration,False
+490,Hydration,False
+491,Bad Dreams,False
+492,Natural Cure,False
+492,Serene Grace,False
+493,Multitype,False
+494,Victory Star,False
+495,Contrary,True
+495,Overgrow,False
+496,Contrary,True
+496,Overgrow,False
+497,Contrary,True
+497,Overgrow,False
+498,Blaze,False
+498,Thick Fat,True
+499,Blaze,False
+499,Thick Fat,True
+500,Blaze,False
+500,Mold Breaker,False
+500,Reckless,True
+501,Shell Armor,True
+501,Torrent,False
+502,Shell Armor,True
+502,Torrent,False
+503,Sharpness,True
+503,Shell Armor,True
+503,Torrent,False
+504,Analytic,True
+504,Keen Eye,False
+504,Run Away,False
+505,Analytic,True
+505,Illuminate,False
+505,Keen Eye,False
+506,Pickup,False
+506,Run Away,True
+506,Vital Spirit,False
+507,Intimidate,False
+507,Sand Rush,False
+507,Scrappy,True
+508,Intimidate,False
+508,Sand Rush,False
+508,Scrappy,True
+509,Limber,False
+509,Prankster,True
+509,Unburden,False
+510,Limber,False
+510,Prankster,True
+510,Unburden,False
+511,Gluttony,False
+511,Overgrow,True
+512,Gluttony,False
+512,Overgrow,True
+513,Blaze,True
+513,Gluttony,False
+514,Blaze,True
+514,Gluttony,False
+515,Gluttony,False
+515,Torrent,True
+516,Gluttony,False
+516,Torrent,True
+517,Forewarn,False
+517,Synchronize,False
+517,Telepathy,True
+518,Forewarn,False
+518,Synchronize,False
+518,Telepathy,True
+519,Big Pecks,False
+519,Rivalry,True
+519,Super Luck,False
+520,Big Pecks,False
+520,Rivalry,True
+520,Super Luck,False
+521,Big Pecks,False
+521,Rivalry,True
+521,Super Luck,False
+522,Lightning Rod,False
+522,Motor Drive,False
+522,Sap Sipper,True
+523,Lightning Rod,False
+523,Motor Drive,False
+523,Sap Sipper,True
+524,Sand Force,True
+524,Sturdy,False
+524,Weak Armor,False
+525,Sand Force,True
+525,Sturdy,False
+525,Weak Armor,False
+526,Sand Force,True
+526,Sand Stream,False
+526,Sturdy,False
+527,Klutz,False
+527,Simple,True
+527,Unaware,False
+528,Klutz,False
+528,Simple,True
+528,Unaware,False
+529,Mold Breaker,True
+529,Sand Force,False
+529,Sand Rush,False
+530,Mold Breaker,True
+530,Piercing Drill,False
+530,Sand Force,False
+530,Sand Rush,False
+531,Healer,False
+531,Klutz,True
+531,Regenerator,False
+532,Guts,False
+532,Iron Fist,True
+532,Sheer Force,False
+533,Guts,False
+533,Iron Fist,True
+533,Sheer Force,False
+534,Guts,False
+534,Iron Fist,True
+534,Sheer Force,False
+535,Hydration,False
+535,Swift Swim,False
+535,Water Absorb,True
+536,Hydration,False
+536,Swift Swim,False
+536,Water Absorb,True
+537,Poison Touch,False
+537,Swift Swim,False
+537,Water Absorb,True
+538,Guts,False
+538,Inner Focus,False
+538,Mold Breaker,True
+539,Inner Focus,False
+539,Mold Breaker,True
+539,Sturdy,False
+540,Chlorophyll,False
+540,Overcoat,True
+540,Swarm,False
+541,Chlorophyll,False
+541,Leaf Guard,False
+541,Overcoat,True
+542,Chlorophyll,False
+542,Overcoat,True
+542,Swarm,False
+543,Poison Point,False
+543,Speed Boost,True
+543,Swarm,False
+544,Poison Point,False
+544,Speed Boost,True
+544,Swarm,False
+545,Poison Point,False
+545,Speed Boost,True
+545,Swarm,False
+546,Chlorophyll,True
+546,Infiltrator,False
+546,Prankster,False
+547,Chlorophyll,True
+547,Infiltrator,False
+547,Prankster,False
+548,Chlorophyll,False
+548,Leaf Guard,True
+548,Own Tempo,False
+549,Chlorophyll,False
+549,Hustle,False
+549,Leaf Guard,True
+549,Own Tempo,False
+550,Adaptability,False
+550,Mold Breaker,True
+550,Rattled,False
+550,Reckless,False
+550,Rock Head,False
+551,Anger Point,True
+551,Intimidate,False
+551,Moxie,False
+552,Anger Point,True
+552,Intimidate,False
+552,Moxie,False
+553,Anger Point,True
+553,Intimidate,False
+553,Moxie,False
+554,Hustle,False
+554,Inner Focus,True
+555,Gorilla Tactics,False
+555,Sheer Force,False
+555,Zen Mode,True
+556,Chlorophyll,False
+556,Storm Drain,True
+556,Water Absorb,False
+557,Shell Armor,False
+557,Sturdy,False
+557,Weak Armor,True
+558,Shell Armor,False
+558,Sturdy,False
+558,Weak Armor,True
+559,Intimidate,True
+559,Moxie,False
+559,Shed Skin,False
+560,Intimidate,True
+560,Moxie,False
+560,Shed Skin,False
+561,Magic Guard,False
+561,Tinted Lens,True
+561,Wonder Skin,False
+562,Mummy,False
+562,Wandering Spirit,False
+563,Mummy,False
+564,Solid Rock,False
+564,Sturdy,False
+564,Swift Swim,True
+565,Solid Rock,False
+565,Sturdy,False
+565,Swift Swim,True
+566,Defeatist,False
+567,Defeatist,False
+568,Aftermath,True
+568,Stench,False
+568,Sticky Hold,False
+569,Aftermath,True
+569,Stench,False
+569,Weak Armor,False
+570,Illusion,False
+571,Illusion,False
+572,Cute Charm,False
+572,Skill Link,True
+572,Technician,False
+573,Cute Charm,False
+573,Skill Link,True
+573,Technician,False
+574,Competitive,False
+574,Frisk,False
+574,Shadow Tag,True
+575,Competitive,False
+575,Frisk,False
+575,Shadow Tag,True
+576,Competitive,False
+576,Frisk,False
+576,Shadow Tag,True
+577,Magic Guard,False
+577,Overcoat,False
+577,Regenerator,True
+578,Magic Guard,False
+578,Overcoat,False
+578,Regenerator,True
+579,Magic Guard,False
+579,Overcoat,False
+579,Regenerator,True
+580,Big Pecks,False
+580,Hydration,True
+580,Keen Eye,False
+581,Big Pecks,False
+581,Hydration,True
+581,Keen Eye,False
+582,Ice Body,False
+582,Snow Cloak,False
+582,Weak Armor,True
+583,Ice Body,False
+583,Snow Cloak,False
+583,Weak Armor,True
+584,Ice Body,False
+584,Snow Warning,False
+584,Weak Armor,True
+585,Chlorophyll,False
+585,Sap Sipper,False
+585,Serene Grace,True
+586,Chlorophyll,False
+586,Sap Sipper,False
+586,Serene Grace,True
+587,Motor Drive,True
+587,Static,False
+588,No Guard,True
+588,Shed Skin,False
+588,Swarm,False
+589,Overcoat,True
+589,Shell Armor,False
+589,Swarm,False
+590,Effect Spore,False
+590,Regenerator,True
+591,Effect Spore,False
+591,Regenerator,True
+592,Cursed Body,False
+592,Damp,True
+592,Water Absorb,False
+593,Cursed Body,False
+593,Damp,True
+593,Water Absorb,False
+594,Healer,False
+594,Hydration,False
+594,Regenerator,True
+595,Compound Eyes,False
+595,Swarm,True
+595,Unnerve,False
+596,Compound Eyes,False
+596,Swarm,True
+596,Unnerve,False
+597,Iron Barbs,False
+598,Anticipation,True
+598,Iron Barbs,False
+599,Clear Body,True
+599,Minus,False
+599,Plus,False
+600,Clear Body,True
+600,Minus,False
+600,Plus,False
+601,Clear Body,True
+601,Minus,False
+601,Plus,False
+602,Levitate,False
+603,Levitate,False
+604,Levitate,False
+605,Analytic,True
+605,Synchronize,False
+605,Telepathy,False
+606,Analytic,True
+606,Synchronize,False
+606,Telepathy,False
+607,Flame Body,False
+607,Flash Fire,False
+607,Infiltrator,True
+608,Flame Body,False
+608,Flash Fire,False
+608,Infiltrator,True
+609,Flame Body,False
+609,Flash Fire,False
+609,Infiltrator,False
+609,Infiltrator,True
+610,Mold Breaker,False
+610,Rivalry,False
+610,Unnerve,True
+611,Mold Breaker,False
+611,Rivalry,False
+611,Unnerve,True
+612,Mold Breaker,False
+612,Rivalry,False
+612,Unnerve,True
+613,Rattled,True
+613,Slush Rush,False
+613,Snow Cloak,False
+614,Slush Rush,False
+614,Snow Cloak,False
+614,Swift Swim,True
+615,Levitate,False
+616,Hydration,False
+616,Overcoat,True
+616,Shell Armor,False
+617,Hydration,False
+617,Sticky Hold,False
+617,Unburden,True
+618,Limber,False
+618,Mimicry,False
+618,Sand Veil,True
+618,Static,False
+619,Inner Focus,False
+619,Reckless,True
+619,Regenerator,False
+620,Inner Focus,False
+620,Reckless,True
+620,Regenerator,False
+621,Mold Breaker,True
+621,Rough Skin,False
+621,Sheer Force,False
+622,Iron Fist,False
+622,Klutz,False
+622,No Guard,True
+623,Iron Fist,False
+623,Klutz,False
+623,No Guard,True
+623,Unseen Fist,False
+624,Defiant,False
+624,Inner Focus,False
+624,Pressure,True
+625,Defiant,False
+625,Inner Focus,False
+625,Pressure,True
+626,Reckless,False
+626,Sap Sipper,False
+626,Soundproof,True
+627,Hustle,True
+627,Keen Eye,False
+627,Sheer Force,False
+628,Defiant,True
+628,Keen Eye,False
+628,Sheer Force,False
+628,Tinted Lens,True
+629,Big Pecks,False
+629,Overcoat,False
+629,Weak Armor,True
+630,Big Pecks,False
+630,Overcoat,False
+630,Weak Armor,True
+631,Flash Fire,False
+631,Gluttony,False
+631,White Smoke,True
+632,Hustle,False
+632,Swarm,False
+632,Truant,True
+633,Hustle,False
+634,Hustle,False
+635,Levitate,False
+636,Flame Body,False
+636,Swarm,True
+637,Flame Body,False
+637,Swarm,True
+638,Justified,False
+639,Justified,False
+640,Justified,False
+641,Defiant,True
+641,Prankster,False
+641,Regenerator,False
+642,Defiant,True
+642,Prankster,False
+642,Volt Absorb,False
+643,Turboblaze,False
+644,Teravolt,False
+645,Intimidate,False
+645,Sand Force,False
+645,Sheer Force,True
+646,Pressure,False
+646,Teravolt,False
+646,Turboblaze,False
+647,Justified,False
+648,Serene Grace,False
+649,Download,False
+650,Bulletproof,True
+650,Overgrow,False
+651,Bulletproof,True
+651,Overgrow,False
+652,Bulletproof,False
+652,Bulletproof,True
+652,Overgrow,False
+653,Blaze,False
+653,Magician,True
+654,Blaze,False
+654,Magician,True
+655,Blaze,False
+655,Levitate,False
+655,Magician,True
+656,Protean,True
+656,Torrent,False
+657,Protean,True
+657,Torrent,False
+658,Battle Bond,False
+658,Protean,False
+658,Protean,True
+658,Torrent,False
+659,Cheek Pouch,False
+659,Huge Power,True
+659,Pickup,False
+660,Cheek Pouch,False
+660,Huge Power,True
+660,Pickup,False
+661,Big Pecks,False
+661,Gale Wings,True
+662,Flame Body,False
+662,Gale Wings,True
+663,Flame Body,False
+663,Gale Wings,True
+664,Compound Eyes,False
+664,Friend Guard,True
+664,Shield Dust,False
+665,Friend Guard,True
+665,Shed Skin,False
+666,Compound Eyes,False
+666,Friend Guard,True
+666,Shield Dust,False
+667,Moxie,True
+667,Rivalry,False
+667,Unnerve,False
+668,Moxie,True
+668,Rivalry,False
+668,Unnerve,False
+669,Flower Veil,False
+669,Symbiosis,True
+670,Fairy Aura,False
+670,Flower Veil,False
+670,Symbiosis,True
+671,Flower Veil,False
+671,Symbiosis,True
+672,Grass Pelt,True
+672,Sap Sipper,False
+673,Grass Pelt,True
+673,Sap Sipper,False
+674,Iron Fist,False
+674,Mold Breaker,False
+674,Scrappy,True
+675,Iron Fist,False
+675,Mold Breaker,False
+675,Scrappy,True
+676,Fur Coat,False
+677,Infiltrator,False
+677,Keen Eye,False
+677,Own Tempo,True
+678,Competitive,True
+678,Infiltrator,False
+678,Keen Eye,False
+678,Prankster,True
+678,Trace,False
+679,No Guard,False
+680,No Guard,False
+681,Stance Change,False
+682,Aroma Veil,True
+682,Healer,False
+683,Aroma Veil,True
+683,Healer,False
+684,Sweet Veil,False
+684,Unburden,True
+685,Sweet Veil,False
+685,Unburden,True
+686,Contrary,False
+686,Infiltrator,True
+686,Suction Cups,False
+687,Contrary,False
+687,Infiltrator,True
+687,Suction Cups,False
+688,Pickpocket,True
+688,Sniper,False
+688,Tough Claws,False
+689,Pickpocket,True
+689,Sniper,False
+689,Tough Claws,False
+690,Adaptability,True
+690,Poison Point,False
+690,Poison Touch,False
+691,Adaptability,True
+691,Poison Point,False
+691,Poison Touch,False
+692,Mega Launcher,False
+693,Mega Launcher,False
+694,Dry Skin,False
+694,Sand Veil,False
+694,Solar Power,True
+695,Dry Skin,False
+695,Sand Veil,False
+695,Solar Power,True
+696,Strong Jaw,False
+696,Sturdy,True
+697,Rock Head,True
+697,Strong Jaw,False
+698,Refrigerate,False
+698,Snow Warning,True
+699,Refrigerate,False
+699,Snow Warning,True
+700,Cute Charm,False
+700,Pixilate,True
+701,Limber,False
+701,Mold Breaker,True
+701,No Guard,False
+701,Unburden,False
+702,Cheek Pouch,False
+702,Pickup,False
+702,Plus,True
+703,Clear Body,False
+703,Sturdy,True
+704,Gooey,True
+704,Hydration,False
+704,Sap Sipper,False
+705,Gooey,True
+705,Hydration,False
+705,Sap Sipper,False
+705,Shell Armor,False
+706,Gooey,True
+706,Hydration,False
+706,Sap Sipper,False
+706,Shell Armor,False
+707,Magician,True
+707,Prankster,False
+708,Frisk,False
+708,Harvest,True
+708,Natural Cure,False
+709,Frisk,False
+709,Harvest,True
+709,Natural Cure,False
+710,Frisk,False
+710,Insomnia,True
+710,Pickup,False
+711,Frisk,False
+711,Insomnia,True
+711,Pickup,False
+712,Ice Body,False
+712,Own Tempo,False
+712,Sturdy,True
+713,Ice Body,False
+713,Own Tempo,False
+713,Strong Jaw,False
+713,Sturdy,True
+714,Frisk,False
+714,Infiltrator,False
+714,Telepathy,True
+715,Frisk,False
+715,Infiltrator,False
+715,Telepathy,True
+716,Fairy Aura,False
+717,Dark Aura,False
+718,Aura Break,False
+718,Power Construct,False
+719,Clear Body,False
+719,Magic Bounce,False
+720,Magician,False
+721,Water Absorb,False
+722,Long Reach,True
+722,Overgrow,False
+723,Long Reach,True
+723,Overgrow,False
+724,Long Reach,True
+724,Overgrow,False
+724,Scrappy,True
+725,Blaze,False
+725,Intimidate,True
+726,Blaze,False
+726,Intimidate,True
+727,Blaze,False
+727,Intimidate,True
+728,Liquid Voice,True
+728,Torrent,False
+729,Liquid Voice,True
+729,Torrent,False
+730,Liquid Voice,True
+730,Torrent,False
+731,Keen Eye,False
+731,Pickup,True
+731,Skill Link,False
+732,Keen Eye,False
+732,Pickup,True
+732,Skill Link,False
+733,Keen Eye,False
+733,Sheer Force,True
+733,Skill Link,False
+734,Adaptability,True
+734,Stakeout,False
+734,Strong Jaw,False
+735,Adaptability,True
+735,Stakeout,False
+735,Strong Jaw,False
+736,Swarm,False
+737,Battery,False
+738,Levitate,False
+739,Anger Point,True
+739,Hyper Cutter,False
+739,Iron Fist,False
+740,Anger Point,True
+740,Hyper Cutter,False
+740,Iron Fist,False
+741,Dancer,False
+742,Honey Gather,False
+742,Shield Dust,False
+742,Sweet Veil,True
+743,Honey Gather,False
+743,Shield Dust,False
+743,Sweet Veil,True
+744,Keen Eye,False
+744,Own Tempo,False
+744,Steadfast,True
+744,Vital Spirit,False
+745,Keen Eye,False
+745,No Guard,True
+745,Sand Rush,False
+745,Steadfast,True
+745,Tough Claws,False
+745,Vital Spirit,False
+746,Schooling,False
+747,Limber,False
+747,Merciless,False
+747,Regenerator,True
+748,Limber,False
+748,Merciless,False
+748,Regenerator,True
+749,Inner Focus,True
+749,Own Tempo,False
+749,Stamina,False
+750,Inner Focus,True
+750,Own Tempo,False
+750,Stamina,False
+751,Water Absorb,True
+751,Water Bubble,False
+752,Water Absorb,True
+752,Water Bubble,False
+753,Contrary,True
+753,Leaf Guard,False
+754,Contrary,True
+754,Leaf Guard,False
+755,Effect Spore,False
+755,Illuminate,False
+755,Rain Dish,True
+756,Effect Spore,False
+756,Illuminate,False
+756,Rain Dish,True
+757,Corrosion,False
+757,Oblivious,True
+758,Corrosion,False
+758,Oblivious,True
+759,Cute Charm,True
+759,Fluffy,False
+759,Klutz,False
+760,Fluffy,False
+760,Klutz,False
+760,Unnerve,True
+761,Leaf Guard,False
+761,Oblivious,False
+761,Sweet Veil,True
+762,Leaf Guard,False
+762,Oblivious,False
+762,Sweet Veil,True
+763,Leaf Guard,False
+763,Queenly Majesty,False
+763,Sweet Veil,True
+764,Flower Veil,False
+764,Natural Cure,True
+764,Triage,False
+765,Inner Focus,False
+765,Symbiosis,True
+765,Telepathy,False
+766,Defiant,True
+766,Receiver,False
+767,Wimp Out,False
+768,Emergency Exit,False
+769,Sand Veil,True
+769,Water Compaction,False
+770,Sand Veil,True
+770,Water Compaction,False
+771,Innards Out,False
+771,Unaware,True
+772,Battle Armor,False
+773,Rks System,False
+774,Shields Down,False
+775,Comatose,False
+776,Shell Armor,False
+777,Iron Barbs,False
+777,Lightning Rod,False
+777,Sturdy,True
+778,Disguise,False
+779,Dazzling,False
+779,Strong Jaw,False
+779,Wonder Skin,True
+780,Berserk,False
+780,Cloud Nine,True
+780,Sap Sipper,False
+781,Steelworker,False
+782,Bulletproof,False
+782,Overcoat,True
+782,Soundproof,False
+783,Bulletproof,False
+783,Overcoat,True
+783,Soundproof,False
+784,Bulletproof,False
+784,Overcoat,True
+784,Soundproof,False
+785,Electric Surge,False
+785,Telepathy,True
+786,Psychic Surge,False
+786,Telepathy,True
+787,Grassy Surge,False
+787,Telepathy,True
+788,Misty Surge,False
+788,Telepathy,True
+789,Unaware,False
+790,Sturdy,False
+791,Full Metal Body,False
+792,Shadow Shield,False
+793,Beast Boost,False
+794,Beast Boost,False
+795,Beast Boost,False
+796,Beast Boost,False
+797,Beast Boost,False
+798,Beast Boost,False
+799,Beast Boost,False
+800,Neuroforce,False
+800,Prism Armor,False
+801,Soul Heart,False
+802,Technician,False
+803,Beast Boost,False
+804,Beast Boost,False
+805,Beast Boost,False
+806,Beast Boost,False
+807,Volt Absorb,False
+808,Magnet Pull,False
+809,Iron Fist,False
+810,Grassy Surge,True
+810,Overgrow,False
+811,Grassy Surge,True
+811,Overgrow,False
+812,Grassy Surge,True
+812,Overgrow,False
+813,Blaze,False
+813,Libero,True
+814,Blaze,False
+814,Libero,True
+815,Blaze,False
+815,Libero,True
+816,Sniper,True
+816,Torrent,False
+817,Sniper,True
+817,Torrent,False
+818,Sniper,True
+818,Torrent,False
+819,Cheek Pouch,False
+819,Gluttony,True
+820,Cheek Pouch,False
+820,Gluttony,True
+821,Big Pecks,True
+821,Keen Eye,False
+821,Unnerve,False
+822,Big Pecks,True
+822,Keen Eye,False
+822,Unnerve,False
+823,Mirror Armor,True
+823,Pressure,False
+823,Unnerve,False
+824,Compound Eyes,False
+824,Swarm,False
+824,Telepathy,True
+825,Compound Eyes,False
+825,Swarm,False
+825,Telepathy,True
+826,Frisk,False
+826,Swarm,False
+826,Telepathy,True
+827,Run Away,False
+827,Stakeout,True
+827,Unburden,False
+828,Run Away,False
+828,Stakeout,True
+828,Unburden,False
+829,Cotton Down,False
+829,Effect Spore,True
+829,Regenerator,False
+830,Cotton Down,False
+830,Effect Spore,True
+830,Regenerator,False
+831,Bulletproof,True
+831,Fluffy,False
+831,Run Away,False
+832,Bulletproof,True
+832,Fluffy,False
+832,Steadfast,False
+833,Shell Armor,False
+833,Strong Jaw,False
+833,Swift Swim,True
+834,Shell Armor,False
+834,Strong Jaw,False
+834,Swift Swim,True
+835,Ball Fetch,False
+835,Rattled,True
+836,Competitive,True
+836,Strong Jaw,False
+837,Flash Fire,True
+837,Heatproof,False
+837,Steam Engine,False
+838,Flame Body,False
+838,Flash Fire,True
+838,Steam Engine,False
+839,Flame Body,False
+839,Flash Fire,True
+839,Steam Engine,False
+840,Bulletproof,True
+840,Gluttony,False
+840,Ripen,False
+841,Gluttony,False
+841,Hustle,True
+841,Ripen,False
+842,Gluttony,False
+842,Ripen,False
+842,Thick Fat,True
+843,Sand Spit,False
+843,Sand Veil,True
+843,Shed Skin,False
+844,Sand Spit,False
+844,Sand Veil,True
+844,Shed Skin,False
+845,Gulp Missile,False
+846,Propeller Tail,True
+846,Swift Swim,False
+847,Propeller Tail,True
+847,Swift Swim,False
+848,Klutz,True
+848,Rattled,False
+848,Static,False
+849,Minus,False
+849,Plus,False
+849,Punk Rock,False
+849,Technician,True
+850,Flame Body,True
+850,Flash Fire,False
+850,White Smoke,False
+851,Flame Body,True
+851,Flash Fire,False
+851,White Smoke,False
+852,Limber,False
+852,Technician,True
+853,Limber,False
+853,Technician,True
+854,Cursed Body,True
+854,Weak Armor,False
+855,Cursed Body,True
+855,Weak Armor,False
+856,Anticipation,False
+856,Healer,False
+856,Magic Bounce,True
+857,Anticipation,False
+857,Healer,False
+857,Magic Bounce,True
+858,Anticipation,False
+858,Healer,False
+858,Magic Bounce,True
+859,Frisk,False
+859,Pickpocket,True
+859,Prankster,False
+860,Frisk,False
+860,Pickpocket,True
+860,Prankster,False
+861,Frisk,False
+861,Pickpocket,True
+861,Prankster,False
+862,Defiant,True
+862,Guts,False
+862,Reckless,False
+863,Battle Armor,False
+863,Steely Spirit,True
+863,Tough Claws,False
+864,Perish Body,True
+864,Weak Armor,False
+865,Scrappy,True
+865,Steadfast,False
+866,Ice Body,True
+866,Screen Cleaner,False
+866,Tangled Feet,False
+867,Wandering Spirit,False
+868,Aroma Veil,True
+868,Sweet Veil,False
+869,Aroma Veil,True
+869,Sweet Veil,False
+870,Battle Armor,False
+870,Defiant,True
+871,Electric Surge,True
+871,Lightning Rod,False
+872,Ice Scales,True
+872,Shield Dust,False
+873,Ice Scales,True
+873,Shield Dust,False
+874,Power Spot,False
+875,Ice Face,False
+876,Inner Focus,False
+876,Own Tempo,False
+876,Psychic Surge,True
+876,Synchronize,False
+877,Hunger Switch,False
+878,Heavy Metal,True
+878,Sheer Force,False
+879,Heavy Metal,True
+879,Sheer Force,False
+880,Hustle,False
+880,Sand Rush,True
+880,Volt Absorb,False
+881,Slush Rush,True
+881,Static,False
+881,Volt Absorb,False
+882,Sand Rush,True
+882,Strong Jaw,False
+882,Water Absorb,False
+883,Ice Body,False
+883,Slush Rush,True
+883,Water Absorb,False
+884,Heavy Metal,False
+884,Light Metal,False
+884,Stalwart,True
+885,Clear Body,False
+885,Cursed Body,True
+885,Infiltrator,False
+886,Clear Body,False
+886,Cursed Body,True
+886,Infiltrator,False
+887,Clear Body,False
+887,Cursed Body,True
+887,Infiltrator,False
+888,Intrepid Sword,False
+889,Dauntless Shield,False
+890,Pressure,False
+891,Inner Focus,False
+892,Unseen Fist,False
+893,Leaf Guard,False
+894,Transistor,False
+895,Dragons Maw,False
+896,Chilling Neigh,False
+897,Grim Neigh,False
+898,As One Glastrier,False
+898,As One Spectrier,False
+898,Unnerve,False
+899,Frisk,False
+899,Intimidate,False
+899,Sap Sipper,True
+900,Sharpness,True
+900,Sheer Force,False
+900,Swarm,False
+901,Bulletproof,False
+901,Guts,False
+901,Minds Eye,False
+901,Unnerve,True
+902,Adaptability,False
+902,Mold Breaker,True
+902,Swift Swim,False
+903,Poison Touch,True
+903,Pressure,False
+903,Unburden,False
+904,Intimidate,True
+904,Poison Point,False
+904,Swift Swim,False
+905,Contrary,True
+905,Cute Charm,False
+905,Overcoat,False
+906,Overgrow,False
+906,Protean,True
+907,Overgrow,False
+907,Protean,True
+908,Overgrow,False
+908,Protean,True
+909,Blaze,False
+909,Unaware,True
+910,Blaze,False
+910,Unaware,True
+911,Blaze,False
+911,Unaware,True
+912,Moxie,True
+912,Torrent,False
+913,Moxie,True
+913,Torrent,False
+914,Moxie,True
+914,Torrent,False
+915,Aroma Veil,False
+915,Gluttony,False
+915,Thick Fat,True
+916,Aroma Veil,False
+916,Gluttony,False
+916,Lingering Aroma,False
+916,Thick Fat,True
+917,Insomnia,False
+917,Stakeout,True
+918,Insomnia,False
+918,Stakeout,True
+919,Swarm,False
+919,Tinted Lens,True
+920,Swarm,False
+920,Tinted Lens,True
+921,Iron Fist,True
+921,Natural Cure,False
+921,Static,False
+922,Iron Fist,True
+922,Natural Cure,False
+922,Volt Absorb,False
+923,Iron Fist,True
+923,Natural Cure,False
+923,Volt Absorb,False
+924,Own Tempo,True
+924,Pickup,False
+924,Run Away,False
+925,Cheek Pouch,False
+925,Friend Guard,False
+925,Technician,True
+926,Klutz,True
+926,Own Tempo,False
+927,Aroma Veil,True
+927,Well Baked Body,False
+928,Early Bird,False
+928,Harvest,True
+929,Early Bird,False
+929,Harvest,True
+930,Harvest,True
+930,Seed Sower,False
+931,Guts,True
+931,Hustle,False
+931,Intimidate,False
+931,Sheer Force,True
+932,Clear Body,True
+932,Purifying Salt,False
+932,Sturdy,False
+933,Clear Body,True
+933,Purifying Salt,False
+933,Sturdy,False
+934,Clear Body,True
+934,Purifying Salt,False
+934,Sturdy,False
+935,Flame Body,True
+935,Flash Fire,False
+936,Flash Fire,False
+936,Weak Armor,True
+937,Flash Fire,False
+937,Weak Armor,True
+938,Damp,True
+938,Own Tempo,False
+938,Static,False
+939,Damp,True
+939,Electromorphosis,False
+939,Static,False
+940,Competitive,True
+940,Volt Absorb,False
+940,Wind Power,False
+941,Competitive,True
+941,Volt Absorb,False
+941,Wind Power,False
+942,Intimidate,False
+942,Run Away,False
+942,Stakeout,True
+943,Guard Dog,False
+943,Intimidate,False
+943,Stakeout,True
+944,Pickpocket,False
+944,Prankster,True
+944,Unburden,False
+945,Poison Touch,False
+945,Prankster,True
+945,Unburden,False
+946,Infiltrator,True
+946,Wind Rider,False
+947,Infiltrator,True
+947,Wind Rider,False
+948,Mycelium Might,False
+949,Mycelium Might,False
+950,Anger Shell,False
+950,Regenerator,True
+950,Shell Armor,False
+951,Chlorophyll,False
+951,Insomnia,False
+951,Klutz,True
+952,Chlorophyll,False
+952,Insomnia,False
+952,Moody,True
+952,Spicy Spray,False
+953,Compound Eyes,False
+953,Shed Skin,True
+954,Synchronize,False
+954,Telepathy,True
+955,Anticipation,False
+955,Frisk,False
+955,Speed Boost,True
+956,Frisk,False
+956,Opportunist,False
+956,Speed Boost,True
+957,Mold Breaker,False
+957,Own Tempo,False
+957,Pickpocket,True
+958,Mold Breaker,False
+958,Own Tempo,False
+958,Pickpocket,True
+959,Mold Breaker,False
+959,Own Tempo,False
+959,Pickpocket,True
+960,Gooey,False
+960,Rattled,False
+960,Sand Veil,True
+961,Gooey,False
+961,Rattled,False
+961,Sand Veil,True
+962,Big Pecks,False
+962,Keen Eye,False
+962,Rocky Payload,True
+963,Water Veil,False
+964,Zero To Hero,False
+965,Overcoat,False
+965,Slow Start,True
+966,Filter,True
+966,Overcoat,False
+967,Regenerator,True
+967,Shed Skin,False
+968,Earth Eater,False
+968,Sand Veil,True
+969,Corrosion,True
+969,Toxic Debris,False
+970,Adaptability,False
+970,Corrosion,True
+970,Toxic Debris,False
+971,Fluffy,True
+971,Pickup,False
+972,Fluffy,True
+972,Sand Rush,False
+973,Costar,True
+973,Scrappy,False
+973,Tangled Feet,False
+974,Sheer Force,True
+974,Snow Cloak,False
+974,Thick Fat,False
+975,Sheer Force,True
+975,Slush Rush,False
+975,Thick Fat,False
+976,Mold Breaker,False
+976,Sharpness,True
+977,Oblivious,False
+977,Unaware,False
+977,Water Veil,True
+978,Commander,False
+978,Storm Drain,True
+979,Defiant,True
+979,Inner Focus,False
+979,Vital Spirit,False
+980,Poison Point,False
+980,Unaware,True
+980,Water Absorb,False
+981,Armor Tail,False
+981,Cud Chew,False
+981,Sap Sipper,True
+982,Rattled,True
+982,Run Away,False
+982,Serene Grace,False
+983,Defiant,False
+983,Pressure,True
+983,Supreme Overlord,False
+984,Protosynthesis,False
+985,Protosynthesis,False
+986,Protosynthesis,False
+987,Protosynthesis,False
+988,Protosynthesis,False
+989,Protosynthesis,False
+990,Quark Drive,False
+991,Quark Drive,False
+992,Quark Drive,False
+993,Quark Drive,False
+994,Quark Drive,False
+995,Quark Drive,False
+996,Ice Body,True
+996,Thermal Exchange,False
+997,Ice Body,True
+997,Thermal Exchange,False
+998,Ice Body,True
+998,Thermal Exchange,False
+999,Rattled,False
+999,Run Away,False
+1000,Good As Gold,False
+1001,Tablets Of Ruin,False
+1002,Sword Of Ruin,False
+1003,Vessel Of Ruin,False
+1004,Beads Of Ruin,False
+1005,Protosynthesis,False
+1006,Quark Drive,False
+1007,Orichalcum Pulse,False
+1008,Hadron Engine,False
+1009,Protosynthesis,False
+1010,Quark Drive,False
+1011,Gluttony,False
+1011,Sticky Hold,True
+1011,Supersweet Syrup,False
+1012,Heatproof,True
+1012,Hospitality,False
+1013,Heatproof,True
+1013,Hospitality,False
+1014,Guard Dog,True
+1014,Toxic Chain,False
+1015,Frisk,True
+1015,Toxic Chain,False
+1016,Technician,True
+1016,Toxic Chain,False
+1017,Defiant,False
+1017,Mold Breaker,False
+1017,Sturdy,False
+1017,Water Absorb,False
+1018,Stalwart,True
+1018,Stamina,False
+1018,Sturdy,False
+1019,Regenerator,False
+1019,Sticky Hold,True
+1019,Supersweet Syrup,False
+1020,Protosynthesis,False
+1021,Protosynthesis,False
+1022,Quark Drive,False
+1023,Quark Drive,False
+1024,Tera Shell,False
+1024,Tera Shift,False
+1024,Teraform Zero,False
+1025,Poison Puppeteer,False
