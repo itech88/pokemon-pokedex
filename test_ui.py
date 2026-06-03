@@ -200,3 +200,69 @@ def test_surprise_me_scrolls_to_top(page: Page):
     assert top < SCROLL_THRESHOLD, (
         f"Surprise me! did not scroll to top — scrollTop={top}px"
     )
+
+
+def test_charizard_not_in_wild_locations(page: Page):
+    """
+    Regression test for the Charizard location data bug.
+
+    Charizard (#6) was incorrectly showing 25 Kanto wild encounter areas at
+    100% rate due to 'overworld-flying-special' (Let's Go) entries being
+    included in the location CSV without method filtering.
+
+    After the fix, Charizard's Physical Traits tab must show the
+    'can't be found in the wild' message — not any region expanders.
+    """
+    enter_gen1(page)
+
+    # Charizard is card index 5 (#6) — click it
+    view_btns = page.locator("button", has_text="View →").all()
+    assert len(view_btns) >= 6, "Not enough cards in Gen I"
+    view_btns[5].click()
+    time.sleep(RERUN_WAIT)
+
+    # Open Physical Traits tab
+    page.locator("[role='tab']", has_text="Physical Traits").first.click()
+    time.sleep(2)
+
+    content = page.content()
+    # Must show the no-locations message
+    assert "obtained another way" in content or "can't be found" in content, (
+        "Charizard should show the 'can't be found in the wild' message "
+        "but no such text was found — the location bug may have returned"
+    )
+    # Must NOT show Kanto as a wild location section
+    traits_section = content.split("Where to Find It")[-1].split("Type Battle")[0] if "Where to Find It" in content else ""
+    assert "Kanto" not in traits_section, (
+        "Charizard's location section should not contain 'Kanto' — "
+        "the overworld-flying-special data is leaking back in"
+    )
+
+
+def test_rattata_has_valid_wild_locations(page: Page):
+    """
+    Rattata (#19) must show real location data in Physical Traits.
+
+    Guards against over-filtering in WILD_METHODS — if too many methods
+    are excluded, genuinely wild Pokémon like Rattata would incorrectly
+    show the no-locations message.
+    """
+    enter_gen1(page)
+
+    # Rattata is card index 18 (#19)
+    view_btns = page.locator("button", has_text="View →").all()
+    assert len(view_btns) >= 19, "Not enough cards in Gen I"
+    view_btns[18].click()
+    time.sleep(RERUN_WAIT)
+
+    page.locator("[role='tab']", has_text="Physical Traits").first.click()
+    time.sleep(2)
+
+    content = page.content()
+    assert "obtained another way" not in content and "can't be found" not in content, (
+        "Rattata should have real location data — the WILD_METHODS filter "
+        "may be excluding 'walk' or 'overworld' encounters incorrectly"
+    )
+    assert any(r in content for r in ("Kanto", "Johto", "Hoenn", "Sinnoh", "Alola")), (
+        "Rattata should show at least one region in its location section"
+    )

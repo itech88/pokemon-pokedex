@@ -1,55 +1,6 @@
 Number,Region,AreaName,EncounterRate
-1,Alola,Alola Route 2 Main,100
-1,Kalos,Lumiose City,100
-1,Kanto,Cerulean City,100
-1,Kanto,Pallet Town,100
-1,Kanto,Viridian Forest,100
 2,Kalos,Friend Safari (Grass),33
-4,Alola,Alola Route 3 Main,100
-4,Kalos,Lumiose City,100
-4,Kanto,Pallet Town,100
-4,Kanto,Road 24,100
-4,Kanto,Road 3,100
-4,Kanto,Road 4,100
-4,Kanto,Rock Tunnel (1F),100
-4,Kanto,Rock Tunnel (B1F),100
 5,Kalos,Friend Safari (Fire),33
-6,Kanto,Road 1,100
-6,Kanto,Road 10,100
-6,Kanto,Road 11,100
-6,Kanto,Road 12,100
-6,Kanto,Road 13,100
-6,Kanto,Road 14,100
-6,Kanto,Road 15,100
-6,Kanto,Road 16,100
-6,Kanto,Road 17,100
-6,Kanto,Road 18,100
-6,Kanto,Road 19,100
-6,Kanto,"Road 2 (north, towards Pewter City)",100
-6,Kanto,"Road 2 (south, towards Viridian City)",100
-6,Kanto,Road 20,100
-6,Kanto,Road 21,100
-6,Kanto,Road 22,100
-6,Kanto,Road 23,100
-6,Kanto,Road 24,100
-6,Kanto,Road 25,100
-6,Kanto,Road 3,100
-6,Kanto,Road 4,100
-6,Kanto,Road 6,100
-6,Kanto,Road 7,100
-6,Kanto,Road 8,100
-6,Kanto,Road 9,100
-7,Alola,Seaward Cave Area,100
-7,Kalos,Lumiose City,100
-7,Kanto,Pallet Town,100
-7,Kanto,Road 24,100
-7,Kanto,Road 25,100
-7,Kanto,Seafoam Islands (1F),100
-7,Kanto,Seafoam Islands (B1F),100
-7,Kanto,Seafoam Islands (B2F),100
-7,Kanto,Seafoam Islands (B3F),100
-7,Kanto,Seafoam Islands (B4F),100
-7,Kanto,Vermilion City,100
 8,Kalos,Friend Safari (Water),33
 10,Alola,Alola Route 1 East,20
 10,Alola,Alola Route 1 South,25
@@ -137,7 +88,6 @@ Number,Region,AreaName,EncounterRate
 12,Kanto,Road 26,15
 12,Kanto,Road 27,15
 12,Kanto,Viridian Forest,100
-12,Orre,Cipher Key Lair 4F,100
 12,Unova,Pinwheel Forest (Hidden Grotto – Inner area),20
 12,Unova,Road 12,5
 13,Johto,Azalea Town,100
@@ -190,7 +140,6 @@ Number,Region,AreaName,EncounterRate
 14,Kanto,Viridian Forest,100
 14,Sinnoh,Eterna Forest,8
 14,Unova,Road 12,20
-15,Alola,Alola Route 4 Area,100
 15,Johto,Azalea Town,15
 15,Johto,Ilex Forest,15
 15,Johto,Lake of Rage,15
@@ -205,7 +154,6 @@ Number,Region,AreaName,EncounterRate
 15,Kanto,Road 26,15
 15,Kanto,Road 27,15
 15,Kanto,Viridian Forest,100
-15,Orre,Cipher Key Lair 3F,100
 15,Unova,Pinwheel Forest (Hidden Grotto – Inner area),20
 15,Unova,Road 12,5
 16,Johto,Ilex Forest,10
@@ -278,8 +226,6 @@ Number,Region,AreaName,EncounterRate
 17,Kanto,Road 7,100
 17,Kanto,Road 8,100
 17,Kanto,Viridian Forest,13
-17,Orre,Cipher Key Lair 3F,100
-18,Alola,Alola Route 10 Area,100
 18,Kanto,Road 1,100
 18,Kanto,Road 11,100
 18,Kanto,Road 12,100
@@ -346,7 +292,6 @@ Number,Region,AreaName,EncounterRate
 19,Johto,Union Cave (B1F),35
 19,Johto,Union Cave (B2F),5
 19,Johto,Unknown Area; all Rattata,100
-19,Kanto,Cerulean City,100
 19,Kanto,Pokemon Mansion (1F),100
 19,Kanto,Pokemon Mansion (2F),100
 19,Kanto,Pokemon Mansion (3F),100
@@ -386,7 +331,6 @@ Number,Region,AreaName,EncounterRate
 20,Alola,Alola Route 17 West,30
 20,Alola,Alola Route 8 Main,15
 20,Alola,Ancient Poni Path Area,30
-20,Alola,Heahea Beach Area,100
 20,Alola,Malie City Outer Cape,20
 20,Alola,Mount Lanakila Base,20
 20,Alola,Poni Gauntlet Area,30
@@ -430,7 +374,6 @@ Number,Region,AreaName,EncounterRate
 20,Kanto,Road 7,100
 20,Kanto,Road 8,100
 20,Kanto,Road 9,100
-20,Orre,Citadark Isle 1F,100
 20,Sinnoh,Road 225,30
 20,Sinnoh,Road 226,30
 20,Unova,Dreamyard,20
@@ -441,11 +384,7 @@ Number,Region,AreaName,EncounterRate
 21,Alola,Alola Route 2 North,40
 21,Alola,Alola Route 3 North,100
 21,Alola,Alola Route 3 South,49
-21,Alola,Poke Pelago Elite Four Defeated,4
-21,Alola,Poke Pelago Poni Island Reached,5
-21,Alola,Poke Pelago Ulaula Island Reached,6
 21,Johto,Azalea Town,100
-21,Johto,Goldenrod City (north gate),100
 21,Johto,Road 29,100
 21,Johto,Road 30,100
 21,Johto,Road 31,100
@@ -477,7 +416,6 @@ Number,Region,AreaName,EncounterRate
 21,Kanto,Ruin Valley,20
 21,Kanto,Treasure Beach,30
 21,Kanto,Water Path,20
-21,Orre,Phenac City Stadium,100
 21,Sinnoh,Road 225,5
 21,Sinnoh,Road 226,5
 22,Alola,Alola Route 10 Area,100
@@ -517,7 +455,6 @@ Number,Region,AreaName,EncounterRate
 23,Alola,Alola Route 2 North,70
 23,Alola,Alola Route 2 South,70
 23,Johto,Azalea Town,30
-23,Johto,Goldenrod City Game Corner,100
 23,Johto,Road 32,90
 23,Johto,Road 33,90
 23,Johto,Road 42,90
@@ -533,7 +470,6 @@ Number,Region,AreaName,EncounterRate
 23,Kanto,Road 8,20
 23,Kanto,Road 9,25
 23,Sinnoh,"Road 212 (east, towards Pastoria City)",8
-24,Alola,Alola Route 8 Main,100
 24,Johto,Mount Silver (outside),40
 24,Johto,Road 42,10
 24,Johto,Safari Zone Marshland,20
@@ -549,7 +485,6 @@ Number,Region,AreaName,EncounterRate
 24,Kanto,Victory Road 2 (1F),5
 24,Kanto,Victory Road 2 (2F),5
 24,Kanto,Victory Road 2 (3F),5
-24,Orre,Cipher Key Lair Roof,100
 24,Sinnoh,Great Marsh Area 1,8
 24,Sinnoh,Great Marsh Area 2,8
 24,Sinnoh,Great Marsh Area 3,8
@@ -559,20 +494,11 @@ Number,Region,AreaName,EncounterRate
 25,Alola,Alola Route 1 East,15
 25,Alola,Alola Route 1 West,15
 25,Alola,Hauoli City Shopping District,15
-25,Alola,Heahea City Surf Association,100
-25,Hoenn,Contest Hall (Fallarbor Town),100
-25,Hoenn,Contest Hall (Lilycove City),100
-25,Hoenn,Contest Hall (Slateport City),100
-25,Hoenn,Contest Hall (Verdanturf Town),100
-25,Hoenn,Hoenn Pokecenter Area,100
 25,Hoenn,Safari Zone (SE),5
 25,Hoenn,Safari Zone (SW),5
 25,Kalos,Friend Safari (Electric),33
 25,Kalos,Road 3,5
 25,Kalos,Santalune Forest,6
-25,Kanto,Celadon City Prize Corner,100
-25,Kanto,Kanto Pokecenter Area,100
-25,Kanto,Pallet Town,100
 25,Kanto,Power Plant,25
 25,Kanto,"Road 2 (south, towards Viridian City)",15
 25,Kanto,Viridian Forest,100
@@ -580,7 +506,6 @@ Number,Region,AreaName,EncounterRate
 26,Kanto,Cerulean Cave (1F),4
 26,Kanto,Cerulean Cave (B1F),10
 26,Kanto,Power Plant,5
-26,Kanto,Saffron City Area,100
 27,Alola,Alola Route 14 Area,10
 27,Alola,Mount Lanakila Base,30
 27,Alola,Mount Lanakila Outside,30
@@ -588,12 +513,10 @@ Number,Region,AreaName,EncounterRate
 27,Hoenn,Mirage Tower,50
 27,Hoenn,Road 111,100
 27,Hoenn,Road 113,25
-27,Johto,Goldenrod City Game Corner,100
 27,Johto,Safari Zone Desert,100
 27,Johto,Union Cave (1F),60
 27,Johto,Union Cave (B1F),30
 27,Kalos,Friend Safari (Ground),33
-27,Kanto,Celadon City,100
 27,Kanto,Mount Moon (1F),40
 27,Kanto,Mount Moon (2F),20
 27,Kanto,Road 10,25
@@ -603,7 +526,6 @@ Number,Region,AreaName,EncounterRate
 27,Kanto,Road 4,100
 27,Kanto,Road 8,20
 27,Kanto,Road 9,25
-27,Orre,Rock Pokespot ,50
 27,Sinnoh,Wayward Cave (1F),8
 27,Sinnoh,Wayward Cave (B1F),8
 27,Unova,Desert Resort,15
@@ -638,7 +560,6 @@ Number,Region,AreaName,EncounterRate
 29,Johto,Road 36,90
 29,Johto,Safari Zone Savannah,100
 29,Kalos,Road 11,60
-29,Kanto,Kanto Underground Path,100
 29,Kanto,Road 10,100
 29,Kanto,"Road 2 (south, towards Viridian City)",15
 29,Kanto,Road 22,100
@@ -653,9 +574,7 @@ Number,Region,AreaName,EncounterRate
 29,Unova, Route 2 (Hidden Grotto),10
 30,Johto,Safari Zone Savannah,30
 30,Kalos,Road 11,5
-30,Kanto,Celadon City Prize Corner,100
 30,Kanto,Road 10,100
-30,Kanto,Road 11,100
 30,Kanto,Road 13,90
 30,Kanto,Road 14,90
 30,Kanto,Road 15,90
@@ -686,7 +605,6 @@ Number,Region,AreaName,EncounterRate
 32,Unova, Route 2 (Hidden Grotto),10
 33,Johto,Safari Zone Savannah,30
 33,Kalos,Road 11,10
-33,Kanto,Celadon City Prize Corner,100
 33,Kanto,Road 10,100
 33,Kanto,Road 13,90
 33,Kanto,Road 14,90
@@ -705,7 +623,6 @@ Number,Region,AreaName,EncounterRate
 35,Alola,Mount Hokulani West,15
 35,Johto,Safari Zone Meadow,10
 35,Kalos,Friend Safari (Fairy),33
-35,Kanto,Celadon City Prize Corner,100
 35,Kanto,Mount Moon (1F),100
 35,Kanto,Mount Moon (2F),5
 35,Kanto,Mount Moon (B1F),100
@@ -729,7 +646,6 @@ Number,Region,AreaName,EncounterRate
 35,Unova,Giant Chasm (forest cave),40
 35,Unova,Giant Chasm (forest),60
 35,Unova,Giant Chasm (outside),30
-36,Kanto,Celadon City Prize Corner,100
 36,Kanto,Mount Moon (B2F),100
 36,Unova,Giant Chasm (forest cave),5
 36,Unova,Giant Chasm (forest),5
@@ -744,8 +660,6 @@ Number,Region,AreaName,EncounterRate
 37,Johto,Road 36,35
 37,Johto,Road 37,35
 37,Johto,Road 48,29
-37,Kanto,Celadon City,100
-37,Kanto,Celadon City Prize Corner,100
 37,Kanto,Pokemon Mansion (1F),15
 37,Kanto,Pokemon Mansion (2F),20
 37,Kanto,Pokemon Mansion (3F),20
@@ -754,7 +668,6 @@ Number,Region,AreaName,EncounterRate
 37,Kanto,Road 6,100
 37,Kanto,Road 7,100
 37,Kanto,Road 8,100
-37,Orre,ONBS 2F,100
 37,Sinnoh,Road 209,8
 37,Sinnoh,Road 214,8
 37,Unova,Abundant Shrine,40
@@ -786,7 +699,6 @@ Number,Region,AreaName,EncounterRate
 39,Unova,Road 1,20
 39,Unova,Road 14,40
 39,Unova,Road 2,10
-40,Kanto,Celadon City Prize Corner,100
 40,Kanto,Cerulean Cave (2F),5
 40,Unova,Dreamyard,5
 40,Unova,Road 1,5
@@ -796,9 +708,6 @@ Number,Region,AreaName,EncounterRate
 41,Alola,Hauoli Cemetery Area,20
 41,Alola,Lush Jungle East Cave,70
 41,Alola,Memorial Hill Area,20
-41,Alola,Poke Pelago Elite Four Defeated,4
-41,Alola,Poke Pelago Poni Island Reached,5
-41,Alola,Poke Pelago Ulaula Island Reached,6
 41,Alola,Sandy Cave Area,70
 41,Alola,Seaward Cave Area,100
 41,Alola,Ten Carat Hill Inside,30
@@ -906,7 +815,6 @@ Number,Region,AreaName,EncounterRate
 41,Kanto,Victory Road 2 (1F),20
 41,Kanto,Victory Road 2 (2F),15
 41,Kanto,Victory Road 2 (3F),15
-41,Orre,Cave Pokespot ,50
 41,Sinnoh,Acuity Lakefront,10
 41,Sinnoh,Iron Island (1F),10
 41,Sinnoh,Lost Tower (1F),60
@@ -1167,7 +1075,6 @@ Number,Region,AreaName,EncounterRate
 46,Kanto,"Safari Zone (Area 1, east)",15
 46,Kanto,"Safari Zone (Area 2, north)",15
 46,Kanto,Safari Zone (middle),5
-46,Orre,Cipher Key Lair 1F,100
 46,Sinnoh,Great Marsh Area 1,10
 46,Sinnoh,Great Marsh Area 2,10
 46,Sinnoh,Great Marsh Area 3,10
@@ -1179,7 +1086,6 @@ Number,Region,AreaName,EncounterRate
 47,Kanto,Cerulean Cave (1F),50
 47,Kanto,Cerulean Cave (2F),20
 47,Kanto,Cerulean Cave (B1F),25
-47,Kanto,Road 18,100
 47,Kanto,"Safari Zone (Area 1, east)",5
 47,Kanto,Safari Zone (middle),15
 48,Johto,Ilex Forest,30
@@ -1220,7 +1126,6 @@ Number,Region,AreaName,EncounterRate
 49,Kanto,"Safari Zone (Area 2, north)",5
 49,Kanto,"Safari Zone (Area 3, west)",5
 49,Kanto,Victory Road 2 (3F),10
-49,Orre,Cipher Key Lair Roof,100
 49,Sinnoh,Road 229,20
 49,Unova,Dreamyard,10
 50,Alola,Alola Route 5 Area,100
@@ -1232,7 +1137,6 @@ Number,Region,AreaName,EncounterRate
 50,Alola,Verdant Cavern Trial Site,35
 50,Johto,Road 48,4
 50,Kanto,Digletts Cave,100
-50,Kanto,Lavender Town Area,100
 50,Kanto,Vermilion City,90
 50,Sinnoh,Road 228,21
 51,Alola,Haina Desert Area,50
@@ -1244,22 +1148,18 @@ Number,Region,AreaName,EncounterRate
 51,Kalos,Friend Safari (Ground),33
 51,Kalos,Road 13,40
 51,Kanto,Digletts Cave,100
-51,Kanto,Road 11,100
-51,Orre,Citadark Isle Dome B1F,100
 51,Sinnoh,Road 228,30
 52,Alola,Alola Route 1 Hauoli Outskirts,30
 52,Alola,Alola Route 1 Trainers School,50
 52,Alola,Alola Route 2 South,30
 52,Alola,Hauoli City Shopping District,10
 52,Alola,Malie Garden Area,20
-52,Hoenn,Hoenn Battle Frontier,100
 52,Johto,Road 35,20
 52,Johto,Road 38,70
 52,Johto,Road 39,70
 52,Kanto,Bond Bridge,10
 52,Kanto,Canyon Entrance,10
 52,Kanto,Cape Brink,10
-52,Kanto,Cinnabar Island,100
 52,Kanto,Five Isle Meadow,10
 52,Kanto,Kindle Road,10
 52,Kanto,Road 11,30
@@ -1273,7 +1173,6 @@ Number,Region,AreaName,EncounterRate
 52,Kanto,Sevault Canyon,10
 52,Kanto,Treasure Beach,10
 52,Kanto,Water Path,10
-52,Orre,Phenac City Prestige Precept Center,100
 53,Alola,Malie Garden Area,15
 53,Hoenn,Mirage Island (Route 124),10
 53,Kanto,Bond Bridge,5
@@ -1286,7 +1185,6 @@ Number,Region,AreaName,EncounterRate
 53,Kanto,Ruin Valley,5
 53,Kanto,Sevault Canyon,5
 53,Kanto,Treasure Beach,5
-53,Kanto,Vermilion City,100
 53,Kanto,Water Path,5
 54,Alola,Brooklet Hill North,50
 54,Alola,Brooklet Hill South,50
@@ -1409,7 +1307,6 @@ Number,Region,AreaName,EncounterRate
 55,Kanto,Seafoam Islands (B2F),14
 55,Kanto,Seafoam Islands (B3F),16
 55,Kanto,Seafoam Islands (B4F),16
-55,Orre,Citadark Isle (Outside),100
 55,Sinnoh,Celestic Town,10
 55,Sinnoh,Eterna City,10
 55,Sinnoh,Great Marsh Area 1,10
@@ -1472,7 +1369,6 @@ Number,Region,AreaName,EncounterRate
 57,Kanto,Road 23,5
 57,Kanto,Road 9,15
 57,Kanto,Victory Road 2 (2F),10
-57,Orre,Cipher Key Lair 5F,100
 57,Sinnoh,Road 225,20
 57,Sinnoh,Road 226,20
 58,Alola,Alola Route 2 North,20
@@ -1489,19 +1385,14 @@ Number,Region,AreaName,EncounterRate
 58,Kanto,Road 6,100
 58,Kanto,Road 7,100
 58,Kanto,Road 8,100
-58,Orre,Cipher Key Lair 1F,100
 58,Sinnoh,Road 201,8
 58,Sinnoh,Road 202,8
 58,Unova,Virbank Complex (inner),40
 59,Kanto,Road 7,100
 59,Kanto,Road 8,100
-59,Kanto,Vermilion City,100
 60,Alola,Brooklet Hill North,60
 60,Alola,Brooklet Hill South,60
 60,Alola,Malie Garden Area,20
-60,Alola,Poke Pelago Elite Four Defeated,4
-60,Alola,Poke Pelago Poni Island Reached,5
-60,Alola,Poke Pelago Ulaula Island Reached,8
 60,Johto,Blackthorn City,100
 60,Johto,Ecruteak City,100
 60,Johto,Ilex Forest,100
@@ -1594,7 +1485,6 @@ Number,Region,AreaName,EncounterRate
 60,Unova,Victory Road 2 (unknown area 78),60
 60,Unova,Victory Road 2 (unknown area 79),60
 60,Unova,Wellspring Cave,60
-61,Alola,Konikoni City Area,100
 61,Alola,Malie Garden Area,30
 61,Johto,Ecruteak City,10
 61,Johto,Mount Silver (outside),100
@@ -1663,7 +1553,6 @@ Number,Region,AreaName,EncounterRate
 62,Kalos,Victory Road (unknown area 328),5
 62,Kanto,Cerulean Cave (1F),100
 62,Kanto,Cerulean Cave (B1F),100
-62,Orre,Citadark Isle Dome Exterior,100
 62,Unova,Challengers Cave (B2F),5
 62,Unova,Clay Tunnel,5
 62,Unova,Giant Chasm,5
@@ -1683,13 +1572,11 @@ Number,Region,AreaName,EncounterRate
 63,Hoenn,Granite Cave (B1F),10
 63,Hoenn,Granite Cave (B2F),10
 63,Hoenn,Road 116,10
-63,Johto,Goldenrod City Game Corner,100
 63,Johto,Road 34,30
 63,Johto,Road 35,30
 63,Johto,Safari Zone Plains,90
 63,Kalos,Friend Safari (Psychic),33
 63,Kalos,Road 5,10
-63,Kanto,Celadon City Prize Corner,100
 63,Kanto,Road 24,60
 63,Kanto,Road 25,30
 63,Kanto,Road 5,100
@@ -1698,9 +1585,6 @@ Number,Region,AreaName,EncounterRate
 63,Kanto,Road 8,100
 63,Sinnoh,Road 203,15
 63,Sinnoh,Road 215,10
-64,Alola,Poke Pelago Elite Four Defeated,2
-64,Alola,Poke Pelago Poni Island Reached,3
-64,Alola,Poke Pelago Ulaula Island Reached,3
 64,Kanto,Cerulean Cave (1F),5
 64,Kanto,Cerulean Cave (2F),20
 64,Kanto,Cerulean Cave (B1F),25
@@ -1708,12 +1592,10 @@ Number,Region,AreaName,EncounterRate
 64,Kanto,Road 8,100
 64,Sinnoh,Road 215,31
 64,Sinnoh,Victory Road (2F),25
-66,Alola,Alola Route 2 Main,100
 66,Alola,Ten Carat Hill Farthest Hollow,30
 66,Hoenn,Fiery Path,15
 66,Hoenn,Jagged Pass,65
 66,Hoenn,Road 112,35
-66,Johto,Goldenrod City Department Store 5F,100
 66,Johto,Mount Mortar (1F),40
 66,Johto,Mount Mortar (B1F),20
 66,Johto,Mount Mortar (Lower Cave),40
@@ -1751,7 +1633,6 @@ Number,Region,AreaName,EncounterRate
 67,Kanto,Cerulean Cave (1F),46
 67,Kanto,Cerulean Cave (2F),30
 67,Kanto,Cerulean Cave (B1F),10
-67,Kanto,Kanto Underground Path,100
 67,Kanto,"Mount Ember (1F, cave behind team rocket)",10
 67,Kanto,Mount Ember (inside),20
 67,Kanto,Rock Tunnel (1F),10
@@ -1786,7 +1667,6 @@ Number,Region,AreaName,EncounterRate
 67,Sinnoh,Victory Road (inside B1F),25
 67,Sinnoh,Victory Road (inside exit),25
 67,Sinnoh,Victory Road (inside),25
-69,Alola,Alola Route 5 Area,100
 69,Johto,Road 31,60
 69,Johto,Road 32,80
 69,Johto,Road 36,60
@@ -1831,7 +1711,6 @@ Number,Region,AreaName,EncounterRate
 70,Kanto,Road 24,40
 70,Kanto,Road 25,15
 70,Kanto,Water Path,5
-70,Orre,Cipher Key Lair Roof,100
 70,Sinnoh,Road 224,5
 70,Sinnoh,Road 229,30
 70,Sinnoh,Road 230,20
@@ -1884,7 +1763,6 @@ Number,Region,AreaName,EncounterRate
 72,Johto,Cianwood City,90
 72,Johto,New Bark Town,100
 72,Johto,Olivine City,90
-72,Johto,Pokemon Center (Cianwood City),100
 72,Johto,Road 32,100
 72,Johto,Road 34,90
 72,Johto,Road 40,90
@@ -2074,7 +1952,6 @@ Number,Region,AreaName,EncounterRate
 74,Kanto,Rock Tunnel (B1F),100
 74,Kanto,Rock Tunnel (B2F),30
 74,Kanto,Sevault Canyon,85
-74,Kanto,Vermilion City,100
 74,Kanto,Victory Road 1 (1F),100
 74,Kanto,Victory Road 1 (2F),100
 74,Kanto,Victory Road 1 (3F),100
@@ -2111,7 +1988,6 @@ Number,Region,AreaName,EncounterRate
 75,Alola,Alola Route 12 Area,30
 75,Alola,Alola Route 17 Northeast,20
 75,Alola,Blush Mountain Area,20
-75,Alola,Tapu Village Area,100
 75,Hoenn,Magma Hideout,15
 75,Hoenn,Mirage Cave (North of Route 124),85
 75,Hoenn,Mirage Cave (South East of Route 129),85
@@ -2222,10 +2098,8 @@ Number,Region,AreaName,EncounterRate
 78,Johto,Mount Silver (outside),30
 78,Kanto,Kindle Road,5
 78,Kanto,Mount Ember,5
-78,Kanto,Pewter City Area,100
 78,Kanto,Road 17,100
 78,Kanto,Road 28,40
-78,Orre,Citadark Isle 3F,100
 78,Unova,Road 12,20
 79,Alola,Alola Route 1 Hauoli Outskirts,20
 79,Alola,Alola Route 15 Main,20
@@ -2233,9 +2107,6 @@ Number,Region,AreaName,EncounterRate
 79,Alola,Alola Route 16 Main,20
 79,Alola,Alola Route 16 West,20
 79,Alola,Kalae Bay Area,20
-79,Alola,Poke Pelago Elite Four Defeated,4
-79,Alola,Poke Pelago Poni Island Reached,5
-79,Alola,Poke Pelago Ulaula Island Reached,5
 79,Hoenn,Mirage Cave (North of Fallarbor),40
 79,Hoenn,Mirage Cave (South of Pacifidlog),10
 79,Johto,Safari Zone Rocky Beach,90
@@ -2320,9 +2191,6 @@ Number,Region,AreaName,EncounterRate
 81,Alola,Alola Route 1 Trainers School,10
 81,Alola,Hauoli City Shopping District,10
 81,Alola,Malie City Outer Cape,20
-81,Alola,Poke Pelago Elite Four Defeated,4
-81,Alola,Poke Pelago Poni Island Reached,5
-81,Alola,Poke Pelago Ulaula Island Reached,6
 81,Hoenn,New Mauville,49
 81,Hoenn,New Mauville (entrance),50
 81,Hoenn,Road 110,60
@@ -2347,7 +2215,6 @@ Number,Region,AreaName,EncounterRate
 82,Kanto,Cerulean Cave (2F),10
 82,Kanto,Cerulean Cave (B1F),15
 82,Kanto,Power Plant,100
-82,Orre,Cipher Key Lair 4F,100
 82,Sinnoh,Road 222,5
 82,Sinnoh,Victory Road (2F),30
 82,Unova,P2 Laboratory,15
@@ -2361,8 +2228,6 @@ Number,Region,AreaName,EncounterRate
 83,Kalos,Road 22,20
 83,Kanto,Road 12,100
 83,Kanto,Road 13,100
-83,Kanto,Vermilion City,100
-83,Orre,Citadark Isle 1F,100
 83,Sinnoh,Road 221,40
 84,Hoenn,Safari Zone (NE/acro bike area),60
 84,Hoenn,Safari Zone (NW/mach bike area),60
@@ -2383,7 +2248,6 @@ Number,Region,AreaName,EncounterRate
 84,Kanto,"Safari Zone (Area 3, west)",20
 84,Sinnoh,Road 201,40
 85,Hoenn,Safari Zone (NW/mach bike area),5
-85,Johto,Blackthorn City,100
 85,Johto,Mount Silver (outside),10
 85,Kanto,Cerulean Cave (1F),10
 85,Kanto,Cerulean Cave (2F),20
@@ -2393,17 +2257,12 @@ Number,Region,AreaName,EncounterRate
 85,Kanto,Road 26,10
 85,Kanto,Road 27,10
 85,Kanto,Road 28,10
-85,Orre,Citadark Isle 1F,100
-86,Alola,Poke Pelago Elite Four Defeated,4
-86,Alola,Poke Pelago Poni Island Reached,5
-86,Alola,Poke Pelago Ulaula Island Reached,5
 86,Alola,Seaward Cave Area,30
 86,Johto,Road 47,30
 86,Johto,Whirl Islands (1F),65
 86,Johto,Whirl Islands (B1F),50
 86,Johto,Whirl Islands (B2F),50
 86,Johto,Whirl Islands (B3F),50
-86,Kanto,Cinnabar Lab (Cinnabar Island),100
 86,Kanto,Icefall Cave (1F),10
 86,Kanto,Icefall Cave (B1F),10
 86,Kanto,Icefall Cave (entrance),100
@@ -2413,14 +2272,12 @@ Number,Region,AreaName,EncounterRate
 86,Kanto,Seafoam Islands (B2F),100
 86,Kanto,Seafoam Islands (B3F),100
 86,Kanto,Seafoam Islands (B4F),100
-86,Orre,Phenac City Stadium,100
 86,Sinnoh,Road 226,30
 86,Sinnoh,Road 230,30
 86,Unova,Giant Chasm,90
 86,Unova,Giant Chasm (forest cave),90
 86,Unova,Seaside Cave (1F),100
 87,Kalos,Friend Safari (Ice),33
-87,Kanto,Cinnabar Lab (Cinnabar Island),100
 87,Kanto,Icefall Cave (entrance),25
 87,Kanto,Icefall Cave (waterfall),20
 87,Kanto,Seafoam Islands (1F),100
@@ -2441,7 +2298,6 @@ Number,Region,AreaName,EncounterRate
 88,Hoenn,Fiery Path,35
 88,Johto,Safari Zone Marshland,50
 88,Kanto,Celadon City,90
-88,Kanto,Cinnabar Island,100
 88,Kanto,Pokemon Mansion (1F),100
 88,Kanto,Pokemon Mansion (2F),100
 88,Kanto,Pokemon Mansion (3F),100
@@ -2450,13 +2306,11 @@ Number,Region,AreaName,EncounterRate
 88,Kanto,Road 16,100
 88,Kanto,Road 17,100
 88,Kanto,Road 18,100
-88,Orre,Phenac City Stadium,100
 88,Sinnoh,"Road 212 (east, towards Pastoria City)",22
 88,Unova,Castelia Sewers,100
 88,Unova,Castelia Sewers (unknown area 38),100
 89,Kalos,Friend Safari (Poison),33
 89,Kanto,Celadon City,10
-89,Kanto,Cinnabar Lab (Cinnabar Island),100
 89,Kanto,Pokemon Mansion (1F),100
 89,Kanto,Pokemon Mansion (2F),100
 89,Kanto,Pokemon Mansion (3F),100
@@ -2470,9 +2324,6 @@ Number,Region,AreaName,EncounterRate
 89,Unova,Road 9,10
 89,Unova,Unova Route 9 (Hidden Grotto),10
 90,Alola,Kalae Bay Area,40
-90,Alola,Poke Pelago Elite Four Defeated,4
-90,Alola,Poke Pelago Poni Island Reached,5
-90,Alola,Poke Pelago Ulaula Island Reached,6
 90,Johto,New Bark Town,40
 90,Johto,Road 41,40
 90,Johto,Road 47,40
@@ -2499,7 +2350,6 @@ Number,Region,AreaName,EncounterRate
 90,Kanto,Seafoam Islands (B3F),100
 90,Kanto,Seafoam Islands (B4F),100
 90,Kanto,Vermilion City,50
-90,Orre,Cipher Key Lair 2F,100
 90,Sinnoh,Fuego Ironworks,15
 90,Sinnoh,"Road 205 (south, towards Floaroma Town)",15
 90,Sinnoh,Valley Windworks,15
@@ -2520,9 +2370,6 @@ Number,Region,AreaName,EncounterRate
 92,Alola,Alola Route 1 Trainers School,100
 92,Alola,Hauoli Cemetery Area,50
 92,Alola,Memorial Hill Area,50
-92,Alola,Poke Pelago Elite Four Defeated,4
-92,Alola,Poke Pelago Poni Island Reached,5
-92,Alola,Poke Pelago Ulaula Island Reached,6
 92,Johto,Bell Tower (10F),80
 92,Johto,Bell Tower (2F),80
 92,Johto,Bell Tower (3F),80
@@ -2622,7 +2469,6 @@ Number,Region,AreaName,EncounterRate
 93,Sinnoh,Turnback Cave (pillar 3),50
 94,Alola,Thrifty Megamart Abandoned Site,15
 94,Sinnoh,Old Chateau (2F right room),20
-95,Alola,Ten Carat Hill Inside,100
 95,Hoenn,Mirage Cave (North of Fortree),10
 95,Hoenn,Mirage Cave (South East of Route 129),40
 95,Johto,Mount Silver (1F),60
@@ -2633,7 +2479,6 @@ Number,Region,AreaName,EncounterRate
 95,Johto,Union Cave (1F),15
 95,Johto,Union Cave (B1F),30
 95,Johto,Union Cave (B2F),15
-95,Johto,Violet City (Southwest House),100
 95,Kalos,Cyllage City,35
 95,Kalos,Friend Safari (Rock),33
 95,Kalos,Glittering Cave (unknown area 303),10
@@ -2703,7 +2548,6 @@ Number,Region,AreaName,EncounterRate
 97,Kanto,Berry Forest,100
 97,Kanto,Cerulean Cave (1F),20
 97,Kanto,Road 11,10
-97,Orre,Cipher Key Lair 5F,100
 98,Johto,Cherrygrove City,100
 98,Johto,Cianwood City,100
 98,Johto,Dark Cave (Violet City entrance),90
@@ -2818,11 +2662,9 @@ Number,Region,AreaName,EncounterRate
 99,Unova,Virbank Complex (outer),20
 100,Hoenn,New Mauville,100
 100,Hoenn,New Mauville (entrance),50
-100,Johto,Olivine City,100
 100,Johto,Team Rocket HQ,100
 100,Kanto,Power Plant,100
 100,Kanto,Road 10,90
-100,Orre,Cave Pokespot ,100
 100,Sinnoh,Road 218,40
 101,Alola,Team Rockets Castle Area,100
 101,Hoenn,New Mauville,100
@@ -2834,7 +2676,6 @@ Number,Region,AreaName,EncounterRate
 101,Kanto,Cerulean Cave (1F),5
 101,Kanto,Cerulean Cave (2F),10
 101,Kanto,Cerulean Cave (B1F),15
-101,Kanto,Cinnabar Lab (Cinnabar Island),100
 101,Kanto,Power Plant,100
 102,Alola,Ancient Poni Path Area,10
 102,Alola,Exeggutor Island Area,40
@@ -2870,11 +2711,8 @@ Number,Region,AreaName,EncounterRate
 102,Sinnoh,Great Marsh Area 5,10
 102,Sinnoh,Great Marsh Area 6,10
 103,Alola,Exeggutor Island Area,100
-103,Kanto,Indigo Plateau Area,100
 103,Kanto,Road 23,100
-103,Orre,Citadark Isle Dome 2F,100
 104,Alola,Wela Volcano Park Area,24
-104,Johto,Goldenrod City Game Corner,100
 104,Johto,Safari Zone Desert,40
 104,Kalos,Glittering Cave (unknown area 303),20
 104,Kanto,Pokemon Tower (3F),100
@@ -2889,12 +2727,10 @@ Number,Region,AreaName,EncounterRate
 104,Kanto,"Safari Zone (Area 3, west)",10
 104,Kanto,Sevault Canyon,10
 104,Sinnoh,Road 203,40
-105,Alola,Heahea Beach Area,100
 105,Johto,Safari Zone Desert,20
 105,Kalos,Friend Safari (Ground),33
 105,Kanto,Cerulean Cave (2F),10
 105,Kanto,Cerulean Cave (B1F),20
-105,Kanto,Fuchsia City,100
 105,Kanto,Road 10,10
 105,Kanto,Road 9,10
 105,Kanto,Rock Tunnel (1F),10
@@ -2905,14 +2741,7 @@ Number,Region,AreaName,EncounterRate
 105,Kanto,Victory Road 2 (1F),5
 105,Kanto,Victory Road 2 (2F),5
 105,Kanto,Victory Road 2 (3F),5
-105,Orre,Citadark Isle Dome 1F,100
 105,Unova,Road 15,40
-106,Kanto,Fighting Dojo,100
-106,Kanto,Victory Road 1 (2F),100
-106,Orre,Citadark Isle 3F,100
-107,Kanto,Fighting Dojo,100
-107,Kanto,Victory Road 1 (3F),100
-107,Orre,Citadark Isle 3F,100
 108,Alola,Poni Gauntlet Area,20
 108,Johto,Road 44,80
 108,Johto,Safari Zone Mountain,60
@@ -2923,8 +2752,6 @@ Number,Region,AreaName,EncounterRate
 108,Kanto,Cerulean Cave (1F),100
 108,Kanto,Cerulean Cave (2F),100
 108,Kanto,Cerulean Cave (B1F),100
-108,Kanto,Road 18,100
-108,Orre,Citadark Isle 6F,100
 108,Sinnoh,Lake Valor,40
 108,Sinnoh,Road 215,10
 108,Unova,Challengers Cave (1F),20
@@ -2956,7 +2783,6 @@ Number,Region,AreaName,EncounterRate
 110,Sinnoh,Stark Mountain exterior,10
 110,Sinnoh,Stark Mountain main cavern,15
 110,Unova,P2 Laboratory,15
-111,Alola,Blush Mountain Area,100
 111,Hoenn,Safari Zone (NW/mach bike area),30
 111,Johto,Safari Zone Savannah,20
 111,Kalos,Glittering Cave (unknown area 303),10
@@ -2975,16 +2801,13 @@ Number,Region,AreaName,EncounterRate
 111,Sinnoh,Stark Mountain entrance,5
 111,Sinnoh,Stark Mountain exterior,17
 111,Sinnoh,Victory Road (1F),20
-112,Johto,Blackthorn City,100
 112,Kalos,Friend Safari (Rock),33
 112,Kanto,Cerulean Cave (1F),100
 112,Kanto,Cerulean Cave (2F),100
 112,Kanto,Cerulean Cave (B1F),100
-112,Kanto,Cinnabar Lab (Cinnabar Island),100
 112,Kanto,Victory Road 1 (1F),100
 112,Kanto,Victory Road 1 (2F),100
 112,Kanto,Victory Road 1 (3F),100
-112,Orre,Citadark Isle Dome 2F,100
 112,Sinnoh,Road 227,20
 112,Sinnoh,Road 228,30
 112,Sinnoh,Stark Mountain entrance,20
@@ -2999,39 +2822,12 @@ Number,Region,AreaName,EncounterRate
 113,Kalos,Friend Safari (Normal),33
 113,Kanto,Cerulean Cave (2F),100
 113,Kanto,Cerulean Cave (B1F),10
-113,Kanto,Digletts Cave,100
-113,Kanto,Mount Moon (1F),100
-113,Kanto,Mount Moon (B1F),100
-113,Kanto,Mount Moon (B2F),100
-113,Kanto,Pokemon Mansion (1F),100
-113,Kanto,Pokemon Mansion (2F),100
-113,Kanto,Pokemon Mansion (3F),100
-113,Kanto,Pokemon Mansion (B1F),100
-113,Kanto,Pokemon Tower (3F),100
-113,Kanto,Pokemon Tower (4F),100
-113,Kanto,Pokemon Tower (5F),100
-113,Kanto,Pokemon Tower (6F),100
-113,Kanto,Power Plant,100
-113,Kanto,Road 10,100
-113,Kanto,Road 11,100
-113,Kanto,Road 12,100
 113,Kanto,Road 13,100
 113,Kanto,Road 14,100
 113,Kanto,Road 15,100
-113,Kanto,Road 16,100
-113,Kanto,Road 17,100
-113,Kanto,Road 18,100
-113,Kanto,Road 21,100
-113,Kanto,Road 23,100
-113,Kanto,Road 5,100
-113,Kanto,Road 6,100
-113,Kanto,Road 8,100
-113,Kanto,Road 9,100
 113,Kanto,"Safari Zone (Area 1, east)",4
 113,Kanto,"Safari Zone (Area 2, north)",4
 113,Kanto,Safari Zone (middle),1
-113,Kanto,Victory Road 1 (1F),100
-113,Orre,Citadark Isle 6F,100
 113,Sinnoh,Road 209,21
 113,Sinnoh,"Road 210 (south, towards Solaceon Town)",17
 114,Hoenn,Mirage Forest (East of Mossdeep),30
@@ -3043,13 +2839,11 @@ Number,Region,AreaName,EncounterRate
 114,Johto,Mount Silver (outside),90
 114,Johto,Road 44,90
 114,Kalos,Friend Safari (Grass),33
-114,Kanto,Cinnabar Lab (Cinnabar Island),100
 114,Kanto,Road 21,100
 114,Kanto,Road 28,90
 114,Kanto,"Safari Zone (Area 3, west)",1
 114,Kanto,Safari Zone (middle),4
 114,Kanto,Treasure Beach,30
-114,Orre,Cipher Key Lair 4F,100
 114,Sinnoh,Great Marsh Area 1,31
 114,Sinnoh,Great Marsh Area 2,31
 114,Sinnoh,Great Marsh Area 3,61
@@ -3067,7 +2861,6 @@ Number,Region,AreaName,EncounterRate
 115,Kanto,"Safari Zone (Area 1, east)",4
 115,Kanto,"Safari Zone (Area 2, north)",15
 115,Kanto,"Safari Zone (Area 3, west)",1
-115,Orre,Citadark Isle B1F,100
 115,Sinnoh,Great Marsh Area 1,10
 115,Sinnoh,Great Marsh Area 2,10
 115,Sinnoh,Great Marsh Area 3,10
@@ -3075,8 +2868,6 @@ Number,Region,AreaName,EncounterRate
 115,Sinnoh,Great Marsh Area 5,10
 115,Sinnoh,Great Marsh Area 6,10
 115,Unova,Road 15,20
-116,Alola,Kalae Bay Area,100
-116,Hoenn,Pacifidlog Town,100
 116,Hoenn,Road 132,15
 116,Hoenn,Road 133,15
 116,Hoenn,Road 134,15
@@ -3086,7 +2877,6 @@ Number,Region,AreaName,EncounterRate
 116,Kalos,Ambrette Town,35
 116,Kalos,Cyllage City,35
 116,Kanto,Bond Bridge,100
-116,Kanto,Celadon City Prize Corner,100
 116,Kanto,Cerulean City,100
 116,Kanto,Cinnabar Island,100
 116,Kanto,Five Island,100
@@ -3332,9 +3122,6 @@ Number,Region,AreaName,EncounterRate
 119,Unova,Striaton City,20
 120,Alola,Alola Route 7 Area,40
 120,Alola,Hano Beach Area,80
-120,Alola,Poke Pelago Elite Four Defeated,4
-120,Alola,Poke Pelago Poni Island Reached,5
-120,Alola,Poke Pelago Ulaula Island Reached,8
 120,Hoenn,Lilycove City,15
 120,Johto,Cherrygrove City,40
 120,Johto,Cianwood City,40
@@ -3372,43 +3159,30 @@ Number,Region,AreaName,EncounterRate
 121,Kanto,Road 18,100
 121,Kanto,Road 19,100
 121,Kanto,Road 21,100
-121,Orre,Citadark Isle Dome Exterior,100
 121,Unova,Humilau City,5
 121,Unova,Road 13,10
 121,Unova,Undella Town,5
 122,Alola,Hauoli City Shopping District,15
-122,Alola,Poke Pelago Elite Four Defeated,2
-122,Alola,Poke Pelago Poni Island Reached,3
-122,Alola,Poke Pelago Ulaula Island Reached,3
 122,Johto,Safari Zone Forest,40
 122,Kalos,Reflection Cave (unknown area 305),20
 122,Kalos,Reflection Cave (unknown area 306),20
 122,Kalos,Reflection Cave (unknown area 307),20
 122,Kalos,Reflection Cave (unknown area 308),20
-122,Kanto,Celadon City Prize Corner,100
 122,Kanto,Road 11,100
-122,Kanto,"Road 2 (north, towards Pewter City)",100
 122,Kanto,Road 21,20
-122,Orre,Citadark Isle Dome Exterior,100
 122,Sinnoh,Road 218,25
 122,Sinnoh,Road 222,15
-123,Alola,Poke Pelago Elite Four Defeated,7
 123,Alola,Poni Plains Center,30
 123,Kalos,Road 21,25
-123,Kanto,Celadon City Prize Corner,100
 123,Kanto,Road 14,100
 123,Kanto,Road 15,100
 123,Kanto,"Safari Zone (Area 1, east)",1
 123,Kanto,"Safari Zone (Area 2, north)",4
 123,Kanto,Safari Zone (middle),4
-123,Orre,Citadark Isle 6F,100
 123,Sinnoh,"Road 210 (south, towards Solaceon Town)",15
 123,Sinnoh,"Road 210 (west, towards Celestic Town)",15
 123,Sinnoh,Road 215,15
 123,Sinnoh,Road 229,5
-124,Alola,Poke Pelago Elite Four Defeated,2
-124,Alola,Poke Pelago Poni Island Reached,3
-124,Alola,Poke Pelago Ulaula Island Reached,3
 124,Alola,Seaward Cave Area,15
 124,Johto,Ice Path (1F),20
 124,Johto,Ice Path (B1F),20
@@ -3418,7 +3192,6 @@ Number,Region,AreaName,EncounterRate
 124,Kalos,Frost Cavern (unknown area 315),20
 124,Kalos,Frost Cavern (unknown area 316),20
 124,Kalos,Frost Cavern (unknown area 317),20
-124,Kanto,Cerulean City,100
 124,Kanto,Seafoam Islands (1F),100
 124,Kanto,Seafoam Islands (B1F),100
 124,Kanto,Seafoam Islands (B2F),100
@@ -3437,7 +3210,6 @@ Number,Region,AreaName,EncounterRate
 125,Kalos,Friend Safari (Electric),33
 125,Kanto,Power Plant,100
 125,Kanto,Road 10,20
-125,Orre,Citadark Isle Dome Exterior,100
 125,Sinnoh,Road 222,40
 126,Alola,Wela Volcano Park Area,15
 126,Johto,Burned Tower (B1F),25
@@ -3449,33 +3221,26 @@ Number,Region,AreaName,EncounterRate
 126,Kanto,Pokemon Mansion (2F),100
 126,Kanto,Pokemon Mansion (3F),100
 126,Kanto,Pokemon Mansion (B1F),100
-126,Orre,Citadark Isle 2F,100
 126,Sinnoh,Fuego Ironworks,40
 127,Alola,Exeggutor Island Area,55
 127,Alola,Lush Jungle North,10
 127,Alola,Lush Jungle South,4
 127,Alola,Lush Jungle West,4
-127,Alola,Poke Pelago Elite Four Defeated,4
-127,Alola,Poke Pelago Poni Island Reached,5
-127,Alola,Poke Pelago Ulaula Island Reached,8
 127,Alola,Poni Grove Area,10
 127,Hoenn,Safari Zone (NW/mach bike area),5
 127,Kalos,Friend Safari (Bug),33
 127,Kalos,Road 12,10
-127,Kanto,Celadon City Prize Corner,100
 127,Kanto,Road 14,100
 127,Kanto,Road 15,100
 127,Kanto,"Safari Zone (Area 1, east)",1
 127,Kanto,"Safari Zone (Area 2, north)",1
 127,Kanto,"Safari Zone (Area 3, west)",4
 127,Kanto,Safari Zone (middle),4
-127,Orre,Citadark Isle 2F,100
 127,Sinnoh,Road 229,40
 127,Unova,Lostlorn Forest,10
 127,Unova,Lostlorn Forest (Hidden Grotto),4
 127,Unova,Road 12,30
 128,Alola,Paniola Ranch Area,20
-128,Alola,Poni Gauntlet Area,100
 128,Alola,Poni Plains Center,25
 128,Alola,Poni Plains East,25
 128,Alola,Poni Plains North,25
@@ -3490,7 +3255,6 @@ Number,Region,AreaName,EncounterRate
 128,Kanto,"Safari Zone (Area 1, east)",10
 128,Kanto,"Safari Zone (Area 2, north)",1
 128,Kanto,"Safari Zone (Area 3, west)",10
-128,Orre,Citadark Isle Dome 2F,100
 128,Sinnoh,Road 209,20
 128,Sinnoh,"Road 210 (south, towards Solaceon Town)",20
 129,Alola,Akala Outskirts Area,95
@@ -3643,8 +3407,6 @@ Number,Region,AreaName,EncounterRate
 129,Kanto,One Island,100
 129,Kanto,Outcast Island,100
 129,Kanto,Pallet Town,100
-129,Kanto,Pokemon Center (Road 3),100
-129,Kanto,Pokemon Center (Road 4),100
 129,Kanto,Resort Gorgeous,100
 129,Kanto,Road 10,100
 129,Kanto,Road 11,100
@@ -3735,7 +3497,6 @@ Number,Region,AreaName,EncounterRate
 129,Sinnoh,Valley Windworks,100
 129,Sinnoh,Victory Road (B1F),100
 129,Sinnoh,Victory Road (inside B1F),100
-129,Unova,Marvelous Bridge,100
 129,Unova,Nature Sanctuary,100
 130,Alola,Akala Outskirts Area,30
 130,Alola,Alola Route 13 Area,15
@@ -3871,8 +3632,6 @@ Number,Region,AreaName,EncounterRate
 130,Sinnoh,Victory Road (inside B1F),100
 130,Unova,Nature Sanctuary,20
 131,Alola,Ancient Poni Path Area,5
-131,Alola,Poke Pelago Elite Four Defeated,7
-131,Alola,Poke Pelago Poni Island Reached,8
 131,Alola,Poni Breaker Coast Area,5
 131,Alola,Poni Wilds Area,5
 131,Johto,Safari Zone Rocky Beach,20
@@ -3881,10 +3640,6 @@ Number,Region,AreaName,EncounterRate
 131,Kalos,Friend Safari (Ice),33
 131,Kalos,Road 12,100
 131,Kanto,Icefall Cave (waterfall),1
-131,Kanto,Road 19,100
-131,Kanto,Road 20,100
-131,Kanto,Silph Co. 7F,100
-131,Orre,Citadark Isle Dome 1F,100
 131,Sinnoh,Victory Road (inside B1F),10
 131,Unova,Village Bridge,5
 132,Alola,Alola Route 9 Main,30
@@ -3920,110 +3675,26 @@ Number,Region,AreaName,EncounterRate
 133,Alola,Alola Route 4 Area,5
 133,Alola,Alola Route 6 North,5
 133,Alola,Alola Route 6 South,5
-133,Alola,Paniola Ranch Area,100
-133,Johto,Goldenrod City (Bill's house),100
 133,Kalos,Friend Safari (Normal),33
 133,Kalos,Road 10,25
-133,Kanto,Celadon City Prize Corner,100
-133,Kanto,Celadon Mansion rooftop,100
-133,Kanto,Pallet Town,100
 133,Kanto,Road 17,100
-133,Orre,Pokemon HQ Lab ,100
-133,Sinnoh,Hearthome City,100
 133,Unova,Castelia City,100
-137,Alola,Alola Route 15 Aether House,100
 137,Hoenn,Mirage Island (East of Shoal Cave),40
 137,Hoenn,Mirage Mountain (South East of Route 129),10
-137,Kanto,Celadon City Prize Corner,100
-137,Kanto,Road 7,100
-137,Kanto,Silph Co.,100
-137,Sinnoh,Veilstone City,100
-138,Alola,Alola Route 8 Fossil Restoration Center,100
-138,Kanto,Cinnabar Lab (Cinnabar Island),100
-138,Kanto,Pewter Museum of Science,100
-138,Sinnoh,Oreburgh Mining Museum,100
-140,Alola,Alola Route 8 Fossil Restoration Center,100
-140,Kanto,Cinnabar Lab (Cinnabar Island),100
-140,Kanto,Pewter Museum of Science,100
-140,Sinnoh,Oreburgh Mining Museum,100
-142,Alola,Seafolk Village Huntail Boat,100
-142,Kanto,Cinnabar Lab (Cinnabar Island),100
-142,Kanto,Pewter Museum of Science,100
-142,Kanto,Road 14,100
-142,Sinnoh,Oreburgh Mining Museum,100
 143,Alola,Alola Route 1 South,15
 143,Kalos,Road 7,100
-143,Kanto,Cerulean Cave (1F),100
-143,Kanto,Cerulean Cave (2F),100
-143,Kanto,Cerulean Cave (B1F),100
-143,Kanto,Road 11,100
-143,Kanto,Road 12,100
-143,Kanto,Road 16,100
-143,Kanto,Vermilion City,100
-143,Orre,Citadark Isle Dome Exterior,100
 144,Alola,Ultra Space Wilds Cliff,100
 144,Alola,Ultra Space Wilds Cliff World,15
 144,Kalos,Roaming Kalos,100
 144,Kalos,Sea Spirits Den Area,100
-144,Kanto,Road 1,100
-144,Kanto,Road 10,100
-144,Kanto,Road 11,100
-144,Kanto,Road 12,100
-144,Kanto,Road 13,100
-144,Kanto,Road 14,100
-144,Kanto,Road 15,100
-144,Kanto,Road 16,100
-144,Kanto,Road 17,100
-144,Kanto,Road 18,100
-144,Kanto,Road 19,100
-144,Kanto,"Road 2 (north, towards Pewter City)",100
-144,Kanto,"Road 2 (south, towards Viridian City)",100
-144,Kanto,Road 20,100
-144,Kanto,Road 21,100
-144,Kanto,Road 22,100
-144,Kanto,Road 23,100
-144,Kanto,Road 24,100
-144,Kanto,Road 25,100
-144,Kanto,Road 3,100
-144,Kanto,Road 4,100
-144,Kanto,Road 6,100
-144,Kanto,Road 7,100
-144,Kanto,Road 8,100
-144,Kanto,Road 9,100
 144,Kanto,Seafoam Islands (B4F),100
-144,Orre,Citadark Isle Dome 2F,100
 144,Sinnoh,Roaming Sinnoh,50
 145,Alola,Ultra Space Wilds Cliff,100
 145,Alola,Ultra Space Wilds Cliff World,15
 145,Kalos,Roaming Kalos,100
 145,Kalos,Sea Spirits Den Area,100
 145,Kanto,Power Plant,100
-145,Kanto,Road 1,100
 145,Kanto,Road 10,100
-145,Kanto,Road 11,100
-145,Kanto,Road 12,100
-145,Kanto,Road 13,100
-145,Kanto,Road 14,100
-145,Kanto,Road 15,100
-145,Kanto,Road 16,100
-145,Kanto,Road 17,100
-145,Kanto,Road 18,100
-145,Kanto,Road 19,100
-145,Kanto,"Road 2 (north, towards Pewter City)",100
-145,Kanto,"Road 2 (south, towards Viridian City)",100
-145,Kanto,Road 20,100
-145,Kanto,Road 21,100
-145,Kanto,Road 22,100
-145,Kanto,Road 23,100
-145,Kanto,Road 24,100
-145,Kanto,Road 25,100
-145,Kanto,Road 3,100
-145,Kanto,Road 4,100
-145,Kanto,Road 6,100
-145,Kanto,Road 7,100
-145,Kanto,Road 8,100
-145,Kanto,Road 9,100
-145,Orre,Citadark Isle Dome 2F,100
 145,Sinnoh,Roaming Sinnoh,50
 146,Alola,Ultra Space Wilds Cliff,100
 146,Alola,Ultra Space Wilds Cliff World,15
@@ -4031,44 +3702,16 @@ Number,Region,AreaName,EncounterRate
 146,Kalos,Roaming Kalos,100
 146,Kalos,Sea Spirits Den Area,100
 146,Kanto,Mount Ember Summit,100
-146,Kanto,Road 1,100
-146,Kanto,Road 10,100
-146,Kanto,Road 11,100
-146,Kanto,Road 12,100
-146,Kanto,Road 13,100
-146,Kanto,Road 14,100
-146,Kanto,Road 15,100
-146,Kanto,Road 16,100
-146,Kanto,Road 17,100
-146,Kanto,Road 18,100
-146,Kanto,Road 19,100
-146,Kanto,"Road 2 (north, towards Pewter City)",100
-146,Kanto,"Road 2 (south, towards Viridian City)",100
-146,Kanto,Road 20,100
-146,Kanto,Road 21,100
-146,Kanto,Road 22,100
-146,Kanto,Road 23,100
-146,Kanto,Road 24,100
-146,Kanto,Road 25,100
-146,Kanto,Road 3,100
-146,Kanto,Road 4,100
-146,Kanto,Road 6,100
-146,Kanto,Road 7,100
-146,Kanto,Road 8,100
-146,Kanto,Road 9,100
 146,Kanto,Victory Road 1 (2F),100
 146,Kanto,Victory Road 2 (2F),100
-146,Orre,Citadark Isle Dome 2F,100
 146,Sinnoh,Roaming Sinnoh,50
 147,Alola,Poni Gauntlet Area,11
 147,Alola,Poni Meadow Area,11
 147,Alola,Vast Poni Canyon Northwest,11
 147,Johto,Dragon's Den,100
-147,Johto,Goldenrod City Game Corner,100
 147,Johto,Road 45,40
 147,Johto,Safari Zone Swamp,20
 147,Kalos,Road 21,5
-147,Kanto,Celadon City Prize Corner,100
 147,Kanto,Road 10,100
 147,Kanto,"Safari Zone (Area 1, east)",25
 147,Kanto,"Safari Zone (Area 2, north)",25
@@ -4076,7 +3719,6 @@ Number,Region,AreaName,EncounterRate
 147,Kanto,Safari Zone (middle),25
 147,Sinnoh,Mount Coronet (4F),40
 147,Unova,Dragonspiral Tower (outside),100
-147,Unova,Floccesy Town,100
 148,Alola,Poni Gauntlet Area,30
 148,Alola,Poni Meadow Area,30
 148,Alola,Vast Poni Canyon Northwest,30
@@ -4084,7 +3726,6 @@ Number,Region,AreaName,EncounterRate
 148,Johto,Road 45,10
 148,Kalos,Friend Safari (Dragon),33
 148,Kalos,Road 21,5
-148,Kanto,Celadon City Prize Corner,100
 148,Kanto,Road 10,100
 148,Kanto,"Safari Zone (Area 1, east)",1
 148,Kanto,"Safari Zone (Area 2, north)",1
@@ -4093,32 +3734,6 @@ Number,Region,AreaName,EncounterRate
 148,Sinnoh,Mount Coronet (4F),5
 148,Unova,Dragonspiral Tower (outside),24
 149,Alola,Poni Gauntlet Area,30
-149,Kanto,Road 1,100
-149,Kanto,Road 10,100
-149,Kanto,Road 11,100
-149,Kanto,Road 12,100
-149,Kanto,Road 13,100
-149,Kanto,Road 14,100
-149,Kanto,Road 15,100
-149,Kanto,Road 16,100
-149,Kanto,Road 17,100
-149,Kanto,Road 18,100
-149,Kanto,Road 19,100
-149,Kanto,"Road 2 (north, towards Pewter City)",100
-149,Kanto,"Road 2 (south, towards Viridian City)",100
-149,Kanto,Road 20,100
-149,Kanto,Road 21,100
-149,Kanto,Road 22,100
-149,Kanto,Road 23,100
-149,Kanto,Road 24,100
-149,Kanto,Road 25,100
-149,Kanto,Road 3,100
-149,Kanto,Road 4,100
-149,Kanto,Road 6,100
-149,Kanto,Road 7,100
-149,Kanto,Road 8,100
-149,Kanto,Road 9,100
-149,Orre,Gateon Port (Lighthouse Top),100
 149,Unova,Dragonspiral Tower (outside),1
 149,Unova,Unova Route 18 (Hidden Grotto),5
 150,Alola,Ultra Space Wilds Crag,100
@@ -4126,30 +3741,6 @@ Number,Region,AreaName,EncounterRate
 150,Kalos,Unknown Dungeon Area,100
 150,Kanto,Cerulean Cave (B1F),100
 151,Hoenn,Faraway Island,100
-152,Alola,Alola Route 2 Main,100
-152,Hoenn,Littleroot Town,100
-152,Hoenn,Road 101,100
-152,Johto,New Bark Town,100
-152,Orre,Mt. Battle Lobby,100
-153,Orre,Phenac City (West Exit),100
-153,Orre,Shadow Pokémon Lab B2F,100
-153,Orre,Snagem Hideout 1F,100
-155,Alola,Alola Route 3 Main,100
-155,Hoenn,Littleroot Town,100
-155,Hoenn,Road 101,100
-155,Johto,New Bark Town,100
-155,Orre,Mt. Battle Lobby,100
-156,Orre,Phenac City (East Exit),100
-156,Orre,Shadow Pokémon Lab B2F,100
-156,Orre,Snagem Hideout 1F,100
-158,Alola,Seaward Cave Area,100
-158,Hoenn,Littleroot Town,100
-158,Hoenn,Road 101,100
-158,Johto,New Bark Town,100
-158,Orre,Mt. Battle Lobby,100
-159,Orre,Phenac City (South Exit),100
-159,Orre,Shadow Pokémon Lab B2F,100
-159,Orre,Snagem Hideout 1F,100
 161,Johto,Road 29,80
 161,Johto,Road 43,60
 161,Johto,Safari Zone Swamp,90
@@ -4162,13 +3753,9 @@ Number,Region,AreaName,EncounterRate
 161,Sinnoh,Road 202,22
 162,Johto,Road 43,30
 162,Kanto,Road 1,10
-162,Orre,Pyrite Town (Entrance),100
 163,Alola,Lush Jungle North,20
 163,Alola,Lush Jungle South,20
 163,Alola,Lush Jungle West,20
-163,Alola,Poke Pelago Elite Four Defeated,4
-163,Alola,Poke Pelago Poni Island Reached,5
-163,Alola,Poke Pelago Ulaula Island Reached,8
 163,Hoenn,Safari Zone (expansion north),5
 163,Hoenn,Safari Zone (expansion south),5
 163,Johto,Ilex Forest,100
@@ -4228,7 +3815,6 @@ Number,Region,AreaName,EncounterRate
 164,Kanto,Road 5,20
 164,Kanto,Road 8,40
 164,Kanto,Viridian Forest,15
-164,Orre,Pyrite Town (Duel Square),100
 164,Sinnoh,Acuity Lakefront,10
 164,Sinnoh,Great Marsh Area 1,20
 164,Sinnoh,Great Marsh Area 2,20
@@ -4265,7 +3851,6 @@ Number,Region,AreaName,EncounterRate
 165,Kanto,Pattern Bush,30
 165,Kanto,"Road 2 (north, towards Pewter City)",34
 165,Kanto,"Road 2 (south, towards Viridian City)",34
-165,Orre,Gateon Port (Across Bridge),100
 166,Alola,Alola Route 10 Area,20
 166,Alola,Alola Route 11 Area,20
 166,Alola,Alola Route 17 West,20
@@ -4273,8 +3858,6 @@ Number,Region,AreaName,EncounterRate
 166,Alola,Ulaula Meadow Area,20
 166,Kanto,"Road 2 (north, towards Pewter City)",9
 166,Kanto,"Road 2 (south, towards Viridian City)",9
-166,Orre,Snagem Hideout 1F,100
-166,Orre,The Under,100
 166,Sinnoh,Road 229,20
 166,Unova,Dreamyard,10
 166,Unova,Dreamyard (B1F),5
@@ -4295,7 +3878,6 @@ Number,Region,AreaName,EncounterRate
 167,Kanto,Pattern Bush,30
 167,Kanto,"Road 2 (north, towards Pewter City)",35
 167,Kanto,"Road 2 (south, towards Viridian City)",35
-167,Orre,Cipher Lab B2F,100
 168,Alola,Alola Route 10 Area,20
 168,Alola,Alola Route 11 Area,20
 168,Alola,Alola Route 17 West,35
@@ -4308,7 +3890,6 @@ Number,Region,AreaName,EncounterRate
 168,Kalos,Friend Safari (Poison),33
 168,Kanto,"Road 2 (north, towards Pewter City)",5
 168,Kanto,"Road 2 (south, towards Viridian City)",5
-168,Orre,Shadow Pokémon Lab B2F,100
 168,Sinnoh,Road 229,20
 168,Unova,Dreamyard,10
 168,Unova,Dreamyard (B1F),5
@@ -4359,38 +3940,23 @@ Number,Region,AreaName,EncounterRate
 172,Alola,Alola Route 1 East,5
 172,Alola,Alola Route 1 West,5
 172,Alola,Hauoli City Shopping District,5
-172,Johto,Road 34,100
 172,Sinnoh,Trophy Garden,30
 173,Alola,Mount Hokulani East,20
 173,Alola,Mount Hokulani Main,10
 173,Alola,Mount Hokulani West,20
-173,Johto,Road 34,100
 173,Sinnoh,Mount Coronet (1F Road 207),25
 173,Sinnoh,Mount Coronet (1F Road 211),29
 174,Alola,Alola Route 4 Area,20
 174,Alola,Alola Route 6 North,20
 174,Alola,Alola Route 6 South,20
-174,Johto,Road 34,100
-175,Hoenn,Lavaridge Town,100
-175,Johto,Violet City,100
-175,Johto,Violet City (Poke Mart),100
 175,Kalos,Friend Safari (Fairy),33
-175,Kanto,Water Labyrinth,100
-175,Orre,Outskirt Stand (Inside),100
-175,Orre,Phenac City (Card E Room),100
-175,Sinnoh,Eterna City (west gate),100
 175,Sinnoh,Road 230,22
-176,Orre,Outskirt Stand (Outside),100
 177,Alola,Akala Outskirts Area,20
-177,Alola,Poke Pelago Elite Four Defeated,4
-177,Alola,Poke Pelago Poni Island Reached,5
-177,Alola,Poke Pelago Ulaula Island Reached,8
 177,Hoenn,Safari Zone (NE/acro bike area),15
 177,Hoenn,Safari Zone (SE),10
 177,Hoenn,Safari Zone (SW),10
 177,Johto,Ruins of Alph (outside),100
 177,Kanto,Ruin Valley,25
-177,Orre,Phenac City Prestige Precept Center,100
 177,Sinnoh,Road 224,40
 178,Alola,Akala Outskirts Area,15
 178,Hoenn,Mirage Island (Route 124),30
@@ -4401,27 +3967,18 @@ Number,Region,AreaName,EncounterRate
 178,Hoenn,Mirage Mountain (South East of Route 129),60
 178,Hoenn,Safari Zone (NE/acro bike area),5
 178,Kalos,Friend Safari (Psychic),33
-178,Kanto,Pewter City Area,100
 179,Alola,Paniola Ranch Area,30
 179,Hoenn,Safari Zone (expansion south),30
 179,Johto,Road 32,50
 179,Johto,Road 42,100
 179,Johto,Road 43,25
-179,Johto,Violet City (Pokemon Center),100
 179,Kalos,Road 12,35
 179,Kanto,Altering Cave (B),100
-179,Orre,Cipher Lab (Outside),100
-179,Orre,Phenac City (Card E Room),100
 179,Sinnoh,Valley Windworks,22
 179,Unova,Floccesy Ranch (inner),10
-180,Alola,Poke Pelago Elite Four Defeated,2
-180,Alola,Poke Pelago Poni Island Reached,3
-180,Alola,Poke Pelago Ulaula Island Reached,3
 180,Johto,Road 42,30
 180,Johto,Road 43,100
-180,Orre,Pyrite Town (Duel Square),100
 180,Sinnoh,Road 222,22
-183,Alola,Brooklet Hill Main,100
 183,Hoenn,Petalburg City,100
 183,Hoenn,Road 102,99
 183,Hoenn,Road 104,20
@@ -4484,12 +4041,7 @@ Number,Region,AreaName,EncounterRate
 185,Alola,Lush Jungle North,15
 185,Alola,Lush Jungle South,15
 185,Alola,Lush Jungle West,15
-185,Hoenn,Hoenn Battle Frontier,100
-185,Johto,Road 36,100
 185,Kalos,Road 20,5
-185,Orre,Pyrite Cave (Miror's Hideout),100
-185,Orre,Realgam Tower,100
-185,Orre,The Under (Deep Colosseum),100
 185,Sinnoh,Road 214,27
 185,Sinnoh,Road 221,25
 186,Alola,Malie Garden Area,1
@@ -4519,13 +4071,11 @@ Number,Region,AreaName,EncounterRate
 187,Kanto,Road 14,20
 187,Kanto,Road 15,38
 187,Kanto,Water Labyrinth,30
-187,Orre,Oasis Pokespot ,50
 187,Sinnoh,Fuego Ironworks,20
 187,Sinnoh,"Road 205 (east, towards Eterna City)",20
 187,Sinnoh,"Road 205 (south, towards Floaroma Town)",22
 188,Johto,Safari Zone Meadow,20
 188,Kanto,Road 14,18
-188,Orre,Pyrite Town (Duel Square),100
 188,Sinnoh,Fuego Ironworks,2
 188,Sinnoh,"Road 205 (east, towards Eterna City)",2
 190,Alola,Poni Plains West,20
@@ -4544,7 +4094,6 @@ Number,Region,AreaName,EncounterRate
 190,Johto,Road 46,60
 190,Kalos,Friend Safari (Normal),33
 190,Kanto,Altering Cave (F),100
-190,Orre,Shadow Pokémon Lab B1F,100
 190,Sinnoh,Eterna Forest,25
 190,Sinnoh,Floaroma Meadow,25
 190,Sinnoh,Fuego Ironworks,25
@@ -4581,14 +4130,10 @@ Number,Region,AreaName,EncounterRate
 191,Sinnoh,"Road 204 (north, towards Floaroma Town)",22
 191,Unova,Road 12,40
 191,Unova,Road 20,76
-192,Orre,Realgam Tower,100
-192,Orre,Snagem Hideout 1F,100
 192,Unova,Road 12,5
 193,Johto,Road 35,93
 193,Kalos,Road 10,35
 193,Kanto,Ruin Valley,10
-193,Orre,Pyrite Bldg 1F,100
-193,Orre,Snagem Hideout 1F,100
 193,Sinnoh,Great Marsh Area 1,31
 193,Sinnoh,Great Marsh Area 2,31
 193,Sinnoh,Great Marsh Area 3,31
@@ -4607,12 +4152,10 @@ Number,Region,AreaName,EncounterRate
 194,Johto,Safari Zone Wetland,70
 194,Johto,Union Cave (1F),80
 194,Johto,Union Cave (B1F),80
-194,Johto,Violet City (Pokemon Center),100
 194,Kalos,Friend Safari (Ground),33
 194,Kanto,Four Island,70
 194,Kanto,Icefall Cave (entrance),5
 194,Kanto,Ruin Valley,100
-194,Orre,Cave Pokespot ,15
 194,Sinnoh,Great Marsh Area 1,100
 194,Sinnoh,Great Marsh Area 2,100
 194,Sinnoh,Great Marsh Area 3,100
@@ -4645,7 +4188,6 @@ Number,Region,AreaName,EncounterRate
 195,Kanto,Road 15,39
 195,Kanto,Road 26,11
 195,Kanto,Road 27,65
-195,Orre,Pyrite Town (Duel Square),100
 195,Sinnoh,Great Marsh Area 1,30
 195,Sinnoh,Great Marsh Area 2,30
 195,Sinnoh,Great Marsh Area 3,30
@@ -4656,15 +4198,10 @@ Number,Region,AreaName,EncounterRate
 196,Alola,Alola Route 4 Area,15
 196,Alola,Alola Route 6 North,15
 196,Alola,Alola Route 6 South,15
-196,Orre,Outskirt Stand (Outside),100
 197,Alola,Alola Route 4 Area,15
 197,Alola,Alola Route 6 North,15
 197,Alola,Alola Route 6 South,15
-197,Orre,Outskirt Stand (Outside),100
 198,Alola,Hauoli Cemetery Area,40
-198,Alola,Poke Pelago Elite Four Defeated,2
-198,Alola,Poke Pelago Poni Island Reached,3
-198,Alola,Poke Pelago Ulaula Island Reached,3
 198,Alola,Vast Poni Canyon Outside,10
 198,Johto,Safari Zone Swamp,50
 198,Kalos,Road 15,60
@@ -4683,7 +4220,6 @@ Number,Region,AreaName,EncounterRate
 198,Kanto,Road 16,15
 198,Kanto,Road 18,10
 198,Kanto,Road 7,35
-198,Orre,Shadow Pokémon Lab B1F,100
 198,Sinnoh,Eterna Forest,20
 198,Sinnoh,Lost Tower (1F),20
 198,Sinnoh,Lost Tower (2F),20
@@ -4695,8 +4231,6 @@ Number,Region,AreaName,EncounterRate
 199,Alola,Kalae Bay Area,15
 199,Unova,Abundant Shrine,5
 200,Alola,Hauoli Cemetery Area,30
-200,Alola,Poke Pelago Elite Four Defeated,2
-200,Alola,Poke Pelago Poni Island Reached,3
 200,Alola,Poni Meadow Area,10
 200,Johto,Mount Silver (1F top),10
 200,Johto,Mount Silver (2F),10
@@ -4716,7 +4250,6 @@ Number,Region,AreaName,EncounterRate
 200,Kanto,Lost Cave (room 7),5
 200,Kanto,Lost Cave (room 8),5
 200,Kanto,Lost Cave (room 9),5
-200,Orre,Pyrite Town (Duel Square),100
 200,Sinnoh,Eterna Forest,20
 200,Sinnoh,Lost Tower (1F),20
 200,Sinnoh,Lost Tower (2F),20
@@ -4757,7 +4290,6 @@ Number,Region,AreaName,EncounterRate
 202,Hoenn,Safari Zone (SE),10
 202,Hoenn,Safari Zone (SW),10
 202,Johto,Dark Cave (Blackthorn City entrance),15
-202,Johto,Goldenrod City Game Corner,100
 202,Johto,Safari Zone Peak,20
 202,Kalos,Friend Safari (Psychic),33
 202,Kalos,Reflection Cave (unknown area 305),10
@@ -4802,7 +4334,6 @@ Number,Region,AreaName,EncounterRate
 204,Kanto,Altering Cave (C),100
 204,Kanto,Road 26,30
 204,Kanto,Road 27,30
-204,Orre,Phenac City (Mayor's House),100
 204,Sinnoh,Eterna Forest,8
 204,Sinnoh,Road 203,8
 204,Sinnoh,"Road 204 (north, towards Floaroma Town)",8
@@ -4815,7 +4346,6 @@ Number,Region,AreaName,EncounterRate
 205,Hoenn,Mirage Mountain (South of Route 131),30
 205,Hoenn,Mirage Mountain (West of Route 104),30
 205,Kalos,Friend Safari (Steel),33
-205,Orre,Shadow Pokémon Lab B2F,100
 206,Alola,Alola Route 2 North,15
 206,Alola,Alola Route 2 South,15
 206,Johto,Dark Cave (Violet City entrance),100
@@ -4823,7 +4353,6 @@ Number,Region,AreaName,EncounterRate
 206,Kalos,Road 22,10
 206,Kalos,Road 3,5
 206,Kanto,Three Isle Port,100
-206,Orre,Pyrite Cave (South Sewers),100
 206,Sinnoh,Road 208,40
 206,Unova,Dreamyard,10
 206,Unova,Floccesy Ranch (Hidden Grotto),5
@@ -4843,9 +4372,6 @@ Number,Region,AreaName,EncounterRate
 207,Hoenn,Safari Zone (expansion south),5
 207,Johto,Road 45,60
 207,Kalos,Road 19,35
-207,Orre,Rock Pokespot ,35
-207,Orre,Snagem Hideout 1F,100
-207,Orre,The Under (Subway),100
 207,Sinnoh,Road 206,30
 207,Sinnoh,Road 207,8
 207,Sinnoh,Road 214,8
@@ -4879,7 +4405,6 @@ Number,Region,AreaName,EncounterRate
 208,Unova,Rocky Mountain Room,5
 208,Unova,Twist Mountain,5
 208,Unova,Underground Ruins,5
-209,Alola,Poke Pelago Elite Four Defeated,7
 209,Hoenn,Safari Zone (expansion south),5
 209,Johto,Road 34,60
 209,Johto,Road 35,60
@@ -4896,7 +4421,6 @@ Number,Region,AreaName,EncounterRate
 210,Alola,Poni Grove Area,20
 210,Alola,Poni Wilds Area,20
 210,Kanto,Road 6,10
-210,Orre,Shadow Pokémon Lab B2F,100
 210,Unova, Route 2 (Hidden Grotto),5
 211,Johto,Road 32,100
 211,Kalos,Road 8,60
@@ -4911,7 +4435,6 @@ Number,Region,AreaName,EncounterRate
 211,Kanto,Trainer Tower,40
 211,Kanto,Water Labyrinth,40
 211,Kanto,Water Path,40
-211,Orre,Pyrite Cave (Outside),100
 211,Sinnoh,Iron Island area,15
 211,Unova,P2 Laboratory,40
 211,Unova,Road 17,40
@@ -4919,11 +4442,8 @@ Number,Region,AreaName,EncounterRate
 211,Unova,Road 4,45
 211,Unova,Virbank City,5
 211,Unova,Virbank Complex (outer),5
-212,Orre,Phenac City (Card E Room),100
 213,Hoenn,Safari Zone (expansion north),100
 213,Johto,Cianwood City,10
-213,Johto,Cianwood City (Kirk's house),100
-213,Johto,Cianwood City (Mania's house),100
 213,Johto,Dark Cave (Violet City entrance),10
 213,Johto,Road 40,10
 213,Kalos,Friend Safari (Rock),33
@@ -4935,8 +4455,6 @@ Number,Region,AreaName,EncounterRate
 213,Kalos,Victory Road (unknown area 324),5
 213,Kanto,Altering Cave (G),100
 213,Kanto,Vermilion City,10
-213,Orre,Pyrite Town (Duking's House),100
-213,Orre,The Under (Deep Colosseum),100
 213,Sinnoh,Road 224,8
 213,Unova,Road 14,10
 213,Unova,Seaside Cave (B1F),5
@@ -4956,8 +4474,6 @@ Number,Region,AreaName,EncounterRate
 214,Kalos,Friend Safari (Bug),33
 214,Kalos,Road 12,10
 214,Kanto,Pattern Bush,20
-214,Orre,Realgam Tower,100
-214,Orre,Snagem Hideout 1F,100
 214,Sinnoh,Eterna Forest,5
 214,Sinnoh,Floaroma Meadow,5
 214,Sinnoh,Fuego Ironworks,5
@@ -4997,8 +4513,6 @@ Number,Region,AreaName,EncounterRate
 215,Kanto,Icefall Cave (1F),5
 215,Kanto,Icefall Cave (B1F),5
 215,Kanto,Road 28,10
-215,Orre,Snagem Hideout 1F,100
-215,Orre,The Under (Subway),100
 215,Sinnoh,Acuity Lakefront,51
 215,Sinnoh,Lake Acuity,33
 215,Sinnoh,Road 216,35
@@ -5022,7 +4536,6 @@ Number,Region,AreaName,EncounterRate
 216,Johto,Road 45,10
 216,Kalos,Friend Safari (Normal),33
 216,Kanto,Altering Cave (E),100
-216,Orre,Pokemon HQ Lab (Outside),100
 216,Sinnoh,Acuity Lakefront,8
 216,Sinnoh,Lake Acuity,8
 216,Sinnoh,"Road 211 (east, towards Celestic Town)",8
@@ -5041,14 +4554,12 @@ Number,Region,AreaName,EncounterRate
 217,Kanto,Victory Road 1 (1F),20
 217,Kanto,Victory Road 1 (2F),20
 217,Kanto,Victory Road 1 (3F),20
-217,Orre,Snagem Hideout 2F,100
 217,Sinnoh,Acuity Lakefront,8
 217,Sinnoh,Lake Acuity,8
 217,Sinnoh,Road 216,8
 217,Sinnoh,Road 217,8
 218,Hoenn,Fiery Path,10
 218,Hoenn,Road 113,25
-218,Johto,Violet City (Pokemon Center),100
 218,Kalos,Friend Safari (Fire),33
 218,Kalos,Road 13,34
 218,Kanto,Mount Ember (B1F),30
@@ -5057,23 +4568,19 @@ Number,Region,AreaName,EncounterRate
 218,Kanto,Road 16,15
 218,Kanto,Road 17,45
 218,Kanto,Road 18,15
-218,Orre,Pyrite Town (Duel Square),100
 218,Sinnoh,Stark Mountain entrance,21
 218,Sinnoh,Stark Mountain main cavern,21
 219,Alola,Ultra Space Wilds Cave,15
 219,Kalos,Friend Safari (Rock),33
 219,Kanto,Mount Ember (B3F),10
-219,Orre,Citadark Isle 3F,100
 219,Sinnoh,Stark Mountain entrance,30
 219,Sinnoh,Stark Mountain main cavern,40
-220,Alola,Tapu Village Area,100
 220,Johto,Ice Path (1F),100
 220,Johto,Ice Path (B1F),100
 220,Johto,Ice Path (B2F),100
 220,Johto,Ice Path (B3F),100
 220,Kanto,Icefall Cave (1F),50
 220,Kanto,Icefall Cave (B1F),50
-220,Orre,Phenac City Stadium (Outside),100
 220,Sinnoh,Acuity Lakefront,35
 220,Sinnoh,Road 217,40
 221,Kalos,Friend Safari (Ice),33
@@ -5081,8 +4588,6 @@ Number,Region,AreaName,EncounterRate
 221,Kalos,Frost Cavern (unknown area 315),20
 221,Kalos,Frost Cavern (unknown area 316),20
 221,Kalos,Frost Cavern (unknown area 317),20
-221,Orre,Snagem Hideout 1F,100
-221,Orre,The Under (Subway),100
 221,Sinnoh,Road 217,22
 221,Unova,Giant Chasm,25
 221,Unova,Giant Chasm (forest cave),60
@@ -5090,11 +4595,7 @@ Number,Region,AreaName,EncounterRate
 222,Alola,Alola Route 9 Main,15
 222,Alola,Hauoli City Beachfront,40
 222,Alola,Melemele Sea Area,30
-222,Alola,Poke Pelago Elite Four Defeated,4
-222,Alola,Poke Pelago Poni Island Reached,5
-222,Alola,Poke Pelago Ulaula Island Reached,5
 222,Hoenn,Ever Grande City,15
-222,Hoenn,Pacifidlog Town,100
 222,Hoenn,Road 128,15
 222,Johto,Cherrygrove City,80
 222,Johto,Cianwood City,80
@@ -5129,8 +4630,6 @@ Number,Region,AreaName,EncounterRate
 223,Kanto,Trainer Tower,40
 223,Kanto,Water Labyrinth,40
 223,Kanto,Water Path,40
-223,Orre,Pyrite Bldg 4F,100
-223,Orre,Pyrite Cave (Miror's Hideout),100
 223,Sinnoh,Pastoria City,45
 223,Sinnoh,"Road 212 (east, towards Pastoria City)",45
 223,Sinnoh,Road 213,45
@@ -5174,8 +4673,6 @@ Number,Region,AreaName,EncounterRate
 225,Kalos,Road 17,40
 225,Kanto,Icefall Cave (1F),5
 225,Kanto,Icefall Cave (B1F),5
-225,Orre,Realgam Tower,100
-225,Orre,Snagem Hideout 1F,100
 225,Sinnoh,Road 216,40
 225,Sinnoh,Road 217,40
 225,Unova,Giant Chasm,10
@@ -5186,8 +4683,6 @@ Number,Region,AreaName,EncounterRate
 226,Johto,Road 41,10
 226,Kanto,Tanoby Ruins,5
 226,Kanto,Trainer Tower,5
-226,Orre,Pyrite Bldg 4F,100
-226,Orre,Pyrite Cave (Miror's Hideout),100
 226,Unova,Road 21,5
 226,Unova,Undella Bay,15
 226,Unova,Undella Town,10
@@ -5195,29 +4690,21 @@ Number,Region,AreaName,EncounterRate
 227,Alola,Alola Route 17 Northeast,15
 227,Alola,Mount Hokulani Main,10
 227,Alola,Mount Hokulani West,10
-227,Alola,Poke Pelago Elite Four Defeated,4
-227,Alola,Poke Pelago Poni Island Reached,8
 227,Alola,Vast Poni Canyon Outside,10
 227,Hoenn,Road 113,5
 227,Johto,Road 45,10
 227,Kalos,Friend Safari (Steel),33
 227,Kanto,Sevault Canyon,5
-227,Orre,Realgam Tower,100
-227,Orre,Snagem Hideout 2F,100
 227,Sinnoh,Road 227,5
 227,Sinnoh,Stark Mountain exterior,5
 227,Unova,Reversal Mountain (unknown area 48),20
-228,Alola,Poke Pelago Elite Four Defeated,2
-228,Alola,Poke Pelago Poni Island Reached,3
 228,Hoenn,Safari Zone (expansion north),5
 228,Kalos,Road 10,35
 228,Kanto,Altering Cave (D),100
 228,Kanto,Road 7,20
-228,Orre,Cipher Lab (Outside),100
 228,Sinnoh,Road 214,41
 228,Sinnoh,Valor Lakefront,20
 229,Alola,Alola Route 12 Area,20
-229,Orre,Realgam Tower Colosseum,100
 229,Sinnoh,Road 214,22
 229,Sinnoh,Road 215,22
 230,Unova,P2 Laboratory,5
@@ -5233,7 +4720,6 @@ Number,Region,AreaName,EncounterRate
 231,Kalos,Friend Safari (Ground),33
 231,Kanto,Canyon Entrance,15
 231,Kanto,Sevault Canyon,20
-231,Orre,Oasis Pokespot ,35
 231,Sinnoh,Road 207,40
 232,Hoenn,Mirage Mountain (North East of Route 125),30
 232,Hoenn,Mirage Mountain (North of Lilycove),30
@@ -5258,8 +4744,6 @@ Number,Region,AreaName,EncounterRate
 234,Johto,Road 37,90
 234,Johto,Safari Zone Plains,20
 234,Kanto,Altering Cave (H),100
-234,Orre,Snagem Hideout 1F,100
-234,Orre,The Under (Subway),100
 234,Sinnoh,Road 207,22
 234,Unova,Abundant Shrine,20
 235,Alola,Alola Route 2 North,10
@@ -5270,19 +4754,12 @@ Number,Region,AreaName,EncounterRate
 235,Kalos,Friend Safari (Normal),33
 235,Kalos,Road 7,30
 235,Kanto,Altering Cave (I),100
-235,Orre,Snagem Hideout 2F,100
 235,Sinnoh,Road 208,22
 235,Sinnoh,"Road 212 (north, towards Hearthome City)",22
-236,Johto,Mount Mortar (B1F),100
-236,Johto,Road 34,100
 236,Kalos,Friend Safari (Fighting),33
 236,Sinnoh,Road 208,22
 236,Sinnoh,"Road 211 (west, towards Eterna City)",22
-237,Orre,Agate Village (Relic Forest),100
-237,Orre,Shadow Pokémon Lab B1F,100
-237,Orre,Snagem Hideout 1F,100
 238,Alola,Seaward Cave Area,30
-238,Johto,Road 34,100
 238,Kalos,Frost Cavern (unknown area 313),5
 238,Kalos,Frost Cavern (unknown area 314),5
 238,Kalos,Frost Cavern (unknown area 315),5
@@ -5294,15 +4771,12 @@ Number,Region,AreaName,EncounterRate
 239,Alola,Blush Mountain Area,10
 239,Alola,Mount Hokulani West,10
 239,Hoenn,Mirage Mountain (South of Route 129),40
-239,Johto,Road 34,100
-239,Orre,Outskirt Stand (Inside),100
 239,Sinnoh,"Road 205 (south, towards Floaroma Town)",8
 239,Sinnoh,Valley Windworks,8
 239,Unova,Virbank Complex (inner),50
 239,Unova,Virbank Complex (outer),15
 240,Alola,Wela Volcano Park Area,15
 240,Hoenn,Mirage Mountain (North of Mossdeep),40
-240,Johto,Road 34,100
 240,Sinnoh,Road 227,8
 240,Sinnoh,Stark Mountain entrance,8
 240,Sinnoh,Stark Mountain exterior,8
@@ -5319,7 +4793,6 @@ Number,Region,AreaName,EncounterRate
 241,Johto,Road 39,15
 241,Johto,Road 47,20
 241,Kalos,Road 12,45
-241,Orre,Realgam Tower Colosseum,100
 241,Sinnoh,Road 209,20
 241,Sinnoh,"Road 210 (south, towards Solaceon Town)",20
 242,Alola,Poni Plains Center,15
@@ -5328,17 +4801,11 @@ Number,Region,AreaName,EncounterRate
 243,Hoenn,Trackless Forest Area,100
 243,Johto,Wandert durch Johto,25
 243,Kanto,Roaming Kanto,25
-243,Orre,Realgam Tower,100
-243,Orre,Shadow Pokémon Lab B2F,100
-243,Orre,The Under (Deep Colosseum),100
 244,Alola,Ultra Space Wilds Crag,100
 244,Alola,Ultra Space Wilds Rocky World,15
 244,Hoenn,Trackless Forest Area,100
 244,Johto,Wandert durch Johto,25
 244,Kanto,Roaming Kanto,25
-244,Orre,Mt. Battle 10F,100
-244,Orre,Realgam Tower,100
-244,Orre,The Under (Deep Colosseum),100
 245,Alola,Ultra Space Wilds Water World,15
 245,Alola,Ultra Space Wilds Waterfall,100
 245,Hoenn,Trackless Forest Area,100
@@ -5346,9 +4813,6 @@ Number,Region,AreaName,EncounterRate
 245,Johto,Wandert durch Johto,10
 245,Kanto,Road 25,100
 245,Kanto,Roaming Kanto,25
-245,Orre,Realgam Tower,100
-245,Orre,The Under (Deep Colosseum),100
-245,Orre,The Under (TV Studio),100
 246,Alola,Digletts Tunnel Area,10
 246,Johto,Mount Silver (1F top),5
 246,Johto,Mount Silver (1F),10
@@ -5363,9 +4827,7 @@ Number,Region,AreaName,EncounterRate
 246,Kalos,Terminus Cave (unknown area 345),5
 246,Kalos,Terminus Cave (unknown area 347),5
 246,Kalos,Terminus Cave (unknown area 348),5
-246,Kanto,Celadon City Prize Corner,100
 246,Kanto,Sevault Canyon,5
-246,Orre,Pyrite Town (Duking's House),100
 246,Sinnoh,Road 206,40
 246,Sinnoh,Road 207,22
 247,Johto,Mount Silver (3F),5
@@ -5378,7 +4840,6 @@ Number,Region,AreaName,EncounterRate
 247,Kalos,Terminus Cave (unknown area 347),20
 247,Kalos,Terminus Cave (unknown area 348),20
 247,Unova,Road 15,30
-248,Orre,Realgam Tower Colosseum,100
 248,Unova,Road 15,5
 249,Alola,Ultra Space Wilds Water World,15
 249,Alola,Ultra Space Wilds Waterfall,100
@@ -5386,25 +4847,12 @@ Number,Region,AreaName,EncounterRate
 249,Johto,Whirl Islands (B2F),100
 249,Johto,Whirl Islands (B3F),100
 249,Kanto,Navel Rock,100
-249,Orre,Citadark Isle Dome 2F,100
 250,Alola,Ultra Space Wilds Cliff,100
 250,Alola,Ultra Space Wilds Cliff World,15
 250,Hoenn,Sea Mauville (Inside),100
 250,Johto,Bell Tower (roof),100
 250,Kanto,Navel Rock,100
-250,Orre,Mt. Battle 100F,100
-251,Hoenn,Hoenn Pokecenter Area,100
 251,Johto,Ilex Forest,100
-251,Kanto,Kanto Pokecenter Area,100
-252,Hoenn,Road 101,100
-252,Kanto,Silph Co.,100
-253,Alola,Alola Route 5 Area,100
-255,Hoenn,Road 101,100
-255,Kanto,Silph Co.,100
-256,Alola,Alola Route 8 Main,100
-258,Hoenn,Road 101,100
-258,Kanto,Silph Co.,100
-259,Alola,Brooklet Hill Main,100
 261,Hoenn,Petalburg Woods,30
 261,Hoenn,Road 101,45
 261,Hoenn,Road 102,30
@@ -5417,7 +4865,6 @@ Number,Region,AreaName,EncounterRate
 261,Hoenn,Road 121,20
 261,Hoenn,Road 123,20
 261,Kanto,Road 1,40
-261,Orre,Gateon Port (Lighthouse Top),100
 261,Sinnoh,Road 214,22
 262,Hoenn,Road 120,30
 262,Hoenn,Road 121,20
@@ -5591,8 +5038,6 @@ Number,Region,AreaName,EncounterRate
 273,Hoenn,Road 114,35
 273,Hoenn,Road 117,1
 273,Hoenn,Road 120,1
-273,Hoenn,Rustboro City,100
-273,Orre,Cipher Lab (Outside),100
 273,Sinnoh,Eterna Forest,8
 273,Sinnoh,Road 203,8
 273,Sinnoh,"Road 204 (north, towards Floaroma Town)",8
@@ -5613,7 +5058,6 @@ Number,Region,AreaName,EncounterRate
 276,Kalos,Road 8,5
 277,Alola,Ultra Space Wilds Cliff,15
 277,Hoenn,Road 115,10
-277,Orre,Citadark Isle Dome Exterior,100
 277,Sinnoh,Road 213,22
 277,Unova,Giant Chasm (outside),40
 277,Unova,Road 13,40
@@ -5628,9 +5072,6 @@ Number,Region,AreaName,EncounterRate
 278,Alola,Hauoli City Shopping District,20
 278,Alola,Kalae Bay Area,60
 278,Alola,Melemele Sea Area,20
-278,Alola,Poke Pelago Elite Four Defeated,4
-278,Alola,Poke Pelago Poni Island Reached,5
-278,Alola,Poke Pelago Ulaula Island Reached,6
 278,Hoenn,Dewford Town,35
 278,Hoenn,Ever Grande City,35
 278,Hoenn,Hoenn Route 104 South Oras,5
@@ -5758,11 +5199,9 @@ Number,Region,AreaName,EncounterRate
 279,Unova,Undella Bay,10
 279,Unova,Undella Town,10
 279,Unova,Unova Route 22 (Hidden Grotto),20
-280,Alola,Alola Route 6 North,100
 280,Hoenn,Road 102,5
 280,Johto,Road 34,40
 280,Kalos,Road 4,10
-280,Orre,ONBS Roof,100
 280,Sinnoh,Road 203,21
 280,Sinnoh,"Road 204 (south, towards Jubilife City)",21
 280,Sinnoh,Road 208,15
@@ -5780,7 +5219,6 @@ Number,Region,AreaName,EncounterRate
 283,Hoenn,Road 114,2
 283,Hoenn,Road 117,2
 283,Hoenn,Road 120,2
-283,Orre,Oasis Pokespot ,15
 283,Sinnoh,Lake Verity (after Galactic intervention),40
 283,Sinnoh,Lake Verity (before Galactic intervention),40
 283,Sinnoh,Road 229,95
@@ -5789,7 +5227,6 @@ Number,Region,AreaName,EncounterRate
 284,Kalos,Road 3,66
 284,Sinnoh,Road 229,5
 285,Hoenn,Petalburg Woods,15
-285,Orre,Cipher Lab B1F,100
 285,Sinnoh,Great Marsh Area 1,10
 285,Sinnoh,Great Marsh Area 2,10
 285,Sinnoh,Great Marsh Area 3,10
@@ -5800,7 +5237,6 @@ Number,Region,AreaName,EncounterRate
 286,Unova,Pinwheel Forest (Hidden Grotto – Inner area),19
 287,Hoenn,Petalburg Woods,5
 287,Sinnoh,Eterna Forest,40
-288,Alola,Alola Route 11 Area,100
 288,Unova,Pinwheel Forest (inside),30
 289,Unova,Pinwheel Forest (inside),5
 290,Hoenn,Road 116,35
@@ -5847,7 +5283,6 @@ Number,Region,AreaName,EncounterRate
 296,Hoenn,Granite Cave (1F),50
 296,Hoenn,Granite Cave (1F/small room),50
 296,Hoenn,Granite Cave (B1F),10
-296,Hoenn,Rustboro City,100
 296,Hoenn,Victory Road (1F),10
 296,Johto,Dark Cave (Blackthorn City entrance),20
 296,Johto,Dark Cave (Violet City entrance),20
@@ -5893,8 +5328,6 @@ Number,Region,AreaName,EncounterRate
 296,Kanto,Victory Road 1 (1F),20
 296,Kanto,Victory Road 1 (2F),20
 296,Kanto,Victory Road 1 (3F),20
-296,Orre,ONBS 2F,100
-296,Orre,Phenac City (Mayor's House),100
 296,Sinnoh,Road 225,40
 297,Alola,Poni Plains Center,30
 297,Alola,Poni Plains North,30
@@ -5918,11 +5351,6 @@ Number,Region,AreaName,EncounterRate
 299,Hoenn,Granite Cave (B2F),30
 299,Kalos,Friend Safari (Rock),33
 299,Kalos,Road 10,60
-299,Orre,Cave Pokespot ,100
-299,Orre,Oasis Pokespot ,100
-299,Orre,Pyrite Town Colosseum,100
-299,Orre,Realgam Tower Colosseum,100
-299,Orre,Rock Pokespot ,100
 299,Sinnoh,Mount Coronet (1F Road 207),5
 299,Sinnoh,Mount Coronet (1F Road 211),5
 299,Sinnoh,Mount Coronet (1F Road 216),5
@@ -5946,12 +5374,10 @@ Number,Region,AreaName,EncounterRate
 299,Unova,Rocky Mountain Room,15
 299,Unova,Underground Ruins,15
 299,Unova,Unova Route 6 (Hidden Grotto – Mistralton Cave),5
-300,Hoenn,Fortree City,100
 300,Hoenn,Road 116,5
 300,Kalos,Road 4,20
 300,Sinnoh,Road 222,40
 300,Unova,Castelia City,30
-301,Orre,Cipher Lab B1F,100
 301,Unova,Castelia City,5
 302,Alola,Ten Carat Hill Inside,15
 302,Alola,Vast Poni Canyon Inside,15
@@ -5972,7 +5398,6 @@ Number,Region,AreaName,EncounterRate
 302,Kalos,Reflection Cave (unknown area 307),5
 302,Kalos,Reflection Cave (unknown area 308),5
 302,Kanto,Road 9,40
-302,Orre,Citadark Isle (Outside),100
 302,Sinnoh,Iron Island (B1F left),8
 302,Sinnoh,Iron Island (B1F right),8
 302,Sinnoh,Iron Island (B2F left),8
@@ -5997,7 +5422,6 @@ Number,Region,AreaName,EncounterRate
 303,Kalos,Friend Safari (Steel),33
 303,Kalos,Glittering Cave (unknown area 303),5
 303,Kanto,Road 9,40
-303,Orre,ONBS 4F,100
 303,Sinnoh,Iron Island (B1F left),8
 303,Sinnoh,Iron Island (B1F right),8
 303,Sinnoh,Iron Island (B2F left),8
@@ -6016,7 +5440,6 @@ Number,Region,AreaName,EncounterRate
 304,Kalos,Terminus Cave (unknown area 345),5
 304,Kalos,Terminus Cave (unknown area 347),5
 304,Kalos,Terminus Cave (unknown area 348),5
-304,Orre,Cave Pokespot ,35
 304,Sinnoh,Fuego Ironworks,22
 304,Unova,Guidance Chamber,20
 304,Unova,Mistralton Cave,20
@@ -6034,7 +5457,6 @@ Number,Region,AreaName,EncounterRate
 305,Unova,Iron Room,15
 305,Unova,Rocky Mountain Room,15
 305,Unova,Underground Ruins,15
-306,Alola,Poni Plains Center,100
 307,Hoenn,Mount Pyre (outside),35
 307,Hoenn,Mount Pyre (summit),35
 307,Hoenn,Victory Road (B1F),5
@@ -6053,8 +5475,6 @@ Number,Region,AreaName,EncounterRate
 307,Johto,Sprout Tower (3F),20
 307,Kalos,Connecting Cave,30
 307,Kalos,Friend Safari (Fighting),33
-307,Orre,Pyrite Cave B1F,100
-307,Orre,Pyrite Town (Duking's House),100
 307,Sinnoh,Acuity Lakefront,20
 307,Sinnoh,Mount Coronet (1F Road 207),30
 307,Sinnoh,Mount Coronet (1F Road 211),41
@@ -6087,8 +5507,6 @@ Number,Region,AreaName,EncounterRate
 308,Sinnoh,Victory Road (inside exit),15
 308,Sinnoh,Victory Road (inside),15
 308,Unova,Pinwheel Forest (Hidden Grotto – Outer area),75
-309,Alola,Poke Pelago Elite Four Defeated,2
-309,Alola,Poke Pelago Poni Island Reached,3
 309,Hoenn,Road 110,30
 309,Hoenn,Road 118,60
 309,Kalos,Road 10,35
@@ -6096,9 +5514,7 @@ Number,Region,AreaName,EncounterRate
 310,Alola,Alola Route 12 Area,20
 310,Hoenn,Road 118,10
 310,Kalos,Friend Safari (Electric),33
-310,Orre,Citadark Isle Dome 1F,100
 310,Unova,Unova Route 3 (Hidden Grotto – Dark Grass),20
-311,Hoenn,Fortree City,100
 311,Hoenn,Road 110,40
 311,Johto,National Park,20
 311,Johto,Road 29,20
@@ -6123,7 +5539,6 @@ Number,Region,AreaName,EncounterRate
 311,Kanto,Road 5,20
 311,Kanto,Road 7,20
 311,Kanto,Road 8,20
-311,Orre,Pyrite Town (Duking's House),100
 312,Hoenn,Road 110,40
 312,Johto,National Park,20
 312,Johto,Road 29,20
@@ -6156,10 +5571,8 @@ Number,Region,AreaName,EncounterRate
 314,Kalos,Friend Safari (Bug),33
 314,Kalos,Road 7,30
 314,Sinnoh,Road 229,10
-315,Alola,Ulaula Meadow Area,100
 315,Hoenn,Road 117,35
 315,Kalos,Road 7,35
-315,Orre,Phenac City Prestige Precept Center,100
 315,Sinnoh,Great Marsh Area 1,10
 315,Sinnoh,Great Marsh Area 2,10
 315,Sinnoh,Great Marsh Area 3,10
@@ -6183,7 +5596,6 @@ Number,Region,AreaName,EncounterRate
 316,Hoenn,Road 110,15
 316,Kalos,Road 5,80
 316,Kanto,Road 3,40
-316,Orre,Cipher Lab (Outside),100
 316,Sinnoh,Great Marsh Area 1,10
 316,Sinnoh,Great Marsh Area 2,10
 316,Sinnoh,Great Marsh Area 3,10
@@ -6196,7 +5608,6 @@ Number,Region,AreaName,EncounterRate
 318,Hoenn,Road 118,80
 318,Hoenn,Road 119,100
 318,Kalos,Road 22,35
-318,Orre,Cipher Lab B1F,100
 318,Sinnoh,Great Marsh Area 1,45
 318,Sinnoh,Great Marsh Area 2,45
 318,Sinnoh,Great Marsh Area 3,45
@@ -6206,7 +5617,6 @@ Number,Region,AreaName,EncounterRate
 318,Unova,Village Bridge,100
 319,Alola,Ancient Poni Path Area,30
 319,Alola,Poni Breaker Coast Area,30
-319,Hoenn,Battle Resort,100
 319,Hoenn,Mossdeep City,40
 319,Hoenn,Pacifidlog Town,40
 319,Hoenn,Road 103,40
@@ -6280,7 +5690,6 @@ Number,Region,AreaName,EncounterRate
 322,Hoenn,Road 112,75
 322,Johto,Ilex Forest,20
 322,Kanto,Viridian Forest,20
-322,Orre,Cipher Lab B1F,100
 322,Sinnoh,Road 227,17
 322,Sinnoh,Stark Mountain exterior,17
 322,Unova,Reversal Mountain (unknown area 48),20
@@ -6296,7 +5705,6 @@ Number,Region,AreaName,EncounterRate
 322,Unova,Reversal Mountain (unknown area 58),20
 322,Unova,Reversal Mountain (unknown area 59),20
 322,Unova,Reversal Mountain (unknown area 60),20
-323,Hoenn,Battle Resort,100
 323,Kalos,Friend Safari (Ground),33
 323,Sinnoh,Road 227,20
 323,Sinnoh,Stark Mountain entrance,5
@@ -6377,11 +5785,9 @@ Number,Region,AreaName,EncounterRate
 328,Hoenn,Road 111,35
 328,Kalos,Friend Safari (Ground),33
 328,Kalos,Road 13,40
-328,Orre,Rock Pokespot ,15
 328,Sinnoh,Road 228,2
 328,Unova,Desert Resort,5
 328,Unova,Reversal Mountain (unknown area 48),15
-329,Orre,Shadow Pokémon Lab B1F,100
 329,Sinnoh,Road 228,20
 329,Unova,Reversal Mountain (unknown area 48),5
 331,Hoenn,Road 111,20
@@ -6395,7 +5801,6 @@ Number,Region,AreaName,EncounterRate
 333,Hoenn,Sky Pillar (5F),5
 333,Johto,Road 45,40
 333,Kalos,Road 21,35
-333,Orre,Pyrite Cave B1F (Post Sewers),100
 333,Sinnoh,"Road 210 (west, towards Celestic Town)",30
 333,Sinnoh,"Road 211 (east, towards Celestic Town)",22
 333,Unova,Abundant Shrine,20
@@ -6404,7 +5809,6 @@ Number,Region,AreaName,EncounterRate
 334,Alola,Ultra Space Wilds Cliff,15
 334,Hoenn,Sky Pillar (5F),6
 334,Kalos,Road 21,40
-334,Orre,Citadark Isle 1F,100
 334,Unova,Abundant Shrine,20
 334,Unova,Nature Sanctuary,40
 334,Unova,Road 14,20
@@ -6412,7 +5816,6 @@ Number,Region,AreaName,EncounterRate
 334,Unova,Victory Road 2 (unknown area 79),40
 335,Hoenn,Road 114,19
 335,Kalos,Road 8,55
-335,Orre,Cipher Key Lair (Outside),100
 335,Sinnoh,Road 208,8
 335,Sinnoh,"Road 210 (west, towards Celestic Town)",8
 335,Unova,Road 11,20
@@ -6435,7 +5838,6 @@ Number,Region,AreaName,EncounterRate
 337,Hoenn,Meteor Falls (back),45
 337,Hoenn,Meteor Falls (back/small room),35
 337,Kalos,Glittering Cave (unknown area 303),10
-337,Orre,Phenac City Stadium,100
 337,Sinnoh,Lake Acuity,8
 337,Sinnoh,Lake Valor,8
 337,Sinnoh,Lake Verity (after Galactic intervention),8
@@ -6468,7 +5870,6 @@ Number,Region,AreaName,EncounterRate
 338,Hoenn,Meteor Falls (back),45
 338,Hoenn,Meteor Falls (back/small room),35
 338,Kalos,Glittering Cave (unknown area 303),10
-338,Orre,Citadark Isle Dome Exterior,100
 338,Sinnoh,Lake Acuity,8
 338,Sinnoh,Lake Valor,8
 338,Sinnoh,Lake Verity (after Galactic intervention),8
@@ -6499,7 +5900,6 @@ Number,Region,AreaName,EncounterRate
 339,Alola,Paniola Town Area,70
 339,Alola,Poni Gauntlet Area,80
 339,Alola,Poni Meadow Area,80
-339,Alola,Royal Avenue Area,100
 339,Alola,Seaward Cave Area,70
 339,Alola,Vast Poni Canyon Northwest,80
 339,Hoenn,Meteor Falls,100
@@ -6589,21 +5989,12 @@ Number,Region,AreaName,EncounterRate
 343,Alola,Haina Desert Area,75
 343,Hoenn,Road 111,24
 343,Kanto,Road 3,40
-343,Orre,Cipher Lab (Outside),100
 343,Sinnoh,Road 206,22
 343,Unova,Relic Castle (D),100
 344,Hoenn,Sky Pillar (1F),25
 344,Hoenn,Sky Pillar (3F),25
 344,Hoenn,Sky Pillar (5F),19
 344,Unova,Relic Castle (D),100
-345,Alola,Alola Route 8 Fossil Restoration Center,100
-345,Hoenn,Rustboro City,100
-345,Kanto,Pewter Museum of Science,100
-345,Sinnoh,Oreburgh Mining Museum,100
-347,Alola,Alola Route 8 Fossil Restoration Center,100
-347,Hoenn,Rustboro City,100
-347,Kanto,Pewter Museum of Science,100
-347,Sinnoh,Oreburgh Mining Museum,100
 349,Alola,Brooklet Hill North,11
 349,Alola,Brooklet Hill South,11
 349,Hoenn,Road 119,50
@@ -6621,11 +6012,8 @@ Number,Region,AreaName,EncounterRate
 351,Alola,Mount Lanakila Base,11
 351,Alola,Mount Lanakila Outside,12
 351,Alola,Tapu Village Area,12
-351,Hoenn,Weather Institute (Road 119),100
 351,Unova,Road 6,5
 352,Alola,Dividing Peak Tunnel Area,100
-352,Hoenn,Lavaridge Town,100
-352,Hoenn,Mossdeep Space Center,100
 352,Hoenn,Road 118,5
 352,Hoenn,Road 119,100
 352,Hoenn,Road 120,100
@@ -6653,12 +6041,9 @@ Number,Region,AreaName,EncounterRate
 353,Hoenn,Road 121,60
 353,Hoenn,Road 123,60
 353,Kalos,Friend Safari (Ghost),33
-354,Alola,Poke Pelago Elite Four Defeated,2
-354,Alola,Poke Pelago Poni Island Reached,3
 354,Hoenn,Sky Pillar (1F),15
 354,Hoenn,Sky Pillar (3F),15
 354,Hoenn,Sky Pillar (5F),15
-354,Orre,Citadark Isle B1F,100
 354,Sinnoh,Road 225,20
 354,Sinnoh,Road 226,20
 354,Sinnoh,Road 227,10
@@ -6677,7 +6062,6 @@ Number,Region,AreaName,EncounterRate
 355,Hoenn,Mount Pyre (summit),85
 355,Hoenn,Road 121,30
 355,Hoenn,Road 123,30
-355,Orre,ONBS 3F,100
 355,Sinnoh,Lost Tower (1F),20
 355,Sinnoh,Lost Tower (2F),20
 355,Sinnoh,Lost Tower (3F),20
@@ -6702,10 +6086,8 @@ Number,Region,AreaName,EncounterRate
 356,Sinnoh,Turnback Cave (pillar 2),27
 356,Sinnoh,Turnback Cave (pillar 3),27
 357,Alola,Exeggutor Island Area,20
-357,Alola,Poke Pelago Elite Four Defeated,7
 357,Hoenn,Road 119,9
 357,Kalos,Friend Safari (Flying),33
-357,Orre,Realgam Tower Colosseum,100
 357,Sinnoh,Great Marsh Area 1,50
 357,Sinnoh,Great Marsh Area 2,50
 357,Sinnoh,Great Marsh Area 3,10
@@ -6777,7 +6159,6 @@ Number,Region,AreaName,EncounterRate
 359,Kanto,Victory Road 1 (1F),20
 359,Kanto,Victory Road 1 (2F),20
 359,Kanto,Victory Road 1 (3F),20
-359,Orre,Realgam Tower Colosseum,100
 359,Sinnoh,Mount Coronet (exterior blizzard),17
 359,Sinnoh,Mount Coronet (exterior snowfall),17
 359,Sinnoh,Road 213,40
@@ -6785,7 +6166,6 @@ Number,Region,AreaName,EncounterRate
 359,Unova,Road 13,30
 359,Unova,Road 14,30
 359,Unova,Unova Route 23 (Hidden Grotto),10
-360,Hoenn,Lavaridge Town,100
 360,Hoenn,Mirage Island,100
 360,Hoenn,Road 130,100
 361,Alola,Alola Route 14 Area,20
@@ -6795,21 +6175,18 @@ Number,Region,AreaName,EncounterRate
 361,Alola,Tapu Village Area,20
 361,Hoenn,Shoal Cave B3F,10
 361,Kalos,Friend Safari (Ice),33
-361,Orre,Phenac City (Mayor's House),100
 361,Sinnoh,Acuity Lakefront,22
 361,Sinnoh,Lake Acuity,20
 361,Sinnoh,Road 216,22
 361,Sinnoh,Road 217,22
 362,Alola,Mount Lanakila Cave,30
 362,Alola,Mount Lanakila Outside,30
-363,Alola,Alola Route 7 Area,100
 363,Hoenn,Shoal Cave,60
 363,Hoenn,Shoal Cave (B1F),50
 363,Hoenn,Shoal Cave B2F,50
 363,Hoenn,Shoal Cave B3F,45
 363,Hoenn,Shoal Cave Low Tide,50
 363,Kalos,Friend Safari (Ice),33
-363,Orre,Cipher Lab (Outside),100
 363,Sinnoh,Road 226,30
 363,Sinnoh,Road 230,30
 363,Unova,Undella Bay,30
@@ -6880,19 +6257,14 @@ Number,Region,AreaName,EncounterRate
 372,Alola,Kalae Bay Area,15
 372,Kalos,Friend Safari (Dragon),33
 373,Alola,Alola Route 3 South,15
-373,Orre,Citadark Isle Dome 1F,100
 374,Alola,Mount Hokulani East,20
 374,Alola,Mount Hokulani Main,10
 374,Alola,Mount Hokulani West,10
-374,Hoenn,Mossdeep City (Steven's house),100
 374,Sinnoh,Road 228,40
-375,Alola,Poke Pelago Elite Four Defeated,2
-375,Alola,Poke Pelago Poni Island Reached,3
 375,Kalos,Friend Safari (Steel),33
 375,Unova,Giant Chasm (Hidden Grotto),10
 375,Unova,Giant Chasm (forest cave),20
 375,Unova,Giant Chasm (forest),20
-376,Orre,Realgam Tower Colosseum,100
 376,Unova,Giant Chasm (forest cave),5
 376,Unova,Giant Chasm (forest),5
 377,Alola,Ultra Space Wilds Cave,100
@@ -6933,21 +6305,8 @@ Number,Region,AreaName,EncounterRate
 384,Alola,Ultra Space Wilds Cliff World,15
 384,Hoenn,Sky Pillar Apex,100
 384,Johto,Embedded Tower (Rayquaza’s room),100
-385,Hoenn,Hoenn Pokecenter Area,100
 386,Hoenn,Sky Pillar Apex,100
 386,Kanto,Birth Island,100
-387,Hoenn,Road 101,100
-387,Sinnoh,Lake Verity (before Galactic intervention),100
-387,Sinnoh,Road 201,100
-388,Alola,Ulaula Meadow Area,100
-390,Hoenn,Road 101,100
-390,Sinnoh,Lake Verity (before Galactic intervention),100
-390,Sinnoh,Road 201,100
-391,Alola,Alola Route 11 Area,100
-393,Hoenn,Road 101,100
-393,Sinnoh,Lake Verity (before Galactic intervention),100
-393,Sinnoh,Road 201,100
-394,Alola,Alola Route 16 Main,100
 396,Kalos,Road 11,5
 396,Sinnoh,Great Marsh Area 1,20
 396,Sinnoh,Great Marsh Area 2,20
@@ -6964,7 +6323,6 @@ Number,Region,AreaName,EncounterRate
 396,Sinnoh,"Road 204 (south, towards Jubilife City)",35
 396,Sinnoh,Road 209,20
 396,Sinnoh,"Road 212 (north, towards Hearthome City)",20
-397,Alola,Alola Route 10 Area,100
 397,Kalos,Road 11,20
 397,Sinnoh,Great Marsh Area 1,10
 397,Sinnoh,Great Marsh Area 2,10
@@ -7101,7 +6459,6 @@ Number,Region,AreaName,EncounterRate
 403,Sinnoh,"Road 204 (north, towards Floaroma Town)",15
 403,Sinnoh,"Road 204 (south, towards Jubilife City)",15
 403,Sinnoh,Valley Windworks,20
-404,Alola,Alola Route 8 Main,100
 404,Kalos,Friend Safari (Electric),33
 404,Sinnoh,Fuego Ironworks,10
 404,Sinnoh,Road 222,10
@@ -7123,12 +6480,6 @@ Number,Region,AreaName,EncounterRate
 407,Unova,Lostlorn Forest,5
 407,Unova,Road 12,5
 407,Unova,Victory Road 2 (unknown area 72),5
-408,Alola,Alola Route 8 Fossil Restoration Center,100
-408,Kanto,Pewter Museum of Science,100
-408,Sinnoh,Oreburgh Mining Museum,100
-410,Alola,Alola Route 8 Fossil Restoration Center,100
-410,Kanto,Pewter Museum of Science,100
-410,Sinnoh,Oreburgh Mining Museum,100
 412,Kalos,Road 3,10
 412,Sinnoh,Eterna Forest,60
 412,Sinnoh,Floaroma Meadow,60
@@ -7275,7 +6626,6 @@ Number,Region,AreaName,EncounterRate
 420,Sinnoh,Valley Windworks,30
 421,Hoenn,Mirage Forest (North of Lilycove),10
 421,Unova,Road 12,20
-422,Alola,Seafolk Village Main,100
 422,Sinnoh,Canalave City,30
 422,Sinnoh,Fuego Ironworks,30
 422,Sinnoh,Pastoria City,30
@@ -7311,9 +6661,6 @@ Number,Region,AreaName,EncounterRate
 425,Sinnoh,Trainers' School,15
 425,Sinnoh,Valley Windworks,100
 425,Unova,Unova Route 13 (Hidden Grotto – Stairs),20
-426,Alola,Poke Pelago Elite Four Defeated,2
-426,Alola,Poke Pelago Poni Island Reached,3
-426,Alola,Poke Pelago Ulaula Island Reached,3
 426,Kalos,Friend Safari (Ghost),33
 426,Unova,Giant Chasm (outside),20
 426,Unova,Reversal Mountain (unknown area 48),40
@@ -7327,9 +6674,7 @@ Number,Region,AreaName,EncounterRate
 427,Unova,Castelia City,30
 428,Alola,Poni Grove Area,15
 428,Unova,Castelia City,5
-429,Alola,Poke Pelago Elite Four Defeated,2
 429,Unova,Abundant Shrine,5
-430,Alola,Poke Pelago Elite Four Defeated,2
 430,Unova,Abundant Shrine,5
 431,Hoenn,Mirage Forest (East of Mossdeep),30
 431,Sinnoh,Road 218,15
@@ -7521,7 +6866,6 @@ Number,Region,AreaName,EncounterRate
 440,Alola,Lush Jungle North,15
 440,Alola,Lush Jungle South,15
 440,Alola,Lush Jungle West,15
-440,Alola,Malie City Main,100
 440,Alola,Mount Hokulani East,15
 440,Alola,Mount Hokulani West,30
 440,Alola,Poni Grove Area,15
@@ -7529,8 +6873,6 @@ Number,Region,AreaName,EncounterRate
 440,Alola,Wela Volcano Park Area,15
 440,Hoenn,Mirage Forest (West of Route 105),40
 440,Hoenn,Mirage Mountain (East of Mossdeep),30
-440,Sinnoh,Hearthome City (west gate),100
-440,Unova,Nacrene City (west gate),100
 441,Johto,Bell Tower (10F),20
 441,Johto,Bell Tower (2F),20
 441,Johto,Bell Tower (3F),20
@@ -7556,7 +6898,6 @@ Number,Region,AreaName,EncounterRate
 442,Sinnoh,Road 209,100
 443,Kalos,Road 13,20
 443,Sinnoh,Wayward Cave (B1F),36
-443,Unova,Floccesy Town,100
 444,Alola,Haina Desert Area,20
 444,Kalos,Friend Safari (Dragon),33
 444,Sinnoh,Victory Road (1F),5
@@ -7590,12 +6931,10 @@ Number,Region,AreaName,EncounterRate
 447,Alola,Poni Grove Area,10
 447,Kalos,Friend Safari (Fighting),33
 447,Kalos,Road 22,10
-447,Sinnoh,Iron Island (B2F left),100
 447,Unova,Challengers Cave (B1F),5
 447,Unova,Challengers Cave (B2F),10
 447,Unova,Floccesy Ranch (inner),5
 448,Alola,Poni Grove Area,15
-448,Kalos,Tower of Mastery,100
 449,Kalos,Road 9,40
 449,Sinnoh,Maniac Tunnel (26+ different Unown caught),20
 449,Sinnoh,Ruin Maniac Cave (0–9 different Unown caught),5
@@ -7735,7 +7074,6 @@ Number,Region,AreaName,EncounterRate
 463,Unova,Road 2,5
 465,Unova,Giant Chasm (outside),5
 465,Unova,Road 13,5
-468,Alola,Poni Gauntlet Area,100
 469,Alola,Ultra Space Wilds Cliff,15
 469,Unova,Pinwheel Forest (outside),5
 469,Unova,Road 3,5
@@ -7744,7 +7082,6 @@ Number,Region,AreaName,EncounterRate
 472,Unova,Road 23,5
 473,Unova,Giant Chasm (forest cave),5
 473,Unova,Giant Chasm (forest),5
-479,Alola,Poni Gauntlet Area,100
 479,Sinnoh,Old Chateau (2F left room),100
 480,Alola,Ultra Space Wilds Water World,15
 480,Alola,Ultra Space Wilds Waterfall,100
@@ -7790,24 +7127,10 @@ Number,Region,AreaName,EncounterRate
 488,Hoenn,Crescent Isle,100
 488,Sinnoh,Roaming Sinnoh,50
 488,Unova,Marvelous Bridge,100
-490,Johto,Johto Pokemart Area,100
-490,Sinnoh,Sinnoh Pokemart Area,100
 491,Sinnoh,Newmoon Island,100
 492,Sinnoh,Flower Paradise,100
 493,Sinnoh,Hall of Origin,100
 494,Unova,Lighthouse Basement,100
-495,Hoenn,Road 101,100
-495,Unova,Aspertia City,100
-495,Unova,Nuvema Town,100
-497,Alola,Exeggutor Island Area,100
-498,Hoenn,Road 101,100
-498,Unova,Aspertia City,100
-498,Unova,Nuvema Town,100
-500,Alola,Ancient Poni Path Area,100
-501,Hoenn,Road 101,100
-501,Unova,Aspertia City,100
-501,Unova,Nuvema Town,100
-503,Alola,Poni Wilds Area,100
 504,Unova,Dreamyard,40
 504,Unova,Floccesy Ranch (inner),10
 504,Unova,Road 1,50
@@ -7872,17 +7195,14 @@ Number,Region,AreaName,EncounterRate
 510,Unova,Unova Route 9 (Hidden Grotto),75
 511,Kalos,Friend Safari (Grass),33
 511,Kalos,Santalune Forest,10
-511,Unova,Dreamyard,100
 511,Unova,Lostlorn Forest,10
 511,Unova,Pinwheel Forest (inside),10
 513,Kalos,Friend Safari (Fire),33
 513,Kalos,Santalune Forest,10
-513,Unova,Dreamyard,100
 513,Unova,Lostlorn Forest,10
 513,Unova,Pinwheel Forest (inside),10
 515,Kalos,Friend Safari (Water),33
 515,Kalos,Santalune Forest,10
-515,Unova,Dreamyard,100
 515,Unova,Lostlorn Forest,10
 515,Unova,Pinwheel Forest (inside),10
 517,Hoenn,Mirage Island (Route 132),60
@@ -8162,7 +7482,6 @@ Number,Region,AreaName,EncounterRate
 533,Unova,Relic Tunnel (Relic Castle entrance),20
 533,Unova,Twist Mountain,100
 533,Unova,Victory Road 2 (unknown area 76),100
-534,Alola,Poni Plains Center,100
 535,Unova,Pinwheel Forest (outside),80
 536,Kalos,Friend Safari (Ground),33
 536,Unova,Icirrus City,100
@@ -8198,12 +7517,10 @@ Number,Region,AreaName,EncounterRate
 541,Unova,Lostlorn Forest,70
 541,Unova,Pinwheel Forest (inside),50
 541,Unova,Road 6,20
-542,Alola,Poni Meadow Area,100
 542,Unova,Lostlorn Forest,5
 542,Unova,Lostlorn Forest (Hidden Grotto),20
 542,Unova,Road 12,5
 542,Unova,Road 6,5
-543,Alola,Alola Route 4 Area,100
 543,Unova,Lostlorn Forest,30
 543,Unova,Pinwheel Forest (inside),15
 543,Unova,Road 20,20
@@ -8358,8 +7675,6 @@ Number,Region,AreaName,EncounterRate
 563,Hoenn,Mirage Cave (South of Pacifidlog),30
 563,Unova,Relic Castle (B),50
 563,Unova,Relic Castle (C),20
-564,Alola,Alola Route 8 Fossil Restoration Center,100
-566,Alola,Alola Route 8 Fossil Restoration Center,100
 568,Alola,Malie City Outer Cape,30
 568,Unova,Road 16,40
 568,Unova,Road 4,25
@@ -8369,8 +7684,6 @@ Number,Region,AreaName,EncounterRate
 569,Unova,Road 9,40
 569,Unova,Unova Route 9 (Hidden Grotto),10
 570,Alola,Alola Route 1 Trainers School,30
-570,Unova,Driftveil City,100
-570,Unova,Game Freak HQ 1F (Castelia City),100
 571,Alola,Poni Grove Area,20
 571,Kalos,Pokemon Village,20
 571,Kalos,Road 20,10
@@ -8388,7 +7701,6 @@ Number,Region,AreaName,EncounterRate
 573,Unova,Road 16,5
 573,Unova,Road 5,5
 573,Unova,Road 9,5
-574,Alola,Alola Route 6 North,100
 574,Unova,Road 16,60
 574,Unova,Road 5,60
 574,Unova,Strange House (1F),20
@@ -8408,7 +7720,6 @@ Number,Region,AreaName,EncounterRate
 577,Unova,Road 5,60
 577,Unova,Strange House (1F),20
 577,Unova,Strange House (B1F),20
-578,Alola,Alola Route 16 Main,100
 578,Kalos,Friend Safari (Psychic),33
 578,Unova,Road 9,60
 578,Unova,Strange House (1F),5
@@ -8443,11 +7754,9 @@ Number,Region,AreaName,EncounterRate
 585,Unova,Dragonspiral Tower (outside),30
 585,Unova,Road 6,70
 585,Unova,Road 7,40
-585,Unova,Weather Institute (Road 6),100
 586,Kalos,Friend Safari (Grass),33
 586,Unova,Dragonspiral Tower (entrance),75
 586,Unova,Dragonspiral Tower (outside),90
-587,Alola,Poke Pelago Elite Four Defeated,7
 587,Alola,Poni Plains West,20
 587,Kalos,Friend Safari (Electric),33
 587,Kalos,Road 10,10
@@ -8548,7 +7857,6 @@ Number,Region,AreaName,EncounterRate
 597,Unova,Chargestone Cave (1F),20
 597,Unova,Chargestone Cave (B1F),20
 597,Unova,Chargestone Cave (B2F),20
-599,Alola,Hauoli City Main,100
 599,Hoenn,Mirage Cave (North of Fortree),30
 599,Hoenn,Mirage Cave (North of Route 124),60
 599,Hoenn,Mirage Cave (West of Rustboro),60
@@ -8570,14 +7878,12 @@ Number,Region,AreaName,EncounterRate
 602,Unova,Chargestone Cave (B2F),8
 602,Unova,Seaside Cave (1F),5
 603,Unova,Seaside Cave (B1F),5
-604,Alola,Poni Grove Area,100
 605,Alola,Mount Hokulani East,50
 605,Alola,Mount Hokulani West,20
 605,Unova,Celestial Tower (3F),15
 605,Unova,Celestial Tower (4F),30
 605,Unova,Celestial Tower (5F),50
 606,Unova,Road 14,20
-607,Alola,Hauoli Cemetery Area,100
 607,Kalos,Lost Hotel,20
 607,Unova,Celestial Tower (2F),100
 607,Unova,Celestial Tower (3F),85
@@ -8586,7 +7892,6 @@ Number,Region,AreaName,EncounterRate
 607,Unova,Strange House (1F),30
 607,Unova,Strange House (B1F),20
 608,Kalos,Friend Safari (Ghost),33
-610,Alola,Mount Hokulani Main,100
 610,Kalos,Connecting Cave,15
 610,Unova,Guidance Chamber,20
 610,Unova,Mistralton Cave,20
@@ -8695,9 +8000,6 @@ Number,Region,AreaName,EncounterRate
 626,Unova,Road 23,50
 626,Unova,Unova Route 9 (Hidden Grotto),5
 627,Alola,Alola Route 3 North,30
-627,Alola,Poke Pelago Elite Four Defeated,2
-627,Alola,Poke Pelago Poni Island Reached,3
-627,Alola,Poke Pelago Ulaula Island Reached,3
 627,Hoenn,Mirage Mountain (North of Lilycove),10
 627,Kalos,Friend Safari (Flying),33
 627,Unova,Road 10,60
@@ -8711,9 +8013,6 @@ Number,Region,AreaName,EncounterRate
 628,Unova,Road 4,100
 628,Unova,Village Bridge,20
 629,Alola,Alola Route 3 North,30
-629,Alola,Poke Pelago Elite Four Defeated,2
-629,Alola,Poke Pelago Poni Island Reached,3
-629,Alola,Poke Pelago Ulaula Island Reached,3
 629,Hoenn,Mirage Mountain (North East of Route 125),10
 629,Kalos,Friend Safari (Dark),33
 629,Unova,Road 10,60
@@ -8756,7 +8055,6 @@ Number,Region,AreaName,EncounterRate
 632,Unova,Victory Road (unknown area 64),40
 632,Unova,Victory Road (unknown area 65),40
 632,Unova,Victory Road (unknown area 66),40
-633,Alola,Ten Carat Hill Inside,100
 633,Unova,Victory Road (unknown area 53),20
 633,Unova,Victory Road (unknown area 58),20
 634,Kalos,Victory Road (unknown area 322),5
@@ -8769,7 +8067,6 @@ Number,Region,AreaName,EncounterRate
 636,Hoenn,Mirage Forest (South of Route 111),40
 636,Hoenn,Mirage Island (Route 114),40
 636,Kalos,Friend Safari (Fire),33
-636,Unova,Road 18,100
 637,Alola,Lush Jungle East Cave,15
 637,Unova,Relic Castle (D),100
 638,Alola,Ultra Space Wilds Crag,100
@@ -8813,15 +8110,9 @@ Number,Region,AreaName,EncounterRate
 646,Alola,Ultra Space Wilds Waterfall,100
 646,Hoenn,Gnarled Den,100
 646,Unova,Giant Chasm (forest cave),100
-650,Kalos,Aquacorde Town,100
 651,Kalos,Friend Safari (Grass),33
-652,Alola,Exeggutor Island Area,100
-653,Kalos,Aquacorde Town,100
 654,Kalos,Friend Safari (Fire),33
-655,Alola,Ancient Poni Path Area,100
-656,Kalos,Aquacorde Town,100
 657,Kalos,Friend Safari (Water),33
-658,Alola,Poni Wilds Area,100
 659,Kalos,Road 2,20
 659,Kalos,Road 22,20
 659,Kalos,Road 3,20
@@ -8829,9 +8120,6 @@ Number,Region,AreaName,EncounterRate
 660,Kalos,Friend Safari (Ground),33
 660,Kalos,Road 22,10
 661,Alola,Alola Route 8 Main,15
-661,Alola,Poke Pelago Elite Four Defeated,4
-661,Alola,Poke Pelago Poni Island Reached,5
-661,Alola,Poke Pelago Ulaula Island Reached,8
 661,Alola,Wela Volcano Park Area,30
 661,Kalos,Road 2,20
 661,Kalos,Road 3,20
@@ -8840,12 +8128,9 @@ Number,Region,AreaName,EncounterRate
 662,Alola,Wela Volcano Park Area,15
 662,Kalos,Friend Safari (Fire),33
 662,Kalos,Friend Safari (Flying),33
-663,Alola,Poni Gauntlet Area,100
-664,Alola,Hauoli City Main,100
 664,Kalos,Road 2,20
 664,Kalos,Santalune Forest,20
 666,Kalos,Friend Safari (Bug),33
-667,Alola,Poke Pelago Elite Four Defeated,7
 667,Kalos,Road 22,30
 668,Alola,Poni Plains Center,30
 668,Kalos,Friend Safari (Fire),33
@@ -8874,7 +8159,6 @@ Number,Region,AreaName,EncounterRate
 676,Kalos,Road 5,30
 677,Kalos,Friend Safari (Psychic),33
 677,Kalos,Road 6,20
-679,Alola,Akala Outskirts Area,100
 679,Kalos,Road 6,15
 682,Kalos,Friend Safari (Fairy),33
 682,Kalos,Road 7,30
@@ -8913,25 +8197,14 @@ Number,Region,AreaName,EncounterRate
 694,Kalos,Friend Safari (Electric),33
 694,Kalos,Road 9,20
 695,Alola,Ultra Space Wilds Crag,15
-696,Alola,Alola Route 8 Fossil Restoration Center,100
-696,Kalos,Glittering Cave (unknown area 303),100
-698,Alola,Alola Route 8 Fossil Restoration Center,100
-698,Kalos,Glittering Cave (unknown area 303),100
-701,Alola,Alola Route 2 Main,100
 701,Alola,Alola Route 3 North,10
 701,Alola,Alola Route 3 South,10
-701,Alola,Poke Pelago Elite Four Defeated,4
-701,Alola,Poke Pelago Poni Island Reached,5
-701,Alola,Poke Pelago Ulaula Island Reached,8
 701,Kalos,Friend Safari (Flying),33
 701,Kalos,Road 10,25
 702,Alola,Blush Mountain Area,25
 702,Kalos,Friend Safari (Electric),33
 702,Kalos,Friend Safari (Fairy),33
 702,Kalos,Road 11,5
-703,Alola,Poke Pelago Elite Four Defeated,4
-703,Alola,Poke Pelago Poni Island Reached,5
-703,Alola,Poke Pelago Ulaula Island Reached,6
 703,Alola,Ten Carat Hill Farthest Hollow,20
 703,Alola,Ten Carat Hill Inside,20
 703,Alola,Vast Poni Canyon Inside,20
@@ -8950,20 +8223,14 @@ Number,Region,AreaName,EncounterRate
 705,Alola,Exeggutor Island Area,10
 705,Kalos,Friend Safari (Dragon),33
 705,Kalos,Road 19,66
-707,Alola,Poke Pelago Elite Four Defeated,4
-707,Alola,Poke Pelago Poni Island Reached,8
 707,Alola,Thrifty Megamart Abandoned Site,15
 707,Kalos,Friend Safari (Steel),33
 707,Kalos,Lost Hotel,20
 707,Kalos,Road 15,25
 707,Kalos,Road 16,24
 708,Alola,Memorial Hill Area,30
-708,Alola,Tapu Village Area,100
 708,Kalos,Friend Safari (Ghost),33
 708,Kalos,Road 16,20
-709,Alola,Poke Pelago Elite Four Defeated,2
-709,Alola,Poke Pelago Poni Island Reached,3
-709,Alola,Poke Pelago Ulaula Island Reached,3
 709,Kalos,Road 20,70
 710,Kalos,Friend Safari (Ghost),33
 710,Kalos,Road 16,30
@@ -8972,7 +8239,6 @@ Number,Region,AreaName,EncounterRate
 712,Kalos,Frost Cavern (unknown area 315),20
 712,Kalos,Frost Cavern (unknown area 316),20
 712,Kalos,Frost Cavern (unknown area 317),20
-714,Alola,Alola Route 5 Area,100
 714,Alola,Verdant Cavern Trial Site,30
 714,Kalos,Friend Safari (Dragon),33
 715,Alola,Resolution Cave Area,15
@@ -8982,15 +8248,8 @@ Number,Region,AreaName,EncounterRate
 717,Alola,Ultra Space Wilds Cliff,100
 717,Alola,Ultra Space Wilds Cliff World,15
 717,Kalos,Team Flare Secret Hq Area,100
-718,Alola,Alola Route 16 Main,100
 718,Alola,Resolution Cave Area,15
 718,Kalos,Terminus Cave (unknown area 348),100
-722,Alola,Alola Route 1 West,100
-722,Alola,Iki Town Area,100
-725,Alola,Alola Route 1 West,100
-725,Alola,Iki Town Area,100
-728,Alola,Alola Route 1 West,100
-728,Alola,Iki Town Area,100
 731,Alola,Alola Route 1 East,30
 731,Alola,Alola Route 1 South,20
 731,Alola,Alola Route 1 West,20
@@ -8999,9 +8258,6 @@ Number,Region,AreaName,EncounterRate
 731,Alola,Alola Route 6 North,40
 731,Alola,Alola Route 6 South,40
 731,Alola,Alola Route 8 Main,15
-731,Alola,Poke Pelago Elite Four Defeated,4
-731,Alola,Poke Pelago Poni Island Reached,5
-731,Alola,Poke Pelago Ulaula Island Reached,6
 732,Alola,Alola Route 11 Area,20
 732,Alola,Alola Route 8 Main,30
 732,Alola,Lush Jungle North,37
@@ -9045,7 +8301,6 @@ Number,Region,AreaName,EncounterRate
 735,Alola,Alola Route 17 West,30
 735,Alola,Alola Route 8 Main,15
 735,Alola,Ancient Poni Path Area,30
-735,Alola,Heahea Beach Area,100
 735,Alola,Malie City Outer Cape,20
 735,Alola,Mount Lanakila Base,20
 735,Alola,Poni Gauntlet Area,30
@@ -9065,7 +8320,6 @@ Number,Region,AreaName,EncounterRate
 736,Alola,Blush Mountain Area,15
 737,Alola,Blush Mountain Area,10
 738,Alola,Blush Mountain Area,15
-738,Alola,Heahea Beach Area,100
 739,Alola,Alola Route 10 Area,100
 739,Alola,Alola Route 12 Area,100
 739,Alola,Alola Route 15 Main,100
@@ -9088,10 +8342,6 @@ Number,Region,AreaName,EncounterRate
 742,Alola,Alola Route 3 North,30
 742,Alola,Alola Route 3 South,30
 742,Alola,Melemele Meadow Area,30
-742,Alola,Poke Pelago Elite Four Defeated,4
-742,Alola,Poke Pelago Poni Island Reached,5
-742,Alola,Poke Pelago Ulaula Island Reached,5
-743,Alola,Heahea Beach Area,100
 743,Alola,Poni Meadow Area,50
 743,Alola,Ulaula Meadow Area,30
 744,Alola,Alola Route 1 South,20
@@ -9123,13 +8373,11 @@ Number,Region,AreaName,EncounterRate
 750,Alola,Poni Plains West,20
 751,Alola,Brooklet Hill North,60
 751,Alola,Brooklet Hill South,60
-752,Alola,Heahea Beach Area,100
 752,Alola,Malie Garden Area,20
 753,Alola,Alola Route 5 Area,20
 753,Alola,Lush Jungle North,30
 753,Alola,Lush Jungle South,20
 753,Alola,Lush Jungle West,100
-754,Alola,Heahea Beach Area,100
 755,Alola,Alola Route 11 Area,10
 755,Alola,Brooklet Hill North,20
 755,Alola,Brooklet Hill South,20
@@ -9140,7 +8388,6 @@ Number,Region,AreaName,EncounterRate
 757,Alola,Alola Route 8 Main,20
 757,Alola,Lush Jungle East Cave,30
 757,Alola,Wela Volcano Park Area,30
-758,Alola,Heahea Beach Area,100
 758,Alola,Lush Jungle East Cave,15
 758,Alola,Wela Volcano Park Area,15
 759,Alola,Akala Outskirts Area,15
@@ -9148,18 +8395,13 @@ Number,Region,AreaName,EncounterRate
 760,Alola,Hauoli City Main,15
 760,Alola,Hauoli City Shopping District,100
 760,Alola,Poni Gauntlet Area,10
-761,Alola,Alola Route 5 Area,100
 761,Alola,Lush Jungle West,40
 762,Alola,Lush Jungle North,10
 762,Alola,Lush Jungle South,80
 762,Alola,Lush Jungle West,80
-762,Alola,Seafolk Village Main,100
 764,Alola,Lush Jungle North,10
 764,Alola,Lush Jungle South,10
 764,Alola,Lush Jungle West,10
-764,Alola,Poke Pelago Elite Four Defeated,4
-764,Alola,Poke Pelago Poni Island Reached,5
-764,Alola,Poke Pelago Ulaula Island Reached,8
 765,Alola,Lush Jungle North,5
 765,Alola,Lush Jungle South,35
 765,Alola,Lush Jungle West,35
@@ -9174,19 +8416,12 @@ Number,Region,AreaName,EncounterRate
 769,Alola,Hano Beach Area,30
 771,Alola,Alola Route 7 Area,20
 771,Alola,Hano Beach Area,45
-771,Alola,Poke Pelago Elite Four Defeated,4
-771,Alola,Poke Pelago Poni Island Reached,5
-771,Alola,Poke Pelago Ulaula Island Reached,8
-772,Alola,Aether Paradise 2F,100
-772,Alola,Ancient Poni Path Area,100
 774,Alola,Mount Hokulani East,70
 774,Alola,Mount Hokulani Main,30
 774,Alola,Mount Hokulani West,10
 775,Alola,Alola Route 11 Area,30
 776,Alola,Blush Mountain Area,10
 777,Alola,Blush Mountain Area,25
-777,Alola,Heahea Beach Area,100
-778,Alola,Heahea Beach Area,100
 778,Alola,Thrifty Megamart Abandoned Site,5
 779,Alola,Alola Route 13 Area,5
 779,Alola,Alola Route 14 Area,40
@@ -9197,14 +8432,11 @@ Number,Region,AreaName,EncounterRate
 781,Alola,Seafolk Village Main,40
 782,Alola,Vast Poni Canyon Outside,5
 783,Alola,Vast Poni Canyon Outside,15
-784,Alola,Heahea Beach Area,100
 784,Alola,Vast Poni Canyon Outside,15
 785,Alola,Ruins Of Conflict Area,100
 786,Alola,Ruins Of Life Area,100
 787,Alola,Ruins Of Abundance Area,100
 788,Alola,Ruins Of Hope Area,100
-789,Alola,Lake Of The Moone Area,100
-789,Alola,Lake Of The Sunne Area,100
 791,Alola,Altar Of The Sunne Area,100
 791,Alola,Mahalo Trail Area,100
 792,Alola,Altar Of The Moone Area,100
@@ -9231,6 +8463,5 @@ Number,Region,AreaName,EncounterRate
 800,Alola,Mount Lanakila Crater,100
 800,Alola,Ten Carat Hill Farthest Hollow,100
 801,Alola,Hauoli City Main,15
-803,Alola,Ultra Megalopolis Area,100
 805,Alola,Poni Grove Area,100
 806,Alola,Poni Grove Area,100
