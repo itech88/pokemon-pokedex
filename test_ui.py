@@ -266,3 +266,65 @@ def test_rattata_has_valid_wild_locations(page: Page):
     assert any(r in content for r in ("Kanto", "Johto", "Hoenn", "Sinnoh", "Alola")), (
         "Rattata should show at least one region in its location section"
     )
+
+
+def test_charizard_catch_difficulty_not_shown(page: Page):
+    """
+    Regression: Charizard's Physical Traits tab must NOT show a catch difficulty
+    gauge or star rating.
+
+    Root cause: CaptureRate (45 for Charizard) exists in PokéAPI for every species
+    as an internal formula value. For Pokémon with 0 wild location rows the gauge
+    has no meaning — showing '5 stars, Very Easy, 17.6%' implies Charizard can be
+    caught in the wild, which it cannot. The fix gates the catch gauge on has_wild.
+    """
+    enter_gen1(page)
+
+    view_btns = page.locator("button", has_text="View →").all()
+    assert len(view_btns) >= 6, "Not enough cards in Gen I"
+    view_btns[5].click()   # index 5 = Charizard (#6)
+    time.sleep(RERUN_WAIT)
+
+    page.locator("[role='tab']", has_text="Physical Traits").first.click()
+    time.sleep(2)
+
+    content = page.content()
+
+    # Must NOT show a star rating or catch chance percentage
+    assert "catch chance" not in content, (
+        "Charizard should not show a catch chance percentage — "
+        "it cannot be found in the wild so the catch rate is meaningless"
+    )
+    assert "Very Easy" not in content and "Very Hard" not in content, (
+        "Charizard should not show a catch difficulty star label"
+    )
+
+    # Must show the 'not applicable' message instead
+    assert "Not applicable" in content or "cannot be found in the wild" in content, (
+        "Charizard's catch difficulty section should explain it is not applicable"
+    )
+
+
+def test_rattata_catch_difficulty_shown(page: Page):
+    """
+    Rattata (#19) IS catchable in the wild and MUST show a catch difficulty gauge.
+    Guards against over-suppression of the catch rate display.
+    """
+    enter_gen1(page)
+
+    view_btns = page.locator("button", has_text="View →").all()
+    assert len(view_btns) >= 19, "Not enough cards in Gen I"
+    view_btns[18].click()   # index 18 = Rattata (#19)
+    time.sleep(RERUN_WAIT)
+
+    page.locator("[role='tab']", has_text="Physical Traits").first.click()
+    time.sleep(2)
+
+    content = page.content()
+    assert "catch chance" in content, (
+        "Rattata should show a catch chance percentage — "
+        "it is a genuine wild Pokémon and the catch rate is meaningful"
+    )
+    assert "Not applicable" not in content, (
+        "Rattata should NOT show the 'not applicable' catch message"
+    )

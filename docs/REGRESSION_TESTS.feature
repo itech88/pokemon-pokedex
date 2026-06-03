@@ -283,17 +283,33 @@ Feature: Physical Traits Tab
 
   # ── Trainer Facts ───────────────────────────────────────────────────────────
 
-  Scenario: Catch difficulty is shown as a star rating and percentage
-    When I view the Trainer Facts section
+  Scenario: Catch difficulty is shown as a star rating and percentage for wild Pokémon
+    When I view the Trainer Facts section for Rattata (a genuinely wild Pokémon)
     Then I should see a catch difficulty gauge bar
-    And I should see a star rating like "⭐⭐⭐⭐ Easy"
-    And I should see a catch percentage like "17.6% catch chance"
+    And I should see a star rating like "⭐⭐⭐⭐⭐ Very Easy"
+    And I should see a catch percentage like "100% catch chance"
 
-  Scenario: Very hard to catch Pokémon show low catch difficulty
-    Given I have selected Mewtwo
+  Scenario: Very hard to catch wild Pokémon show low catch difficulty
+    Given I have selected a Pokémon that is both wild AND hard to catch
     When I view the Trainer Facts section
     Then I should see "💀 Very Hard" or a 1-star rating
     And the gauge bar should be very short
+
+  Scenario: Catch difficulty is HIDDEN for non-wild Pokémon — regression for Charizard catch-rate bug
+    # Root cause: CaptureRate exists in PokéAPI for ALL Pokémon (it's an internal game
+    # formula value). Charizard has CaptureRate=45 (17.6%) even though it cannot be
+    # caught in the wild. Showing this implied it was catchable. Fix: gate the catch
+    # difficulty gauge on has_wild (WildLocations > 0 in raw_locations).
+    Given I have selected Charizard (which has 0 wild encounter locations)
+    When I view the Trainer Facts section
+    Then I should NOT see any catch percentage or star rating
+    And I should see a message like "Not applicable — this Pokémon cannot be found in the wild"
+
+  Scenario: Bulbasaur and other gift-only starters also hide catch difficulty
+    Given I have selected Bulbasaur (which is received as a gift, never wild)
+    When I view the Trainer Facts section
+    Then I should NOT see a catch difficulty gauge
+    And I should see the "not applicable" message
 
   Scenario: Starting happiness is shown with an emoji label
     When I view the Trainer Facts section

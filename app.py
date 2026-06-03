@@ -347,6 +347,15 @@ def render_traits_tab(row, sel_num: int) -> None:
     """Render the full Physical Traits tab content."""
     con = get_con()
 
+    # Determine up-front whether this Pokémon has any genuine wild encounters.
+    # CaptureRate exists in PokéAPI for every species (it's an internal game formula
+    # value), but it is only meaningful to show when the Pokémon can actually be
+    # found and caught in the wild. If WildLocations == 0, hide the catch gauge.
+    wild_count = con.sql(
+        f"SELECT COUNT(*) FROM raw_locations WHERE Number = {sel_num}"
+    ).fetchone()[0]
+    has_wild = wild_count > 0
+
     # ── Section 1: Body Facts ─────────────────────────────────────────────────
     _section("🔬 Body Facts")
     col_a, col_b = st.columns(2)
@@ -386,19 +395,31 @@ def render_traits_tab(row, sel_num: int) -> None:
     col_c, col_d = st.columns(2)
 
     with col_c:
-        # Catch difficulty
-        catch = int(row.get("CaptureRate") or 0)
-        catch_pct = min(catch / 255, 1.0)
-        catch_color = "#5bde7a" if catch > 180 else "#f7d02c" if catch > 90 else "#EE8130" if catch > 30 else "#C22E28"
+        # Catch difficulty — only shown for Pokémon that actually appear in the wild.
+        # CaptureRate exists in PokéAPI for all species but has no meaning for
+        # Pokémon that cannot be encountered (gifts, evolutions, legendaries obtained
+        # through scripted events). Showing it for Charizard, e.g., would falsely
+        # imply it can be caught, which it cannot.
         st.markdown("**🎯 Catch Difficulty:**")
-        st.markdown(
-            f'<div style="background:#2a2a2a;border-radius:8px;height:12px;margin:4px 0;">'
-            f'<div style="width:{catch_pct*100:.0f}%;height:100%;border-radius:8px;background:{catch_color};"></div>'
-            f'</div>'
-            f'<div style="font-size:0.85rem;color:#aaa;">{_catch_label(catch)}</div>'
-            f'<div style="font-size:0.75rem;color:#666;margin-top:2px;">Higher = easier to catch</div>',
-            unsafe_allow_html=True,
-        )
+        if has_wild:
+            catch = int(row.get("CaptureRate") or 0)
+            catch_pct = min(catch / 255, 1.0)
+            catch_color = "#5bde7a" if catch > 180 else "#f7d02c" if catch > 90 else "#EE8130" if catch > 30 else "#C22E28"
+            st.markdown(
+                f'<div style="background:#2a2a2a;border-radius:8px;height:12px;margin:4px 0;">'
+                f'<div style="width:{catch_pct*100:.0f}%;height:100%;border-radius:8px;background:{catch_color};"></div>'
+                f'</div>'
+                f'<div style="font-size:0.85rem;color:#aaa;">{_catch_label(catch)}</div>'
+                f'<div style="font-size:0.75rem;color:#666;margin-top:2px;">Higher = easier to catch</div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div style="font-size:0.88rem;color:#888;font-style:italic;margin-top:4px;">'
+                '🚫 Not applicable — this Pokémon cannot be found in the wild.'
+                '</div>',
+                unsafe_allow_html=True,
+            )
 
         st.markdown("<br>", unsafe_allow_html=True)
 
