@@ -2,6 +2,7 @@ import sys
 from pathlib import Path
 
 import streamlit as st
+import streamlit.components.v1 as components
 
 sys.path.insert(0, str(Path(__file__).parent))
 from db import get_con, TYPE_COLORS, TYPE_ORDER
@@ -111,10 +112,63 @@ st.markdown("""
     margin-right: 8px; font-size: 0.9rem;
 }
 
-/* ── Card grid ── */
-.poke-card {
-    border-radius: 10px; padding: 4px;
-    text-align: center; cursor: pointer;
+/* ── Card grid cells — uniform spreadsheet-style ── */
+.poke-cell {
+    background: #1a1d23;
+    border: 1px solid #2e3038;
+    border-radius: 8px;
+    padding: 8px 4px 6px;
+    text-align: center;
+    /* Fixed height so every cell is identical */
+    min-height: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    margin-bottom: 2px;
+}
+.poke-cell.selected {
+    border-width: 2px;
+    background: #1e2430;
+}
+/* Fixed-size image box — all sprites same visual footprint */
+.poke-img-box {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.poke-img-box img {
+    max-width: 68px;
+    max-height: 68px;
+    image-rendering: pixelated;
+}
+.poke-num  { font-size: 0.62rem; color: #777; font-weight: 600; }
+.poke-name { font-size: 0.7rem;  color: #eee; font-weight: 700; line-height: 1.2; }
+
+/* Card buttons — visible on dark background */
+div[data-testid="stVerticalBlock"] .stButton button {
+    font-size: 0.7rem !important;
+    padding: 3px 6px !important;
+    border: 1px solid #3e4148 !important;
+    background-color: #2a2d35 !important;
+    color: #ccc !important;
+    border-radius: 6px !important;
+    width: 100% !important;
+}
+div[data-testid="stVerticalBlock"] .stButton button:hover {
+    border-color: #EE8130 !important;
+    color: #fff !important;
+}
+/* Primary (selected) card button — accent fill */
+div[data-testid="stVerticalBlock"] .stButton button[kind="primary"] {
+    background-color: var(--primary-color, #EE8130) !important;
+    border-color: transparent !important;
+    color: white !important;
+    font-weight: 700 !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -252,6 +306,7 @@ with st.sidebar:
 
     if st.button("🎲 Surprise me!", use_container_width=True):
         st.session_state["selected_number"] = int(df.sample(1).iloc[0]["Number"])
+        st.session_state["_scroll_top"] = True
         st.rerun()
 
 # Apply search/legendary filter (generation is already locked)
@@ -286,6 +341,13 @@ st.markdown(
     f'{len(df_view):,} Pokémon shown</p>',
     unsafe_allow_html=True,
 )
+
+# Scroll to top whenever a new Pokémon is selected
+if st.session_state.pop("_scroll_top", False):
+    components.html(
+        "<script>window.parent.document.querySelector('section.main').scrollTo({top:0,behavior:'smooth'});</script>",
+        height=0,
+    )
 
 # ── Detail panel ──────────────────────────────────────────────────────────────
 with st.container(border=True):
@@ -350,30 +412,36 @@ with st.container(border=True):
                  f'Total: <strong style="color:{tc}">{int(row["TotalStats"])}</strong></div>')
         st.markdown(bars, unsafe_allow_html=True)
 
-# ── Card grid ────────────────────────────────────────────────────────────────
+# ── Card grid — uniform spreadsheet cells ─────────────────────────────────────
 st.divider()
-st.subheader(f"All {len(df_view):,} Pokémon — click to explore!")
+st.subheader(f"All {len(df_view):,} Pokémon — click any card to explore!")
 
 COLS = 8
 for chunk_start in range(0, len(df_view), COLS):
     chunk = df_view.iloc[chunk_start : chunk_start + COLS]
-    cols = st.columns(COLS)
+    cols = st.columns(COLS, gap="small")
     for col, (_, r) in zip(cols, chunk.iterrows()):
         with col:
             is_sel = int(r["Number"]) == sel_num
-            border = f"2px solid {accent}" if is_sel else "2px solid transparent"
-            bg = "#1e2128" if is_sel else "transparent"
-            num_label = f"#{int(r['Number'])}"
+            cell_cls = "poke-cell selected" if is_sel else "poke-cell"
+            border_color = accent if is_sel else "#2e3038"
+
             st.markdown(
-                f'<div style="border:{border};border-radius:10px;padding:4px;'
-                f'background:{bg};text-align:center;">'
-                f'<img src="{r["AnimatedGifURL"]}" width="58" style="image-rendering:pixelated;"/>'
-                f'<br><span style="font-size:0.62rem;color:#888;">{num_label}</span>'
-                f'<br><span style="font-size:0.68rem;font-weight:700;">{r["Name"]}</span><br>'
+                f'<div class="{cell_cls}" style="border-color:{border_color};">'
+                f'<div class="poke-img-box">'
+                f'<img src="{r["AnimatedGifURL"]}"/>'
+                f'</div>'
+                f'<div class="poke-num">#{int(r["Number"]):04d}</div>'
+                f'<div class="poke-name">{r["Name"]}</div>'
                 f'{type_badge(r["Type1"])}'
                 f'</div>',
                 unsafe_allow_html=True,
             )
-            if st.button("", key=f"c_{int(r['Number'])}", help=r["Name"], width="stretch"):
+
+            btn_label = "✓ Selected" if is_sel else "View →"
+            btn_type  = "primary"    if is_sel else "secondary"
+            if st.button(btn_label, key=f"c_{int(r['Number'])}", type=btn_type,
+                         use_container_width=True):
                 st.session_state["selected_number"] = int(r["Number"])
+                st.session_state["_scroll_top"] = True
                 st.rerun()
