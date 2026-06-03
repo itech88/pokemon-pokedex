@@ -376,12 +376,19 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Scroll to top whenever a new Pokémon is selected
+# Scroll to top whenever a new Pokémon is selected.
+# Uses a counter token so the iframe content hash changes every click →
+# Streamlit never reuses a cached iframe and the script always re-executes.
+# Three firings (0 / 200 / 500 ms) catch any post-render DOM reflows.
+# scrollTop = 0 (instant) instead of smooth — smooth can be interrupted.
 if st.session_state.pop("_scroll_top", False):
+    n = st.session_state.get("_scroll_n", 0) + 1
+    st.session_state["_scroll_n"] = n
     components.html(
-        "<script>"
-        "var el=window.parent.document.querySelector('[data-testid=\"stMain\"]');"
-        "if(el)el.scrollTo({top:0,behavior:'smooth'});"
+        f"<script>/* {n} */"
+        "function _s(){{var e=window.parent.document.querySelector('[data-testid=\"stMain\"]');"
+        "if(e)e.scrollTop=0;}}"
+        "_s();setTimeout(_s,200);setTimeout(_s,500);"
         "</script>",
         height=0,
     )
