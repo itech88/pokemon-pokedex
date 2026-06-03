@@ -18,24 +18,24 @@ CDN = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon"
 
 # ── Game registry ─────────────────────────────────────────────────────────────
 GAMES = {
-    1: {"title": "Generation I",   "subtitle": "Red · Blue · Yellow",
-        "starters": [1, 4, 7],     "accent": "#C62828"},
-    2: {"title": "Generation II",  "subtitle": "Gold · Silver · Crystal",
-        "starters": [152, 155, 158], "accent": "#F9A825"},
-    3: {"title": "Generation III", "subtitle": "Ruby · Sapphire · Emerald",
-        "starters": [252, 255, 258], "accent": "#2E7D32"},
-    4: {"title": "Generation IV",  "subtitle": "Diamond · Pearl · Platinum",
-        "starters": [387, 390, 393], "accent": "#1565C0"},
-    5: {"title": "Generation V",   "subtitle": "Black · White",
-        "starters": [495, 498, 501], "accent": "#424242"},
-    6: {"title": "Generation VI",  "subtitle": "X · Y",
-        "starters": [650, 653, 656], "accent": "#4527A0"},
-    7: {"title": "Generation VII", "subtitle": "Sun · Moon",
-        "starters": [722, 725, 728], "accent": "#E65100"},
-    8: {"title": "Generation VIII","subtitle": "Sword · Shield",
-        "starters": [810, 813, 816], "accent": "#0277BD"},
-    9: {"title": "Generation IX",  "subtitle": "Scarlet · Violet",
-        "starters": [906, 909, 912], "accent": "#6A1B9A"},
+    1: {"title": "Generation I",    "subtitle": "Red · Blue · Yellow",
+        "starters": [1, 4, 7],      "legendary": 150,  "accent": "#C62828"},
+    2: {"title": "Generation II",   "subtitle": "Gold · Silver · Crystal",
+        "starters": [152, 155, 158], "legendary": 249,  "accent": "#F9A825"},
+    3: {"title": "Generation III",  "subtitle": "Ruby · Sapphire · Emerald",
+        "starters": [252, 255, 258], "legendary": 384,  "accent": "#2E7D32"},
+    4: {"title": "Generation IV",   "subtitle": "Diamond · Pearl · Platinum",
+        "starters": [387, 390, 393], "legendary": 483,  "accent": "#1565C0"},
+    5: {"title": "Generation V",    "subtitle": "Black · White",
+        "starters": [495, 498, 501], "legendary": 643,  "accent": "#37474F"},
+    6: {"title": "Generation VI",   "subtitle": "X · Y",
+        "starters": [650, 653, 656], "legendary": 716,  "accent": "#4527A0"},
+    7: {"title": "Generation VII",  "subtitle": "Sun · Moon",
+        "starters": [722, 725, 728], "legendary": 791,  "accent": "#E65100"},
+    8: {"title": "Generation VIII", "subtitle": "Sword · Shield",
+        "starters": [810, 813, 816], "legendary": 888,  "accent": "#0277BD"},
+    9: {"title": "Generation IX",   "subtitle": "Scarlet · Violet",
+        "starters": [906, 909, 912], "legendary": 1007, "accent": "#6A1B9A"},
 }
 
 # ── CSS ───────────────────────────────────────────────────────────────────────
@@ -43,16 +43,42 @@ st.markdown("""
 <style>
 /* ── Game selection cards ── */
 .game-card {
+    position: relative;
     border-radius: 16px;
-    padding: 18px 14px 12px;
+    overflow: hidden;
+    padding: 18px 14px 14px;
     text-align: center;
     margin-bottom: 8px;
-    cursor: pointer;
-    transition: transform 0.15s;
-    background: #1a1d23;
-    border: 2px solid #2a2d33;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: 2px solid transparent;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.game-card:hover { transform: translateY(-3px); border-color: #EE8130; }
+.game-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+/* Legendary art — absolute-positioned behind everything */
+.game-card .cover-art {
+    position: absolute;
+    right: -12px;
+    bottom: -8px;
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    opacity: 0.18;
+    pointer-events: none;
+}
+/* Foreground content sits above the art */
+.game-card .card-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
 .game-title {
     font-size: 1.05rem;
     font-weight: 800;
@@ -61,19 +87,20 @@ st.markdown("""
 }
 .game-subtitle {
     font-size: 0.75rem;
-    color: #aaa;
+    color: #ccc;
     margin-bottom: 10px;
 }
 .game-count {
     display: inline-block;
-    background: #2a2d33;
+    background: rgba(0,0,0,0.35);
     border-radius: 20px;
     padding: 2px 12px;
     font-size: 0.75rem;
-    color: #ccc;
+    color: #ddd;
     margin-top: 8px;
+    backdrop-filter: blur(4px);
 }
-.starter-row { display: flex; justify-content: center; gap: 4px; }
+.starter-row { display: flex; justify-content: center; gap: 6px; }
 .starter-row img { image-rendering: pixelated; }
 
 /* ── Pokédex detail panel ── */
@@ -258,12 +285,19 @@ if st.session_state["selected_gen"] is None:
             )
 
             with col:
+                leg_id = info["legendary"]
+                art_url = f"{CDN}/other/official-artwork/{leg_id}.png"
+                # Gradient: accent colour fading to dark, with legendary art watermark
+                gradient = f"linear-gradient(145deg, {accent}33 0%, #0e1117 65%)"
                 st.markdown(
-                    f'<div class="game-card" style="border-top:4px solid {accent};">'
+                    f'<div class="game-card" style="background:{gradient};border-color:{accent};">'
+                    f'<div class="cover-art" style="background-image:url(\'{art_url}\');"></div>'
+                    f'<div class="card-content">'
                     f'<div class="game-title" style="color:{accent};">{info["title"]}</div>'
                     f'<div class="game-subtitle">{info["subtitle"]}</div>'
                     f'<div class="starter-row">{starter_imgs}</div>'
                     f'<div class="game-count">✨ {count} new Pokémon</div>'
+                    f'</div>'
                     f'</div>',
                     unsafe_allow_html=True,
                 )
@@ -345,7 +379,10 @@ st.markdown(
 # Scroll to top whenever a new Pokémon is selected
 if st.session_state.pop("_scroll_top", False):
     components.html(
-        "<script>window.parent.document.querySelector('section.main').scrollTo({top:0,behavior:'smooth'});</script>",
+        "<script>"
+        "var el=window.parent.document.querySelector('[data-testid=\"stMain\"]');"
+        "if(el)el.scrollTo({top:0,behavior:'smooth'});"
+        "</script>",
         height=0,
     )
 
