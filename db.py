@@ -27,9 +27,10 @@ def _build(db_path: Path) -> None:
     abilities_csv  = str(DATA_DIR / "Pokemon_Abilities.csv")
     locations_csv  = str(DATA_DIR / "Pokemon_Locations.csv")
     type_attrs_csv = str(DATA_DIR / "Types_Attributes.csv")
+    evolution_csv  = str(DATA_DIR / "evolution_chains.csv")
 
     for tbl in ["raw_pokemon", "raw_pokedex", "raw_abilities",
-                "raw_locations", "raw_type_attrs"]:
+                "raw_locations", "raw_type_attrs", "raw_evolution"]:
         con.execute(f"DROP TABLE IF EXISTS {tbl} CASCADE")
 
     con.execute(f"CREATE TABLE raw_pokemon    AS SELECT * FROM read_csv_auto('{pokemon_csv}',    header=true)")
@@ -37,6 +38,7 @@ def _build(db_path: Path) -> None:
     con.execute(f"CREATE TABLE raw_abilities  AS SELECT * FROM read_csv_auto('{abilities_csv}',  header=true)")
     con.execute(f"CREATE TABLE raw_locations  AS SELECT * FROM read_csv_auto('{locations_csv}',  header=true)")
     con.execute(f"CREATE TABLE raw_type_attrs AS SELECT * FROM read_csv_auto('{type_attrs_csv}', header=true)")
+    con.execute(f"CREATE TABLE raw_evolution  AS SELECT * FROM read_csv_auto('{evolution_csv}',  header=true)")
 
     con.execute("DROP VIEW IF EXISTS pokemon_base")
     con.execute("""
@@ -78,6 +80,30 @@ def _build(db_path: Path) -> None:
             ta.StrongAgainst, ta.WeakAgainst, ta.ResistantTo, ta.ImmuneFrom
         FROM pokedex_full p
         LEFT JOIN raw_type_attrs ta ON ta.TypeName = p.Type1
+    """)
+
+    # Recursive walk from each chain root down to every descendant. Not used by
+    # the Evolution tab directly (it queries raw_evolution edges), but kept here
+    # in sync with the analytics build for future use.
+    con.execute("DROP VIEW IF EXISTS evolution_paths")
+    con.execute("""
+        CREATE VIEW evolution_paths AS
+        WITH RECURSIVE walk AS (
+            SELECT DISTINCT
+                e.species_id AS root_id, e.species_id AS node_id,
+                0 AS depth, CAST(e.species_id AS VARCHAR) AS path_string, e.chain_id
+            FROM raw_evolution e
+            WHERE NOT EXISTS (
+                SELECT 1 FROM raw_evolution p WHERE p.evolves_into_id = e.species_id
+            )
+            UNION ALL
+            SELECT
+                w.root_id, e.evolves_into_id AS node_id,
+                w.depth + 1, w.path_string || '→' || e.evolves_into_id, e.chain_id
+            FROM walk w
+            JOIN raw_evolution e ON e.species_id = w.node_id
+        )
+        SELECT * FROM walk
     """)
 
     con.execute("CHECKPOINT")

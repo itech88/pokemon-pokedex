@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -272,12 +273,11 @@ GROWTH_ICONS = {
     "Slow": "🐢 Slow", "Fluctuating": "🔀 Fluctuating",
 }
 CATCH_LABELS = [
-    (50,  "⭐⭐⭐⭐⭐ Very Easy"),
-    (120, "⭐⭐⭐⭐ Easy"),
-    (180, "⭐⭐⭐ Medium"),
-    (220, "⭐⭐ Tricky"),
-    (255, "⭐ Hard"),
-    (256, "💀 Very Hard (Legendary!)"),
+    (30,  "💀 Very Hard"),
+    (75,  "⭐ Hard"),
+    (150, "⭐⭐ Medium"),
+    (200, "⭐⭐⭐ Easy"),
+    (255, "⭐⭐⭐⭐⭐ Very Easy"),
 ]
 HAPPINESS_LABELS = [
     (50,  "😤 Grumpy — needs lots of love to warm up"),
@@ -552,6 +552,170 @@ def artwork_url(pokemon_id: int) -> str:
     return f"{CDN}/other/official-artwork/{pokemon_id}.png"
 
 
+# ── Evolution tab ─────────────────────────────────────────────────────────────
+
+# Friendly emoji for evolution items so the trigger labels pop for kids.
+_ITEM_EMOJI = {
+    "thunder-stone": "⚡", "water-stone": "💧", "fire-stone": "🔥",
+    "leaf-stone": "🍃", "moon-stone": "🌙", "sun-stone": "☀️",
+    "shiny-stone": "✨", "dusk-stone": "🌑", "dawn-stone": "🌅",
+    "ice-stone": "❄️", "oval-stone": "🥚", "black-augurite": "🪨",
+    "kings-rock": "👑", "metal-coat": "⚙️", "dragon-scale": "🐉",
+    "razor-claw": "🪝", "razor-fang": "🦷", "deep-sea-tooth": "🦈",
+    "deep-sea-scale": "🐚", "protector": "🛡️", "electirizer": "🔌",
+    "magmarizer": "🌋", "up-grade": "💾", "dubious-disc": "💿",
+    "reaper-cloth": "🧵", "prism-scale": "🌈", "sachet": "🌸",
+    "whipped-dream": "🍰", "tart-apple": "🍏", "sweet-apple": "🍎",
+    "cracked-pot": "🫖", "chipped-pot": "🫖",
+}
+
+
+def _nice(slug: str) -> str:
+    return slug.replace("-", " ").title()
+
+
+def _evo_condition_label(e: dict) -> str:
+    """Build a kid-readable trigger label for one evolution edge dict."""
+    parts: list[str] = []
+
+    if e["min_level"] is not None:
+        parts.append(f"Lv {e['min_level']}")
+    if e["trigger_item"]:
+        parts.append(f"{_ITEM_EMOJI.get(e['trigger_item'], '💎')} {_nice(e['trigger_item'])}")
+    if e["trigger"] == "trade":
+        parts.append("🔄 Trade")
+    if e["held_item"]:
+        parts.append(f"💼 hold {_nice(e['held_item'])}")
+    if e["known_move"]:
+        parts.append(f"📘 knows {_nice(e['known_move'])}")
+    if e["min_happiness"] is not None:
+        parts.append("❤️ Friendship")
+    if e["location"]:
+        parts.append(f"📍 {_nice(e['location'])}")
+    if e["time_of_day"] == "day":
+        parts.append("☀️ Day")
+    elif e["time_of_day"] == "night":
+        parts.append("🌙 Night")
+
+    if not parts:
+        parts.append(_nice(e["trigger"]) if e["trigger"] else "Evolves")
+    return " · ".join(parts)
+
+
+def render_evolution_tab(row, sel_num: int) -> None:
+    """Render the clickable, animated evolution family tree for sel_num."""
+    from collections import defaultdict, deque
+
+    con = get_con()
+    _section("🔗 Evolution Family")
+
+    cid_row = con.sql(
+        f"SELECT chain_id FROM raw_evolution "
+        f"WHERE species_id = {sel_num} OR evolves_into_id = {sel_num} LIMIT 1"
+    ).fetchone()
+
+    # No edge references this Pokémon → it doesn't evolve.
+    if cid_row is None:
+        st.markdown(
+            f'<div style="text-align:center;margin:18px 0;">'
+            f'<img src="{gif_url(sel_num)}" width="120" style="image-rendering:pixelated;"/>'
+            f'<div style="margin-top:8px;color:#ccc;font-size:1.05rem;">'
+            f'🚫 <strong>{row["Name"]}</strong> does not evolve.</div>'
+            f'<div style="color:#777;font-size:0.85rem;">It stays just the way it is!</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        return
+
+    cid = int(cid_row[0])
+    raw = con.sql(
+        "SELECT species_id, evolves_into_id, trigger, min_level, min_happiness, "
+        "trigger_item, time_of_day, location, held_item, known_move "
+        f"FROM raw_evolution WHERE chain_id = {cid}"
+    ).df()
+
+    def _s(v) -> str:
+        return v if isinstance(v, str) else ""
+
+    def _i(v):
+        return int(v) if pd.notna(v) else None
+
+    edges = [{
+        "species_id":      int(r["species_id"]),
+        "evolves_into_id": int(r["evolves_into_id"]),
+        "trigger":         _s(r["trigger"]),
+        "min_level":       _i(r["min_level"]),
+        "min_happiness":   _i(r["min_happiness"]),
+        "trigger_item":    _s(r["trigger_item"]),
+        "time_of_day":     _s(r["time_of_day"]),
+        "location":        _s(r["location"]),
+        "held_item":       _s(r["held_item"]),
+        "known_move":      _s(r["known_move"]),
+    } for _, r in raw.iterrows()]
+
+    # Build adjacency, find the root (a species never reached by evolution).
+    children: dict[int, list[dict]] = defaultdict(list)
+    parents, all_children = set(), set()
+    for e in edges:
+        children[e["species_id"]].append(e)
+        parents.add(e["species_id"])
+        all_children.add(e["evolves_into_id"])
+    root = next((s for s in parents if s not in all_children), edges[0]["species_id"])
+
+    # Breadth-first into depth levels; remember the edge that produced each node.
+    level_nodes: dict[int, list[int]] = defaultdict(list)
+    edge_into: dict[int, dict] = {}
+    visited = {root}
+    q = deque([(root, 0)])
+    while q:
+        nid, depth = q.popleft()
+        level_nodes[depth].append(nid)
+        for ce in children.get(nid, []):
+            child = ce["evolves_into_id"]
+            if child not in visited:
+                visited.add(child)
+                edge_into[child] = ce
+                q.append((child, depth + 1))
+
+    st.caption("Tap any Pokémon to jump to it in the Pokédex! ✨")
+
+    HILITE = "#F7D02C"
+    for depth in sorted(level_nodes):
+        nodes = level_nodes[depth]
+        for col, nid in zip(st.columns(len(nodes)), nodes):
+            with col:
+                m = df_all[df_all["Number"] == nid]
+                name = str(m.iloc[0]["Name"]) if len(m) else f"#{nid:04d}"
+                gen = int(m.iloc[0]["Generation"]) if len(m) else None
+
+                if nid in edge_into:
+                    st.markdown(
+                        f'<div style="text-align:center;color:#7fbfff;font-size:0.78rem;'
+                        f'font-weight:700;margin-bottom:2px;line-height:1.2;">'
+                        f'⬇ {_evo_condition_label(edge_into[nid])}</div>',
+                        unsafe_allow_html=True,
+                    )
+
+                is_cur = nid == sel_num
+                ring = (f"box-shadow:0 0 0 3px {HILITE};border-radius:14px;background:#ffffff14;"
+                        if is_cur else "")
+                st.markdown(
+                    f'<div style="text-align:center;">'
+                    f'<img src="{gif_url(nid)}" width="104" '
+                    f'style="image-rendering:pixelated;padding:6px;{ring}"/>'
+                    f'</div>',
+                    unsafe_allow_html=True,
+                )
+
+                if st.button(("⭐ " + name) if is_cur else name,
+                             key=f"evo_{cid}_{nid}", use_container_width=True,
+                             disabled=(is_cur or gen is None)):
+                    st.session_state["selected_gen"] = gen
+                    st.session_state["selected_number"] = nid
+                    st.session_state["_scroll_top"] = True
+                    st.rerun()
+
+
 # ── Session state defaults ────────────────────────────────────────────────────
 if "selected_gen" not in st.session_state:
     st.session_state["selected_gen"] = None
@@ -698,7 +862,8 @@ if st.session_state.pop("_scroll_top", False):
 
 # ── Detail panel — tabbed ────────────────────────────────────────────────────
 with st.container(border=True):
-    tab_overview, tab_traits = st.tabs(["📋 Overview", "🏋️ Physical Traits"])
+    tab_overview, tab_traits, tab_evo = st.tabs(
+        ["📋 Overview", "🏋️ Physical Traits", "🔗 Evolution"])
 
     # ── Overview tab (unchanged layout) ──────────────────────────────────────
     with tab_overview:
@@ -766,6 +931,10 @@ with st.container(border=True):
     # ── Physical Traits tab ───────────────────────────────────────────────────
     with tab_traits:
         render_traits_tab(row, int(row["Number"]))
+
+    # ── Evolution tab ─────────────────────────────────────────────────────────
+    with tab_evo:
+        render_evolution_tab(row, int(row["Number"]))
 
 # ── Card grid — uniform spreadsheet cells ─────────────────────────────────────
 st.divider()

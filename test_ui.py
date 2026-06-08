@@ -328,3 +328,104 @@ def test_rattata_catch_difficulty_shown(page: Page):
     assert "Not applicable" not in content, (
         "Rattata should NOT show the 'not applicable' catch message"
     )
+
+
+# ── Evolution tab (Idea 3) ────────────────────────────────────────────────────
+
+def open_sidebar(page: Page) -> None:
+    """Reveal the collapsed sidebar so the search box is interactable."""
+    for sel in (
+        '[data-testid="stSidebarCollapsedControl"]',
+        '[data-testid="collapsedControl"]',
+        'button[aria-label="Open sidebar"]',
+    ):
+        loc = page.locator(sel)
+        if loc.count() > 0:
+            try:
+                loc.first.click()
+                time.sleep(0.4)
+                return
+            except Exception:
+                continue
+
+
+def select_by_search(page: Page, name: str) -> None:
+    """Filter the Pokédex to `name`; the detail panel auto-selects the first match.
+
+    Passing "" clears the filter (restoring the full grid) while keeping the
+    currently selected Pokémon — used to escape the gen's search filter before
+    testing cross-card navigation.
+    """
+    open_sidebar(page)
+    box = page.get_by_placeholder("e.g. Charizard")
+    box.fill(name)
+    box.press("Enter")
+    time.sleep(RERUN_WAIT)
+
+
+def open_evolution_tab(page: Page) -> None:
+    page.locator("[role='tab']", has_text="Evolution").first.click()
+    time.sleep(2)
+
+
+def test_evolution_tab_eevee_shows_all_eight_branches(page: Page):
+    """
+    The headline feature: Eevee's evolution tab must show all 8 branch evolutions.
+    A regression here means the branch-walk or the chain CSV has broken.
+    """
+    enter_gen1(page)
+    select_by_search(page, "Eevee")
+    open_evolution_tab(page)
+
+    content = page.content()
+    assert "Evolution Family" in content, "Evolution Family header missing"
+    for name in ["Vaporeon", "Jolteon", "Flareon", "Espeon",
+                 "Umbreon", "Leafeon", "Glaceon", "Sylveon"]:
+        assert name in content, f"Eevee evolution branch '{name}' missing from the tab"
+
+
+def test_evolution_tab_linear_chain_shows_levels(page: Page):
+    """Charmander's tab shows the linear chain and the level-up trigger labels."""
+    enter_gen1(page)
+    select_by_search(page, "Charmander")
+    open_evolution_tab(page)
+
+    content = page.content()
+    assert "Charmeleon" in content, "Charmeleon missing from Charmander's evolution tab"
+    assert "Charizard" in content, "Charizard missing from Charmander's evolution tab"
+    assert "Lv 16" in content, (
+        "Expected the 'Lv 16' trigger label (Charmander → Charmeleon) — "
+        "evolution condition labels are not rendering"
+    )
+
+
+def test_evolution_tab_non_evolver_message(page: Page):
+    """Kangaskhan does not evolve and must show the explicit message, never a tree."""
+    enter_gen1(page)
+    select_by_search(page, "Kangaskhan")
+    open_evolution_tab(page)
+
+    content = page.content()
+    assert "does not evolve" in content, (
+        "Kangaskhan should show the 'does not evolve' message in the Evolution tab"
+    )
+
+
+def test_evolution_tab_click_navigates_to_family_member(page: Page):
+    """
+    Clicking a family member in the tree navigates the Pokédex to that Pokémon.
+    This is the core interactivity of the feature.
+    """
+    enter_gen1(page)
+    select_by_search(page, "Charmander")  # select #4
+    select_by_search(page, "")            # clear filter so #6 is reachable, #4 stays selected
+    open_evolution_tab(page)
+
+    # Click the "Charizard" family button (distinct from grid "View →" buttons).
+    page.get_by_role("button", name="Charizard", exact=True).first.click()
+    time.sleep(RERUN_WAIT)
+
+    content = page.content()
+    assert "#0006" in content, (
+        "Clicking Charizard in the evolution tree did not navigate to Charizard (#0006)"
+    )
