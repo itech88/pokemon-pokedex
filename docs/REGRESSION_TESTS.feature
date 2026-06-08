@@ -9,6 +9,11 @@
 # Run backend tests:  python -m pytest test_pokemon_data.py -v         (in pokemon-analytics/)
 # Run UI tests:       python -m pytest test_ui.py -v                   (in pokemon-pokedex/)
 # Run all:            python -m pytest test_pokemon_data.py test_dashboard_smoke.py test_ui.py -v
+#
+# Deployment gate: ALL of the above must pass before every push/deploy. The
+# Evolution Chains feature (Idea 3) is covered by:
+#   - test_pokemon_data.py :: TestEvolutionChains, TestEvolutionExtractor, TestEvolutionView
+#   - test_ui.py           :: test_evolution_tab_*
 
 # ============================================================================
 # FEATURE: Game Selection Landing Screen
@@ -536,3 +541,128 @@ Feature: Backend Data Integrity
     Then there should be exactly 120 rows
     # Only non-neutral multipliers (0.0 and 0.5 and 2.0) are stored;
     # neutral (1.0) entries are omitted and inferred by the type_matchup_matrix view
+
+
+# ============================================================================
+# FEATURE: Evolution Chain Trees  (Idea 3)
+# ============================================================================
+
+Feature: Evolution Chain Data Integrity
+  As a developer maintaining the Evolution feature
+  I want the evolution_chains.csv edge table to be complete and correct
+  So that the family-tree UI never shows a wrong or broken evolution
+
+  # ── evolution_chains.csv (one row per directed parent→child evolution edge) ──
+
+  Scenario: The evolution edge table is present and non-trivial
+    Given I load evolution_chains.csv
+    Then there should be at least 400 evolution edges
+    And there should be at least 300 distinct evolution chains
+    # Guards against a blank/partial CSV silently making every Pokémon "not evolve"
+
+  Scenario: Key fields are never null
+    Given I load evolution_chains.csv
+    Then species_id, evolves_into_id, trigger, and chain_id should all be non-null
+
+  Scenario: No evolution references an out-of-range species
+    Given I load evolution_chains.csv
+    Then no species_id or evolves_into_id should be greater than 1025
+    # Excludes Mega/Gigantamax and regional-variant species ids (≥ 10000) and DLC
+
+  Scenario: Every evolution id resolves to a real Pokémon
+    Given I load evolution_chains.csv and pokemon_data.csv
+    Then every species_id and evolves_into_id should exist in pokemon_data.csv
+
+  Scenario: No self-loops exist
+    Given I load evolution_chains.csv
+    Then no row should have species_id equal to evolves_into_id
+    # A self-edge would make the recursive evolution_paths view loop forever
+
+  Scenario: No duplicate edges exist
+    Given I load evolution_chains.csv
+    Then no two rows should share the same species_id, evolves_into_id, and chain_id
+
+  Scenario: Branching families have all their branches
+    Given I load evolution_chains.csv
+    Then Eevee (133) should evolve into exactly 8 species
+    And Tyrogue (236) should evolve into exactly 3 species
+    And Wurmple (265) should evolve into exactly 2 species
+
+  Scenario: Linear evolutions carry the correct level trigger
+    Given I load evolution_chains.csv
+    Then Bulbasaur should evolve into Ivysaur at level 16
+    And Ivysaur should evolve into Venusaur at level 32
+    And Charmeleon should evolve into Charizard at level 36
+
+  Scenario: Condition-based triggers are captured
+    Given I load evolution_chains.csv
+    Then Eevee → Vaporeon should require the Water Stone
+    And Eevee → Espeon should require high happiness during the day
+    And Eevee → Umbreon should require high happiness at night
+    And Slowpoke → Slowking should require holding the King's Rock
+
+  Scenario: Non-evolving Pokémon have zero outgoing edges
+    Given I load evolution_chains.csv
+    Then Kangaskhan (115), Mewtwo (150), Ditto (132), and Snorlax (143)
+      should each have zero evolution edges
+
+  Scenario: Breeding relationships are not treated as evolutions — regression for Phione/Manaphy
+    Given I load evolution_chains.csv
+    Then Phione (489) should have zero evolution edges
+    # PokéAPI links Phione "evolves_to" Manaphy with an empty evolution_details list,
+    # but Phione does NOT evolve into Manaphy (it is a breeding relationship). The
+    # extractor must drop edges that have no evolution trigger.
+
+  Scenario: The committed CSV matches the extractor output on the cache
+    Given the cached evolution-chain JSON files in .api_cache/
+    When I re-run the extractor over them
+    Then the produced edges should exactly equal the committed evolution_chains.csv
+    # Guards against stale or hand-edited data drifting from the parsing code
+
+  # ── evolution_paths recursive view (build_db.py) ────────────────────────────
+
+  Scenario: The recursive evolution_paths view terminates with sane depth
+    Given the pokemon.duckdb database is built
+    Then the evolution_paths view should be non-empty
+    And the maximum depth should be no greater than 3
+    # Real chains are at most 3 stages (depth 2); a deeper walk implies a cycle
+
+  Scenario: The Eevee chain walk is complete
+    Given the pokemon.duckdb database is built
+    When I query evolution_paths for Eevee's chain
+    Then it should return 9 rows (1 root + 8 branches)
+    And every row's root_id should be Eevee (133)
+
+
+Feature: Evolution Tab (Kids App UI)
+  As a young Pokémon fan
+  I want to see and explore my Pokémon's animated evolution family
+  So that learning how Pokémon grow is fun and visual
+
+  Background:
+    Given the Pokédex application is running
+    And I have selected "Generation I"
+
+  Scenario: Eevee's tab shows all eight branch evolutions
+    Given I have selected Eevee
+    When I open the "🔗 Evolution" tab
+    Then I should see "Evolution Family"
+    And I should see Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, and Sylveon
+
+  Scenario: A linear chain shows its level-up trigger labels
+    Given I have selected Charmander
+    When I open the "🔗 Evolution" tab
+    Then I should see Charmeleon and Charizard
+    And I should see the "Lv 16" trigger label
+
+  Scenario: A non-evolving Pokémon shows the "does not evolve" message
+    Given I have selected Kangaskhan
+    When I open the "🔗 Evolution" tab
+    Then I should see a "does not evolve" message
+    And I should not see an evolution tree
+
+  Scenario: Clicking a family member navigates the Pokédex to it
+    Given I have selected Charmander
+    And I have opened the "🔗 Evolution" tab
+    When I click "Charizard" in the evolution tree
+    Then the detail panel should navigate to Charizard "#0006"
